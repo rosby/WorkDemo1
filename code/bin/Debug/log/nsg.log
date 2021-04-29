@@ -64,3 +64,175 @@
 [ERROR] [08:47:19] [1] - Key: Invalid agent!
 [ERROR] [08:47:19] [1] - Key: Invalid agent!
 [ERROR] [08:47:19] [1] - Key: Invalid agent!
+[INFO ] [09:12:16] [1] - 
+
+09:12:16 -------------------------------- NEW LOG --------------------------------
+[INFO ] [09:13:25] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [09:13:27] [1] - Key: Invalid agent!
+[ERROR] [09:13:27] [1] - Key: Invalid agent!
+[ERROR] [09:13:27] [1] - Key: Invalid agent!
+[ERROR] [09:13:27] [1] - Key: Invalid agent!
+[ERROR] [09:13:37] [844e8a2b-7260-456e-a797-e9faf939b080] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[ERROR] [09:14:29] [9f0de88a-1a9a-4032-a243-c4c6e4401958] - Ошибка 22. Ошибка работы с БД -- Недопустимое имя столбца "Nomenklatura".
+[ERROR] [09:14:29] [9f0de88a-1a9a-4032-a243-c4c6e4401958] -  CallStack content :
+[ERROR] [09:14:29] [9f0de88a-1a9a-4032-a243-c4c6e4401958] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
+   в NsgSoft.Database.NsgDatabaseMsSQL.Find(String tableName, NsgFindParam& parameters, IDbTransaction transaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 2440
+   в NsgSoft.DataObjects.NsgDataTable.LoadFromDatabase(NsgMultipleObject inOwner, NsgCompare inCompare) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataTable.cs:строка 629
+   в NsgSoft.DataObjects.NsgReference.get_Referent() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgReference.cs:строка 434
+   в NsgSoft.Forms.NsgDataSourceProvider.updateMetaObject(ThreadWorkArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3430
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3011
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [09:14:29] [9f0de88a-1a9a-4032-a243-c4c6e4401958] - 
+[ERROR] [09:14:29] [9f0de88a-1a9a-4032-a243-c4c6e4401958] - ===================== Exception Begin =====================
+Main Message = 'Ошибка 22. Ошибка работы с БД -- Недопустимое имя столбца "Nomenklatura".'.
+ 
+Main StackTrace = '   в NsgSoft.Database.NsgDatabaseMsSQL.Find(String tableName, NsgFindParam& parameters, IDbTransaction transaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 2489
+   в NsgSoft.DataObjects.NsgDataTable.LoadFromDatabase(NsgMultipleObject inOwner, NsgCompare inCompare) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataTable.cs:строка 629
+   в NsgSoft.DataObjects.NsgReference.get_Referent() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgReference.cs:строка 434
+   в NsgSoft.Forms.NsgDataSourceProvider.updateMetaObject(ThreadWorkArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3430
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3011
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [09:15:45] [1] - 
+
+09:15:45 -------------------------------- NEW LOG --------------------------------
+[INFO ] [09:15:49] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [09:15:50] [1] - Key: Invalid agent!
+[ERROR] [09:15:50] [1] - Key: Invalid agent!
+[ERROR] [09:15:50] [1] - Key: Invalid agent!
+[ERROR] [09:15:50] [1] - Key: Invalid agent!
+[ERROR] [09:15:57] [bf92664e-fc8e-4f73-be53-c7cb3e679ced] - Ошибка 22. Ошибка работы с БД -- Недопустимое имя столбца "Nomenklatura".
+[ERROR] [09:15:57] [bf92664e-fc8e-4f73-be53-c7cb3e679ced] -  CallStack content :
+[ERROR] [09:15:57] [bf92664e-fc8e-4f73-be53-c7cb3e679ced] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
+   в NsgSoft.Database.NsgDatabaseMsSQL.Find(String tableName, NsgFindParam& parameters, IDbTransaction transaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 2440
+   в NsgSoft.DataObjects.NsgDataTable.LoadFromDatabase(NsgMultipleObject inOwner, NsgCompare inCompare) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataTable.cs:строка 629
+   в NsgSoft.DataObjects.NsgReference.get_Referent() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgReference.cs:строка 434
+   в NsgSoft.Forms.NsgDataSourceProvider.updateMetaObject(ThreadWorkArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3430
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3011
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [09:15:57] [bf92664e-fc8e-4f73-be53-c7cb3e679ced] - 
+[ERROR] [09:15:57] [bf92664e-fc8e-4f73-be53-c7cb3e679ced] - ===================== Exception Begin =====================
+Main Message = 'Ошибка 22. Ошибка работы с БД -- Недопустимое имя столбца "Nomenklatura".'.
+ 
+Main StackTrace = '   в NsgSoft.Database.NsgDatabaseMsSQL.Find(String tableName, NsgFindParam& parameters, IDbTransaction transaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 2489
+   в NsgSoft.DataObjects.NsgDataTable.LoadFromDatabase(NsgMultipleObject inOwner, NsgCompare inCompare) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataTable.cs:строка 629
+   в NsgSoft.DataObjects.NsgReference.get_Referent() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgReference.cs:строка 434
+   в NsgSoft.Forms.NsgDataSourceProvider.updateMetaObject(ThreadWorkArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3430
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3011
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [09:17:14] [1] - 
+
+09:17:14 -------------------------------- NEW LOG --------------------------------
+[INFO ] [09:17:18] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [09:17:20] [1] - Key: Invalid agent!
+[ERROR] [09:17:20] [1] - Key: Invalid agent!
+[ERROR] [09:17:20] [1] - Key: Invalid agent!
+[ERROR] [09:17:20] [1] - Key: Invalid agent!
+[ERROR] [09:18:23] [b4afdb8b-bb0d-4ac2-a8ba-9e7b2383ac82] - Ошибка 22. Ошибка работы с БД -- Недопустимое имя столбца "Nomenklatura".
+[ERROR] [09:18:23] [b4afdb8b-bb0d-4ac2-a8ba-9e7b2383ac82] -  CallStack content :
+[ERROR] [09:18:23] [b4afdb8b-bb0d-4ac2-a8ba-9e7b2383ac82] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
+   в NsgSoft.Database.NsgDatabaseMsSQL.Find(String tableName, NsgFindParam& parameters, IDbTransaction transaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 2440
+   в NsgSoft.DataObjects.NsgDataTable.LoadFromDatabase(NsgMultipleObject inOwner, NsgCompare inCompare) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataTable.cs:строка 629
+   в NsgSoft.DataObjects.NsgReference.get_Referent() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgReference.cs:строка 434
+   в NsgSoft.Forms.NsgDataSourceProvider.updateMetaObject(ThreadWorkArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3430
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3011
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [09:18:23] [b4afdb8b-bb0d-4ac2-a8ba-9e7b2383ac82] - 
+[ERROR] [09:18:23] [b4afdb8b-bb0d-4ac2-a8ba-9e7b2383ac82] - ===================== Exception Begin =====================
+Main Message = 'Ошибка 22. Ошибка работы с БД -- Недопустимое имя столбца "Nomenklatura".'.
+ 
+Main StackTrace = '   в NsgSoft.Database.NsgDatabaseMsSQL.Find(String tableName, NsgFindParam& parameters, IDbTransaction transaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 2489
+   в NsgSoft.DataObjects.NsgDataTable.LoadFromDatabase(NsgMultipleObject inOwner, NsgCompare inCompare) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataTable.cs:строка 629
+   в NsgSoft.DataObjects.NsgReference.get_Referent() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgReference.cs:строка 434
+   в NsgSoft.Forms.NsgDataSourceProvider.updateMetaObject(ThreadWorkArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3430
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3011
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[ERROR] [09:18:55] [c1be105d-47d2-4fba-9421-c0e5ce0c2d1d] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[ERROR] [09:21:21] [19d0b844-9074-4cf6-aead-7eba9ce74cae] - Ошибка 22. Ошибка работы с БД -- Недопустимое имя столбца "Nomenklatura".
+[ERROR] [09:21:21] [19d0b844-9074-4cf6-aead-7eba9ce74cae] -  CallStack content :
+[ERROR] [09:21:21] [19d0b844-9074-4cf6-aead-7eba9ce74cae] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
+   в NsgSoft.Database.NsgDatabaseMsSQL.Find(String tableName, NsgFindParam& parameters, IDbTransaction transaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 2440
+   в NsgSoft.DataObjects.NsgDataTable.LoadFromDatabase(NsgMultipleObject inOwner, NsgCompare inCompare) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataTable.cs:строка 629
+   в NsgSoft.DataObjects.NsgReference.get_Referent() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgReference.cs:строка 434
+   в NsgSoft.Forms.NsgDataSourceProvider.updateMetaObject(ThreadWorkArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3430
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3011
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [09:21:21] [19d0b844-9074-4cf6-aead-7eba9ce74cae] - 
+[ERROR] [09:21:21] [19d0b844-9074-4cf6-aead-7eba9ce74cae] - ===================== Exception Begin =====================
+Main Message = 'Ошибка 22. Ошибка работы с БД -- Недопустимое имя столбца "Nomenklatura".'.
+ 
+Main StackTrace = '   в NsgSoft.Database.NsgDatabaseMsSQL.Find(String tableName, NsgFindParam& parameters, IDbTransaction transaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 2489
+   в NsgSoft.DataObjects.NsgDataTable.LoadFromDatabase(NsgMultipleObject inOwner, NsgCompare inCompare) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataTable.cs:строка 629
+   в NsgSoft.DataObjects.NsgReference.get_Referent() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgReference.cs:строка 434
+   в NsgSoft.Forms.NsgDataSourceProvider.updateMetaObject(ThreadWorkArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3430
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3011
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
