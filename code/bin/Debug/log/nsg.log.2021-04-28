@@ -1,0 +1,400 @@
+[INFO ] [16:18:04] [1] - 
+
+16:18:04 -------------------------------- NEW LOG --------------------------------
+[ERROR] [16:18:05] [Launch] - Ошибка 21. Невозможно открыть соединение с сервером: 
+	Type: 'MsSQL'
+	Server: ''
+	Database: ''
+	IntegratedSecurity: 'False'
+.
+[ERROR] [16:18:05] [Launch] -  CallStack content :
+[ERROR] [16:18:05] [Launch] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
+   в NsgSoft.Database.NsgDatabaseMsSQL.connect(String databaseName) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 135
+   в NsgSoft.Database.NsgDatabaseMsSQL.CheckExistDB(String dbName) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 287
+   в NsgSoft.DataObjects.NsgConfiguration.CheckDatabasesExisting() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 1809
+   в NsgSoft.Forms.NsgDatabaseGUIService.checkDBExisting(List`1 noExisting) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgDatabaseGUIService.cs:строка 164
+   в NsgSoft.Forms.NsgDatabaseGUIService.checkDBExistingWithMessage(Boolean showMessage, Boolean throwException) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgDatabaseGUIService.cs:строка 191
+   в NsgSoft.Forms.NsgDatabaseGUIService.Connect(String[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgDatabaseGUIService.cs:строка 597
+   в Авто.Program.<>c__DisplayClass0_0.<Main>b__1(NsgThread <p0>, DoWorkEventArgs <p1>) в E:\Work\FirstDemo\code\Program.cs:строка 50
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [16:18:05] [Launch] - 
+[ERROR] [16:18:06] [Launch] - Ошибка 21. Невозможно открыть соединение с сервером: 
+	Type: 'MsSQL'
+	Server: ''
+	Database: ''
+	IntegratedSecurity: 'False'
+.
+NsgSoft.Common.NsgLoggedException: Ошибка 21. Невозможно открыть соединение с сервером: 
+	Type: 'MsSQL'
+	Server: ''
+	Database: ''
+	IntegratedSecurity: 'False'
+.
+   в NsgSoft.Database.NsgDatabaseMsSQL.connect(String databaseName) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 210
+   в NsgSoft.Database.NsgDatabaseMsSQL.CheckExistDB(String dbName) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 287
+   в NsgSoft.DataObjects.NsgConfiguration.CheckDatabasesExisting() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 1809
+   в NsgSoft.Forms.NsgDatabaseGUIService.checkDBExisting(List`1 noExisting) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgDatabaseGUIService.cs:строка 164
+   в NsgSoft.Forms.NsgDatabaseGUIService.checkDBExistingWithMessage(Boolean showMessage, Boolean throwException) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgDatabaseGUIService.cs:строка 191
+   в NsgSoft.Forms.NsgDatabaseGUIService.Connect(String[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgDatabaseGUIService.cs:строка 597
+[INFO ] [17:11:38] [1] - 
+
+17:11:38 -------------------------------- NEW LOG --------------------------------
+[ERROR] [17:11:39] [Launch] - Ошибка 21. Невозможно открыть соединение с сервером: 
+	Type: 'MsSQL'
+	Server: ''
+	Database: ''
+	IntegratedSecurity: 'False'
+.
+[ERROR] [17:11:39] [Launch] -  CallStack content :
+[ERROR] [17:11:39] [Launch] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
+   в NsgSoft.Database.NsgDatabaseMsSQL.connect(String databaseName) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 135
+   в NsgSoft.Database.NsgDatabaseMsSQL.CheckExistDB(String dbName) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 287
+   в NsgSoft.DataObjects.NsgConfiguration.CheckDatabasesExisting() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 1809
+   в NsgSoft.Forms.NsgDatabaseGUIService.checkDBExisting(List`1 noExisting) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgDatabaseGUIService.cs:строка 164
+   в NsgSoft.Forms.NsgDatabaseGUIService.checkDBExistingWithMessage(Boolean showMessage, Boolean throwException) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgDatabaseGUIService.cs:строка 191
+   в NsgSoft.Forms.NsgDatabaseGUIService.Connect(String[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgDatabaseGUIService.cs:строка 597
+   в Авто.Program.<>c__DisplayClass0_0.<Main>b__1(NsgThread <p0>, DoWorkEventArgs <p1>) в E:\Work\FirstDemo\code\Program.cs:строка 50
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [17:11:39] [Launch] - 
+[ERROR] [17:11:40] [Launch] - Ошибка 21. Невозможно открыть соединение с сервером: 
+	Type: 'MsSQL'
+	Server: ''
+	Database: ''
+	IntegratedSecurity: 'False'
+.
+NsgSoft.Common.NsgLoggedException: Ошибка 21. Невозможно открыть соединение с сервером: 
+	Type: 'MsSQL'
+	Server: ''
+	Database: ''
+	IntegratedSecurity: 'False'
+.
+   в NsgSoft.Database.NsgDatabaseMsSQL.connect(String databaseName) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 210
+   в NsgSoft.Database.NsgDatabaseMsSQL.CheckExistDB(String dbName) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 287
+   в NsgSoft.DataObjects.NsgConfiguration.CheckDatabasesExisting() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 1809
+   в NsgSoft.Forms.NsgDatabaseGUIService.checkDBExisting(List`1 noExisting) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgDatabaseGUIService.cs:строка 164
+   в NsgSoft.Forms.NsgDatabaseGUIService.checkDBExistingWithMessage(Boolean showMessage, Boolean throwException) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgDatabaseGUIService.cs:строка 191
+   в NsgSoft.Forms.NsgDatabaseGUIService.Connect(String[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgDatabaseGUIService.cs:строка 597
+[INFO ] [17:13:57] [1] - 
+
+17:13:57 -------------------------------- NEW LOG --------------------------------
+[INFO ] [17:19:00] [1] - 
+
+17:19:00 -------------------------------- NEW LOG --------------------------------
+[ERROR] [17:19:45] [8] - Key: NetKey: Cannot connect to the NetKey License Server!
+[ERROR] [17:19:45] [8] - Key: NetKey: Cannot connect to the NetKey License Server!
+[ERROR] [17:19:46] [8] - Key: NetKey: Cannot connect to the NetKey License Server!
+[ERROR] [17:19:46] [8] - Key: NetKey: Cannot connect to the NetKey License Server!
+[INFO ] [17:21:22] [1] - 
+
+17:21:22 -------------------------------- NEW LOG --------------------------------
+[ERROR] [17:21:32] [8] - Key: NetKey: Cannot connect to the NetKey License Server!
+[ERROR] [17:21:32] [8] - Key: NetKey: Cannot connect to the NetKey License Server!
+[ERROR] [17:21:33] [8] - Key: NetKey: Cannot connect to the NetKey License Server!
+[ERROR] [17:21:33] [8] - Key: NetKey: Cannot connect to the NetKey License Server!
+[INFO ] [17:23:02] [1] - 
+
+17:23:02 -------------------------------- NEW LOG --------------------------------
+[INFO ] [17:24:23] [1] - 
+
+17:24:23 -------------------------------- NEW LOG --------------------------------
+[INFO ] [17:24:36] [1] - 
+
+17:24:36 -------------------------------- NEW LOG --------------------------------
+[INFO ] [17:25:04] [1] - 
+
+17:25:04 -------------------------------- NEW LOG --------------------------------
+[INFO ] [17:25:08] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [17:25:10] [1] - Key: NetKey: Cannot connect to the NetKey License Server!
+[ERROR] [17:25:10] [1] - Key: NetKey: Cannot connect to the NetKey License Server!
+[ERROR] [17:25:10] [1] - Key: NetKey: Cannot connect to the NetKey License Server!
+[ERROR] [17:25:10] [1] - Key: NetKey: Cannot connect to the NetKey License Server!
+[INFO ] [17:25:30] [1] - 
+
+17:25:30 -------------------------------- NEW LOG --------------------------------
+[INFO ] [17:25:41] [1] - 
+
+17:25:41 -------------------------------- NEW LOG --------------------------------
+[INFO ] [17:25:49] [1] - 
+
+17:25:49 -------------------------------- NEW LOG --------------------------------
+[INFO ] [17:26:24] [1] - 
+
+17:26:24 -------------------------------- NEW LOG --------------------------------
+[INFO ] [17:26:28] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [17:26:29] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:26:29] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:26:29] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:26:29] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:26:29] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:26:29] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:26:29] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:26:29] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:26:46] [44] - Превышено максимальное количество записей для режима DEMO
+[ERROR] [17:26:46] [44] -  CallStack content :
+[ERROR] [17:26:46] [44] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Database.NsgDatabaseMsSQL.Post(NsgDatabaseTable& table, TreeNode condition, IDbTransaction transaction, String startQuery, String endQuery, Int32 lockWaitTime) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 1123
+   в NsgSoft.DataObjects.NsgMultipleObject.BasePost(NsgTimeMoment moment, NsgCompare compare, NsgSimpleObject[] requisits, Boolean isUpdate) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.DB.cs:строка 669
+   в NsgSoft.DataObjects.NsgUserSettings.SaveUserSettings(NsgDataDictionary user) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Data Management\NsgUserSettings.cs:строка 498
+   в NsgSoft.Forms.NsgMainForm.bwSaveUsersSettings_DoWork(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgMainForm.cs:строка 1524
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [17:26:46] [44] - 
+[INFO ] [17:27:16] [1] - 
+
+17:27:16 -------------------------------- NEW LOG --------------------------------
+[INFO ] [17:27:21] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [17:27:22] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:27:22] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:27:22] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:27:22] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:27:22] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:27:22] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:27:22] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:27:22] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:28:57] [169] - Превышено максимальное количество записей для режима DEMO
+[ERROR] [17:28:57] [169] -  CallStack content :
+[ERROR] [17:28:57] [169] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Database.NsgDatabaseMsSQL.Post(NsgDatabaseTable& table, TreeNode condition, IDbTransaction transaction, String startQuery, String endQuery, Int32 lockWaitTime) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 1123
+   в NsgSoft.DataObjects.NsgMultipleObject.BasePost(NsgTimeMoment moment, NsgCompare compare, NsgSimpleObject[] requisits, Boolean isUpdate) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.DB.cs:строка 669
+   в NsgSoft.DataObjects.NsgUserSettings.SaveUserSettings(NsgDataDictionary user) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Data Management\NsgUserSettings.cs:строка 498
+   в NsgSoft.Forms.NsgMainForm.bwSaveUsersSettings_DoWork(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgMainForm.cs:строка 1524
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [17:28:57] [169] - 
+[INFO ] [17:51:35] [1] - 
+
+17:51:35 -------------------------------- NEW LOG --------------------------------
+[INFO ] [17:51:39] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [17:51:41] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:51:41] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:51:41] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:51:41] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:51:41] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:51:41] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:51:41] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:51:41] [1] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:51:52] [53] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:51:52] [53] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:51:52] [53] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:51:52] [53] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:51:52] [53] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:51:52] [53] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:51:52] [53] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:51:52] [53] - Key: Не удается загрузить DLL "Ekc6420.dll": Не найден указанный модуль. (Исключение из HRESULT: 0x8007007E)
+[ERROR] [17:56:35] [123] - Превышено максимальное количество записей для режима DEMO
+[ERROR] [17:56:35] [123] -  CallStack content :
+[ERROR] [17:56:35] [123] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Database.NsgDatabaseMsSQL.Post(NsgDatabaseTable& table, TreeNode condition, IDbTransaction transaction, String startQuery, String endQuery, Int32 lockWaitTime) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 1123
+   в NsgSoft.DataObjects.NsgMultipleObject.BasePost(NsgTimeMoment moment, NsgCompare compare, NsgSimpleObject[] requisits, Boolean isUpdate) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.DB.cs:строка 669
+   в NsgSoft.DataObjects.NsgUserSettings.SaveUserSettings(NsgDataDictionary user) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Data Management\NsgUserSettings.cs:строка 498
+   в NsgSoft.Forms.NsgMainForm.bwSaveUsersSettings_DoWork(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgMainForm.cs:строка 1524
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [17:56:35] [123] - 
+[ERROR] [18:01:35] [342] - Превышено максимальное количество записей для режима DEMO
+[ERROR] [18:01:35] [342] -  CallStack content :
+[ERROR] [18:01:35] [342] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Database.NsgDatabaseMsSQL.Post(NsgDatabaseTable& table, TreeNode condition, IDbTransaction transaction, String startQuery, String endQuery, Int32 lockWaitTime) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 1123
+   в NsgSoft.DataObjects.NsgMultipleObject.BasePost(NsgTimeMoment moment, NsgCompare compare, NsgSimpleObject[] requisits, Boolean isUpdate) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.DB.cs:строка 669
+   в NsgSoft.DataObjects.NsgUserSettings.SaveUserSettings(NsgDataDictionary user) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Data Management\NsgUserSettings.cs:строка 498
+   в NsgSoft.Forms.NsgMainForm.bwSaveUsersSettings_DoWork(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgMainForm.cs:строка 1524
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [18:01:35] [342] - 
+[ERROR] [18:04:09] [251] - Превышено максимальное количество записей для режима DEMO
+[ERROR] [18:04:09] [251] -  CallStack content :
+[ERROR] [18:04:09] [251] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Database.NsgDatabaseMsSQL.Post(NsgDatabaseTable& table, TreeNode condition, IDbTransaction transaction, String startQuery, String endQuery, Int32 lockWaitTime) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 1123
+   в NsgSoft.DataObjects.NsgMultipleObject.BasePost(NsgTimeMoment moment, NsgCompare compare, NsgSimpleObject[] requisits, Boolean isUpdate) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.DB.cs:строка 669
+   в NsgSoft.DataObjects.NsgUserSettings.SaveUserSettings(NsgDataDictionary user) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Data Management\NsgUserSettings.cs:строка 498
+   в NsgSoft.Forms.NsgMainForm.bwSaveUsersSettings_DoWork(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgMainForm.cs:строка 1524
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [18:04:09] [251] - 
+[INFO ] [18:04:46] [1] - 
+
+18:04:46 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:05:20] [1] - 
+
+18:05:20 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:05:24] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:05:26] [1] - Key: Invalid agent!
+[ERROR] [18:05:26] [1] - Key: Invalid agent!
+[ERROR] [18:05:26] [1] - Key: Invalid agent!
+[ERROR] [18:05:26] [1] - Key: Invalid agent!
+[INFO ] [18:18:21] [1] - 
+
+18:18:21 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:18:26] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:18:27] [1] - Key: Invalid agent!
+[ERROR] [18:18:27] [1] - Key: Invalid agent!
+[ERROR] [18:18:27] [1] - Key: Invalid agent!
+[ERROR] [18:18:27] [1] - Key: Invalid agent!
+[INFO ] [18:21:47] [1] - 
+
+18:21:47 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:21:52] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:21:54] [1] - Key: Invalid agent!
+[ERROR] [18:21:54] [1] - Key: Invalid agent!
+[ERROR] [18:21:54] [1] - Key: Invalid agent!
+[ERROR] [18:21:54] [1] - Key: Invalid agent!
+[INFO ] [18:25:28] [1] - 
+
+18:25:28 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:25:32] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:25:34] [1] - Key: Invalid agent!
+[ERROR] [18:25:34] [1] - Key: Invalid agent!
+[ERROR] [18:25:34] [1] - Key: Invalid agent!
+[ERROR] [18:25:34] [1] - Key: Invalid agent!
+[INFO ] [18:35:01] [1] - 
+
+18:35:01 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:35:06] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:35:08] [1] - Key: Invalid agent!
+[ERROR] [18:35:08] [1] - Key: Invalid agent!
+[ERROR] [18:35:08] [1] - Key: Invalid agent!
+[ERROR] [18:35:08] [1] - Key: Invalid agent!
+[INFO ] [18:35:49] [1] - 
+
+18:35:49 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:35:53] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:35:55] [1] - Key: Invalid agent!
+[ERROR] [18:35:55] [1] - Key: Invalid agent!
+[ERROR] [18:35:55] [1] - Key: Invalid agent!
+[ERROR] [18:35:55] [1] - Key: Invalid agent!
+[INFO ] [18:37:55] [1] - 
+
+18:37:55 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:37:59] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:38:00] [1] - Key: Invalid agent!
+[ERROR] [18:38:00] [1] - Key: Invalid agent!
+[ERROR] [18:38:00] [1] - Key: Invalid agent!
+[ERROR] [18:38:00] [1] - Key: Invalid agent!
+[INFO ] [18:38:31] [1] - 
+
+18:38:31 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:38:35] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:38:37] [1] - Key: Invalid agent!
+[ERROR] [18:38:37] [1] - Key: Invalid agent!
+[ERROR] [18:38:37] [1] - Key: Invalid agent!
+[ERROR] [18:38:37] [1] - Key: Invalid agent!
+[INFO ] [18:42:25] [1] - 
+
+18:42:25 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:42:29] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:42:30] [1] - Key: Invalid agent!
+[ERROR] [18:42:30] [1] - Key: Invalid agent!
+[ERROR] [18:42:30] [1] - Key: Invalid agent!
+[ERROR] [18:42:30] [1] - Key: Invalid agent!
+[INFO ] [18:45:43] [1] - 
+
+18:45:43 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:45:47] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:45:48] [1] - Key: Invalid agent!
+[ERROR] [18:45:48] [1] - Key: Invalid agent!
+[ERROR] [18:45:48] [1] - Key: Invalid agent!
+[ERROR] [18:45:48] [1] - Key: Invalid agent!
+[INFO ] [18:46:28] [1] - 
+
+18:46:28 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:46:32] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:46:33] [1] - Key: Invalid agent!
+[ERROR] [18:46:33] [1] - Key: Invalid agent!
+[ERROR] [18:46:33] [1] - Key: Invalid agent!
+[ERROR] [18:46:33] [1] - Key: Invalid agent!
+[INFO ] [18:46:55] [1] - 
+
+18:46:55 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:46:59] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:47:01] [1] - Key: Invalid agent!
+[ERROR] [18:47:01] [1] - Key: Invalid agent!
+[ERROR] [18:47:01] [1] - Key: Invalid agent!
+[ERROR] [18:47:01] [1] - Key: Invalid agent!
+[INFO ] [19:00:03] [1] - 
+
+19:00:03 -------------------------------- NEW LOG --------------------------------
+[INFO ] [19:00:09] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [19:00:13] [8] - Key: Invalid agent!
+[ERROR] [19:00:13] [8] - Key: Invalid agent!
+[ERROR] [19:00:13] [8] - Key: Invalid agent!
+[ERROR] [19:00:13] [8] - Key: Invalid agent!
+[ERROR] [19:00:13] [8] - Ошибка 22. Ошибка работы с БД -- Нельзя снять блокировку приложения (участник базы данных: "public", ресурс: "951c139f-ae76-4e3e-9906-e5d25656b880"), поскольку в данный момент она не удерживается.
+[ERROR] [19:00:13] [8] -  CallStack content :
+[ERROR] [19:00:13] [8] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
+   в NsgSoft.Database.NsgDatabaseMsSQL.asyncExecuteNonQuery(SqlCommand command, Boolean noOutTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 4571
+   в NsgSoft.DataObjects.NsgMultipleObject.UnLock(String resource) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2323
+   в NsgSoft.DataObjects.NsgMultipleObject.Lock(String resource, Boolean openNewTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2264
+   в NsgSoft.DataObjects.NsgConfiguration.SetUpdateFlag(Boolean p) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 2281
+   в NsgSoft.DataObjects.NsgConfiguration.CreateStorage(Object sender, DoWorkEventArgs eventArgs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 1697
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [19:00:13] [8] - 
+[INFO ] [19:00:36] [1] - 
+
+19:00:36 -------------------------------- NEW LOG --------------------------------
+[INFO ] [19:00:41] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [19:00:43] [1] - Key: Invalid agent!
+[ERROR] [19:00:43] [1] - Key: Invalid agent!
+[ERROR] [19:00:43] [1] - Key: Invalid agent!
+[ERROR] [19:00:43] [1] - Key: Invalid agent!
+[INFO ] [19:26:25] [1] - 
+
+19:26:25 -------------------------------- NEW LOG --------------------------------
+[INFO ] [19:26:31] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [19:26:33] [1] - Key: Invalid agent!
+[ERROR] [19:26:33] [1] - Key: Invalid agent!
+[ERROR] [19:26:33] [1] - Key: Invalid agent!
+[ERROR] [19:26:33] [1] - Key: Invalid agent!

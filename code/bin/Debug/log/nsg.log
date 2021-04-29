@@ -1,0 +1,66 @@
+[INFO ] [07:53:37] [1] - 
+
+07:53:37 -------------------------------- NEW LOG --------------------------------
+[INFO ] [07:53:50] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [07:53:54] [8] - Key: Invalid agent!
+[ERROR] [07:53:54] [8] - Key: Invalid agent!
+[ERROR] [07:53:54] [8] - Key: Invalid agent!
+[ERROR] [07:53:54] [8] - Key: Invalid agent!
+[ERROR] [07:53:55] [8] - Ошибка 22. Ошибка работы с БД -- Нельзя снять блокировку приложения (участник базы данных: "public", ресурс: "618293e0-6942-4113-8692-dd5cfbc54096"), поскольку в данный момент она не удерживается.
+[ERROR] [07:53:55] [8] -  CallStack content :
+[ERROR] [07:53:55] [8] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
+   в NsgSoft.Database.NsgDatabaseMsSQL.asyncExecuteNonQuery(SqlCommand command, Boolean noOutTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 4571
+   в NsgSoft.DataObjects.NsgMultipleObject.UnLock(String resource) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2323
+   в NsgSoft.DataObjects.NsgMultipleObject.Lock(String resource, Boolean openNewTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2264
+   в NsgSoft.DataObjects.NsgConfiguration.SetUpdateFlag(Boolean p) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 2281
+   в NsgSoft.DataObjects.NsgConfiguration.CreateStorage(Object sender, DoWorkEventArgs eventArgs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 1697
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [07:53:55] [8] - 
+[INFO ] [07:54:25] [1] - 
+
+07:54:25 -------------------------------- NEW LOG --------------------------------
+[INFO ] [07:54:28] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [07:54:29] [1] - Key: Invalid agent!
+[ERROR] [07:54:29] [1] - Key: Invalid agent!
+[ERROR] [07:54:29] [1] - Key: Invalid agent!
+[ERROR] [07:54:29] [1] - Key: Invalid agent!
+[INFO ] [08:14:38] [1] - 
+
+08:14:38 -------------------------------- NEW LOG --------------------------------
+[INFO ] [08:14:43] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [08:14:45] [1] - Key: Invalid agent!
+[ERROR] [08:14:45] [1] - Key: Invalid agent!
+[ERROR] [08:14:45] [1] - Key: Invalid agent!
+[ERROR] [08:14:45] [1] - Key: Invalid agent!
+[INFO ] [08:36:21] [1] - 
+
+08:36:21 -------------------------------- NEW LOG --------------------------------
+[INFO ] [08:36:26] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [08:36:27] [1] - Key: Invalid agent!
+[ERROR] [08:36:27] [1] - Key: Invalid agent!
+[ERROR] [08:36:27] [1] - Key: Invalid agent!
+[ERROR] [08:36:27] [1] - Key: Invalid agent!
+[INFO ] [08:38:29] [1] - 
+
+08:38:29 -------------------------------- NEW LOG --------------------------------
+[INFO ] [08:38:33] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [08:38:35] [1] - Key: Invalid agent!
+[ERROR] [08:38:35] [1] - Key: Invalid agent!
+[ERROR] [08:38:35] [1] - Key: Invalid agent!
+[ERROR] [08:38:35] [1] - Key: Invalid agent!
+[INFO ] [08:47:13] [1] - 
+
+08:47:13 -------------------------------- NEW LOG --------------------------------
+[INFO ] [08:47:17] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [08:47:19] [1] - Key: Invalid agent!
+[ERROR] [08:47:19] [1] - Key: Invalid agent!
+[ERROR] [08:47:19] [1] - Key: Invalid agent!
+[ERROR] [08:47:19] [1] - Key: Invalid agent!
