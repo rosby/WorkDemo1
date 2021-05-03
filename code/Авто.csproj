@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>2021.4.29.0</ProductVersion>
+    <ProductVersion>2021.5.3.8</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>ba39aa6f-8a49-4da2-9389-35dcf2e0cf2d</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -666,5 +666,152 @@
       <DependentUpon>ФормаЭлемента.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Метаданные\Автосервис\Долги\Долги.NsgInit.cs">
+      <NsgOwnerGuid>a5481105-b6bc-4f5a-9227-e8c41fb8a73b</NsgOwnerGuid>
+      <NsgOwnerName>Долги</NsgOwnerName>
+      <DependentUpon>Долги.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Долги\Долги.cs">
+      <NsgOwnerGuid>a5481105-b6bc-4f5a-9227-e8c41fb8a73b</NsgOwnerGuid>
+      <NsgOwnerName>Долги</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Долги\Форма.Designer.cs">
+      <NsgOwnerGuid>a5481105-b6bc-4f5a-9227-e8c41fb8a73b</NsgOwnerGuid>
+      <DependentUpon>Форма.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Долги\Форма.cs">
+      <NsgOwnerGuid>a5481105-b6bc-4f5a-9227-e8c41fb8a73b</NsgOwnerGuid>
+      <SubType>Form</SubType>
+    </Compile>
+    <EmbeddedResource Include="Метаданные\Автосервис\Долги\Форма.resx">
+      <NsgOwnerGuid>a5481105-b6bc-4f5a-9227-e8c41fb8a73b</NsgOwnerGuid>
+      <DependentUpon>Форма.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Метаданные\Автосервис\Фирмы\Фирмы.NsgInit.cs">
+      <NsgOwnerGuid>8eb26341-0ac6-4097-a90e-e13a3ebd83c5</NsgOwnerGuid>
+      <NsgOwnerName>Фирмы</NsgOwnerName>
+      <DependentUpon>Фирмы.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Фирмы\Фирмы.cs">
+      <NsgOwnerGuid>8eb26341-0ac6-4097-a90e-e13a3ebd83c5</NsgOwnerGuid>
+      <NsgOwnerName>Фирмы</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Сотрудники\Сотрудники.NsgInit.cs">
+      <NsgOwnerGuid>13950ba0-f729-44a9-82fd-b4aec70d0d9c</NsgOwnerGuid>
+      <NsgOwnerName>Сотрудники</NsgOwnerName>
+      <DependentUpon>Сотрудники.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Сотрудники\Сотрудники.cs">
+      <NsgOwnerGuid>13950ba0-f729-44a9-82fd-b4aec70d0d9c</NsgOwnerGuid>
+      <NsgOwnerName>Сотрудники</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Сотрудники\АвтосервисСотрудникиДвижения.NsgInit.cs">
+      <NsgOwnerGuid>dec666ba-76a6-46fb-989c-6e07d84b0930</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисСотрудникиДвижения</NsgOwnerName>
+      <DependentUpon>АвтосервисСотрудникиДвижения.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Сотрудники\АвтосервисСотрудникиДвижения.cs">
+      <NsgOwnerGuid>dec666ba-76a6-46fb-989c-6e07d84b0930</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисСотрудникиДвижения</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Сотрудники\АвтосервисСотрудникиДвижения.Строка.NsgInit.cs">
+      <NsgOwnerGuid>dec666ba-76a6-46fb-989c-6e07d84b0930</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисСотрудникиДвижения</NsgOwnerName>
+      <DependentUpon>АвтосервисСотрудникиДвижения.Строка.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Сотрудники\АвтосервисСотрудникиДвижения.Строка.cs">
+      <NsgOwnerGuid>dec666ba-76a6-46fb-989c-6e07d84b0930</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисСотрудникиДвижения</NsgOwnerName>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Метаданные\Автосервис\Взаиморасчеты\АвтосервисВзаиморасчетыНакопления.NsgInit.cs">
+      <NsgOwnerGuid>80643ab5-51ab-4db8-8e54-1a90bc91276a</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисВзаиморасчетыНакопления</NsgOwnerName>
+      <DependentUpon>АвтосервисВзаиморасчетыНакопления.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Взаиморасчеты\АвтосервисВзаиморасчетыНакопления.cs">
+      <NsgOwnerGuid>80643ab5-51ab-4db8-8e54-1a90bc91276a</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисВзаиморасчетыНакопления</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Взаиморасчеты\АвтосервисВзаиморасчетыНакопления.Строка.NsgInit.cs">
+      <NsgOwnerGuid>80643ab5-51ab-4db8-8e54-1a90bc91276a</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисВзаиморасчетыНакопления</NsgOwnerName>
+      <DependentUpon>АвтосервисВзаиморасчетыНакопления.Строка.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Взаиморасчеты\АвтосервисВзаиморасчетыНакопления.Строка.cs">
+      <NsgOwnerGuid>80643ab5-51ab-4db8-8e54-1a90bc91276a</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисВзаиморасчетыНакопления</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Взаиморасчеты\АвтосервисВзаиморасчетыНакопления_1.NsgInit.cs">
+      <NsgOwnerGuid>66b03380-dafe-4d93-809b-692079e18645</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисВзаиморасчетыНакопления_1</NsgOwnerName>
+      <DependentUpon>АвтосервисВзаиморасчетыНакопления_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Взаиморасчеты\АвтосервисВзаиморасчетыНакопления_1.cs">
+      <NsgOwnerGuid>66b03380-dafe-4d93-809b-692079e18645</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисВзаиморасчетыНакопления_1</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Взаиморасчеты\АвтосервисВзаиморасчетыНакопления_1.Строка.NsgInit.cs">
+      <NsgOwnerGuid>66b03380-dafe-4d93-809b-692079e18645</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисВзаиморасчетыНакопления_1</NsgOwnerName>
+      <DependentUpon>АвтосервисВзаиморасчетыНакопления_1.Строка.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Взаиморасчеты\АвтосервисВзаиморасчетыНакопления_1.Строка.cs">
+      <NsgOwnerGuid>66b03380-dafe-4d93-809b-692079e18645</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисВзаиморасчетыНакопления_1</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Взаиморасчеты\Взаиморасчеты.NsgInit.cs">
+      <NsgOwnerGuid>4a1570c6-fe8e-4e81-8d8b-52de0dd68ce7</NsgOwnerGuid>
+      <NsgOwnerName>Взаиморасчеты</NsgOwnerName>
+      <DependentUpon>Взаиморасчеты.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Взаиморасчеты\Взаиморасчеты.cs">
+      <NsgOwnerGuid>4a1570c6-fe8e-4e81-8d8b-52de0dd68ce7</NsgOwnerGuid>
+      <NsgOwnerName>Взаиморасчеты</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Взаиморасчеты\АвтосервисВзаиморасчетыДвижения.NsgInit.cs">
+      <NsgOwnerGuid>b31e534b-4851-4364-9286-d9820bee02f5</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисВзаиморасчетыДвижения</NsgOwnerName>
+      <DependentUpon>АвтосервисВзаиморасчетыДвижения.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Взаиморасчеты\АвтосервисВзаиморасчетыДвижения.cs">
+      <NsgOwnerGuid>b31e534b-4851-4364-9286-d9820bee02f5</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисВзаиморасчетыДвижения</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Взаиморасчеты\АвтосервисВзаиморасчетыДвижения.Строка.NsgInit.cs">
+      <NsgOwnerGuid>b31e534b-4851-4364-9286-d9820bee02f5</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисВзаиморасчетыДвижения</NsgOwnerName>
+      <DependentUpon>АвтосервисВзаиморасчетыДвижения.Строка.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Взаиморасчеты\АвтосервисВзаиморасчетыДвижения.Строка.cs">
+      <NsgOwnerGuid>b31e534b-4851-4364-9286-d9820bee02f5</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисВзаиморасчетыДвижения</NsgOwnerName>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Метаданные\Автосервис\Долги\АвтосервисДолгиТаблица.NsgInit.cs">
+      <NsgOwnerGuid>14b8f299-afcb-4b61-a3e7-d74bddb216ff</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисДолгиТаблица</NsgOwnerName>
+      <DependentUpon>АвтосервисДолгиТаблица.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Долги\АвтосервисДолгиТаблица.cs">
+      <NsgOwnerGuid>14b8f299-afcb-4b61-a3e7-d74bddb216ff</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисДолгиТаблица</NsgOwnerName>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Долги\АвтосервисДолгиТаблица.Строка.NsgInit.cs">
+      <NsgOwnerGuid>14b8f299-afcb-4b61-a3e7-d74bddb216ff</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисДолгиТаблица</NsgOwnerName>
+      <DependentUpon>АвтосервисДолгиТаблица.Строка.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Метаданные\Автосервис\Долги\АвтосервисДолгиТаблица.Строка.cs">
+      <NsgOwnerGuid>14b8f299-afcb-4b61-a3e7-d74bddb216ff</NsgOwnerGuid>
+      <NsgOwnerName>АвтосервисДолгиТаблица</NsgOwnerName>
+    </Compile>
   </ItemGroup>
 </Project>

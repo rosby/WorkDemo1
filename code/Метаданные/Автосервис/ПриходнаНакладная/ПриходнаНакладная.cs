@@ -22,8 +22,19 @@ namespace Авто.Метаданные.Автосервис
         #region Свойства
         #endregion //Свойства
 
-        #region Методы
-        #endregion //Методы
+        protected override bool Handling()
+        {
+            var рег = Взаиморасчеты.Новый(this);
+            рег.New();
+            рег.Контрагенты = Контрагент;
+            рег.Сумма = СуммаИтого;
+            рег.ВидДвижения = Сервис.ВидыДвижений.Расход;
+            рег.AddMovement();
+            рег.Post();
+
+            return true;
+
+        }
     }
 
 }

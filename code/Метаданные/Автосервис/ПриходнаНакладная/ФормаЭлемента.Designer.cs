@@ -37,6 +37,8 @@ namespace Авто.Метаданные.Автосервис
             NsgSoft.Forms.NsgIGridColumn nsgIGridColumn1 = new NsgSoft.Forms.NsgIGridColumn();
             NsgSoft.Forms.NsgIGridColumn nsgIGridColumn2 = new NsgSoft.Forms.NsgIGridColumn();
             NsgSoft.Forms.NsgIGridColumn nsgIGridColumn3 = new NsgSoft.Forms.NsgIGridColumn();
+            NsgSoft.Forms.NsgIGridColumn nsgIGridColumn4 = new NsgSoft.Forms.NsgIGridColumn();
+            NsgSoft.Forms.NsgIGridColumn nsgIGridColumn5 = new NsgSoft.Forms.NsgIGridColumn();
             NsgSoft.Forms.NsgMasterDetailBinding nsgMasterDetailBinding1 = new NsgSoft.Forms.NsgMasterDetailBinding();
             NsgSoft.DataObjects.NsgObjectDescriptor nsgObjectDescriptor1 = new NsgSoft.DataObjects.NsgObjectDescriptor();
             NsgSoft.DataObjects.NsgObjectDescriptor nsgObjectDescriptor2 = new NsgSoft.DataObjects.NsgObjectDescriptor();
@@ -47,7 +49,17 @@ namespace Авто.Метаданные.Автосервис
             this.Владелец = new NsgSoft.Forms.NsgColumnDescriptor.MultipleObject();
             this.НомерСтроки = new NsgSoft.Forms.NsgColumnDescriptor.Int64();
             this.Номенклатура = new Авто.Метаданные.Автосервис.Номенклатура.ColumnDescriptor();
-            this.Вещественное = new NsgSoft.Forms.NsgColumnDescriptor.Decimal();
+            this.Цена = new NsgSoft.Forms.NsgColumnDescriptor.Decimal();
+            this.Количество = new NsgSoft.Forms.NsgColumnDescriptor.Decimal();
+            this.Сумма = new NsgSoft.Forms.NsgColumnDescriptor.Decimal();
+            this.label1 = new System.Windows.Forms.Label();
+            this.nsgInput1 = new NsgSoft.Forms.NsgInput();
+            this.nsgInput2 = new NsgSoft.Forms.NsgInput();
+            this.label2 = new System.Windows.Forms.Label();
+            this.nsgInput3 = new NsgSoft.Forms.NsgInput();
+            this.label3 = new System.Windows.Forms.Label();
+            this.nsgInput4 = new NsgSoft.Forms.NsgInput();
+            this.label4 = new System.Windows.Forms.Label();
             this.Идентификатор = new NsgSoft.Forms.NsgColumnDescriptor.Guid();
             this.Автоинкремент = new NsgSoft.Forms.NsgColumnDescriptor.Int64();
             this.ПрефиксКода = new NsgSoft.Forms.NsgColumnDescriptor.String();
@@ -60,14 +72,7 @@ namespace Авто.Метаданные.Автосервис
             this.СостояниеДокумента = new Авто.Метаданные.Сервис.СостоянияОбъекта.ColumnDescriptor();
             this.Таблица = new Авто.Метаданные._SystemTables.АвтосервисПриходнаНакладнаяТаблица.ColumnDescriptor();
             this.Контрагент = new Авто.Метаданные.Автосервис.Контрагенты.ColumnDescriptor();
-            this.label1 = new System.Windows.Forms.Label();
-            this.nsgInput1 = new NsgSoft.Forms.NsgInput();
-            this.nsgInput2 = new NsgSoft.Forms.NsgInput();
-            this.label2 = new System.Windows.Forms.Label();
-            this.nsgInput3 = new NsgSoft.Forms.NsgInput();
-            this.label3 = new System.Windows.Forms.Label();
-            this.nsgInput4 = new NsgSoft.Forms.NsgInput();
-            this.label4 = new System.Windows.Forms.Label();
+            this.СуммаИтого = new NsgSoft.Forms.NsgColumnDescriptor.Decimal();
             ((System.ComponentModel.ISupportInitialize)(this.nsgEdit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nsgClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nsgToolStrip2)).BeginInit();
@@ -363,6 +368,7 @@ namespace Авто.Метаданные.Автосервис
             this.nsgVisualMultipleObject.Columns.Collection.Add(this.СостояниеДокумента);
             this.nsgVisualMultipleObject.Columns.Collection.Add(this.Таблица);
             this.nsgVisualMultipleObject.Columns.Collection.Add(this.Контрагент);
+            this.nsgVisualMultipleObject.Columns.Collection.Add(this.СуммаИтого);
             this.nsgVisualMultipleObject.IsActive = true;
             this.nsgVisualMultipleObject.MetaDataName = "Метаданные";
             this.nsgVisualMultipleObject.FullName = "Автосервис.ПриходнаНакладная";
@@ -418,15 +424,49 @@ namespace Авто.Метаданные.Автосервис
             nsgIGridColumn3.DateFormat = null;
             nsgIGridColumn3.ImportedFromVMO = false;
             nsgIGridColumn3.InitiateRowEdit = true;
-            nsgIGridColumn3.Name = "Вещественное";
+            nsgIGridColumn3.Name = "Цена";
             nsgIGridColumn3.Position = ((NsgSoft.Forms.NsgIGrid.ColumnPosition)(NsgSoft.Forms.NsgIGrid.ColumnPosition.NextColumn));
             nsgIGridColumn3.Root = this.nsgIGrid1.Columns.Collection;
             nsgIGridColumn3.SortDirection = NsgSoft.Database.NsgSortDirection.None;
             nsgIGridColumn3.UseAsHeaderImage = false;
             nsgIGridColumn3.Width = 100;
+            nsgIGridColumn4.AllowFilter = true;
+            nsgIGridColumn4.AllowGroupSelect = false;
+            nsgIGridColumn4.AllowResize = true;
+            nsgIGridColumn4.AutoResize = true;
+            nsgIGridColumn4.Caption = "";
+            nsgIGridColumn4.ChangedProperties = new string[] {
+        "Visible"};
+            nsgIGridColumn4.DateFormat = null;
+            nsgIGridColumn4.ImportedFromVMO = false;
+            nsgIGridColumn4.InitiateRowEdit = true;
+            nsgIGridColumn4.Name = "Количество";
+            nsgIGridColumn4.Position = ((NsgSoft.Forms.NsgIGrid.ColumnPosition)(NsgSoft.Forms.NsgIGrid.ColumnPosition.NextColumn));
+            nsgIGridColumn4.Root = this.nsgIGrid1.Columns.Collection;
+            nsgIGridColumn4.SortDirection = NsgSoft.Database.NsgSortDirection.None;
+            nsgIGridColumn4.UseAsHeaderImage = false;
+            nsgIGridColumn4.Width = 100;
+            nsgIGridColumn5.AllowFilter = true;
+            nsgIGridColumn5.AllowGroupSelect = false;
+            nsgIGridColumn5.AllowResize = true;
+            nsgIGridColumn5.AutoResize = true;
+            nsgIGridColumn5.Caption = "";
+            nsgIGridColumn5.ChangedProperties = new string[] {
+        "Visible"};
+            nsgIGridColumn5.DateFormat = null;
+            nsgIGridColumn5.ImportedFromVMO = false;
+            nsgIGridColumn5.InitiateRowEdit = true;
+            nsgIGridColumn5.Name = "Сумма";
+            nsgIGridColumn5.Position = ((NsgSoft.Forms.NsgIGrid.ColumnPosition)(NsgSoft.Forms.NsgIGrid.ColumnPosition.NextColumn));
+            nsgIGridColumn5.Root = this.nsgIGrid1.Columns.Collection;
+            nsgIGridColumn5.SortDirection = NsgSoft.Database.NsgSortDirection.None;
+            nsgIGridColumn5.UseAsHeaderImage = false;
+            nsgIGridColumn5.Width = 100;
             this.nsgIGrid1.Columns.Collection.Add(nsgIGridColumn1);
             this.nsgIGrid1.Columns.Collection.Add(nsgIGridColumn2);
             this.nsgIGrid1.Columns.Collection.Add(nsgIGridColumn3);
+            this.nsgIGrid1.Columns.Collection.Add(nsgIGridColumn4);
+            this.nsgIGrid1.Columns.Collection.Add(nsgIGridColumn5);
             this.nsgIGrid1.Filter = false;
             this.nsgIGrid1.FrozenColumns = 0;
             this.nsgIGrid1.Grouping = true;
@@ -456,6 +496,7 @@ namespace Авто.Метаданные.Автосервис
             this.nsgIGrid1.SourceObject = this.vmoТаблица;
             this.nsgIGrid1.TabIndex = 17;
             this.nsgIGrid1.TableType = NsgSoft.Forms.NsgIGrid.TableTypes.Journal;
+            this.nsgIGrid1.CellEndEdit += new NsgSoft.Forms.NsgIGrid.NsgIGridCellEventHandler(this.nsgIGrid1_CellEndEdit);
             this.vmoТаблица.DataSourceType = NsgSoft.Forms.NsgDataSourceType.MasterComponent;
             nsgObjectDescriptor2.ConfigurationName = "Авто";
             this.vmoТаблица.MetaDataName = "Метаданные";
@@ -476,7 +517,9 @@ namespace Авто.Метаданные.Автосервис
             this.vmoТаблица.Columns.Collection.Add(this.Владелец);
             this.vmoТаблица.Columns.Collection.Add(this.НомерСтроки);
             this.vmoТаблица.Columns.Collection.Add(this.Номенклатура);
-            this.vmoТаблица.Columns.Collection.Add(this.Вещественное);
+            this.vmoТаблица.Columns.Collection.Add(this.Цена);
+            this.vmoТаблица.Columns.Collection.Add(this.Количество);
+            this.vmoТаблица.Columns.Collection.Add(this.Сумма);
             this.vmoТаблица.MasterComponent = this.nsgVisualMultipleObject;
             this.vmoТаблица.Binding = nsgMasterDetailBinding1;
             // 
@@ -540,17 +583,198 @@ namespace Авто.Метаданные.Автосервис
             this.Номенклатура.SearchCondition.OwnerComponent = this.Номенклатура;
             this.Номенклатура.SearchCondition.Parameters = new NsgSoft.DataObjects.NsgCompareParam[0];
             // 
-            // Вещественное
+            // Цена
             // 
-            this.Вещественное.AutoGenerated = true;
-            this.Вещественное.CalcTotal = false;
-            this.Вещественное.Caption = "Вещественное";
-            this.Вещественное.Creator = typeof(NsgSoft.Forms.NsgMultipleObjectElementForm);
-            this.Вещественное.Name = "Вещественное";
-            this.Вещественное.NSGType = typeof(NsgSoft.DataObjects.NsgDataFloat);
-            this.Вещественное.PropertyType = typeof(decimal);
-            this.Вещественное.SearchCondition.OwnerComponent = this.Вещественное;
-            this.Вещественное.SearchCondition.Parameters = new NsgSoft.DataObjects.NsgCompareParam[0];
+            this.Цена.AutoGenerated = true;
+            this.Цена.CalcTotal = false;
+            this.Цена.Caption = "Цена";
+            this.Цена.Creator = typeof(NsgSoft.Forms.NsgMultipleObjectElementForm);
+            this.Цена.Name = "Цена";
+            this.Цена.NSGType = typeof(NsgSoft.DataObjects.NsgDataFloat);
+            this.Цена.PropertyType = typeof(decimal);
+            this.Цена.SearchCondition.OwnerComponent = this.Цена;
+            this.Цена.SearchCondition.Parameters = new NsgSoft.DataObjects.NsgCompareParam[0];
+            // 
+            // Количество
+            // 
+            this.Количество.AutoGenerated = true;
+            this.Количество.CalcTotal = false;
+            this.Количество.Caption = "Количество";
+            this.Количество.Creator = typeof(NsgSoft.Forms.NsgMultipleObjectElementForm);
+            this.Количество.Name = "Количество";
+            this.Количество.NSGType = typeof(NsgSoft.DataObjects.NsgDataFloat);
+            this.Количество.PropertyType = typeof(decimal);
+            this.Количество.SearchCondition.OwnerComponent = this.Количество;
+            this.Количество.SearchCondition.Parameters = new NsgSoft.DataObjects.NsgCompareParam[0];
+            // 
+            // Сумма
+            // 
+            this.Сумма.AutoGenerated = true;
+            this.Сумма.CalcTotal = false;
+            this.Сумма.Caption = "Сумма";
+            this.Сумма.Creator = typeof(NsgSoft.Forms.NsgMultipleObjectElementForm);
+            this.Сумма.Name = "Сумма";
+            this.Сумма.NSGType = typeof(NsgSoft.DataObjects.NsgDataFloat);
+            this.Сумма.PropertyType = typeof(decimal);
+            this.Сумма.SearchCondition.OwnerComponent = this.Сумма;
+            this.Сумма.SearchCondition.Parameters = new NsgSoft.DataObjects.NsgCompareParam[0];
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(55, 41);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(33, 13);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Дата";
+            // 
+            // nsgInput1
+            // 
+            this.nsgInput1.BackColor = System.Drawing.SystemColors.Window;
+            this.nsgInput1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nsgInput1.ConfigurationName = "Авто";
+            this.nsgInput1.DisableLeaveControlEvent = false;
+            this.nsgInput1.FullName = "Автосервис.ПриходнаНакладная.ДатаДокумента";
+            this.nsgInput1.FullTextSearch = false;
+            this.nsgInput1.HorizontalAlignment = System.Drawing.StringAlignment.Near;
+            this.nsgInput1.IsButton = false;
+            this.nsgInput1.IsInitialized = true;
+            this.nsgInput1.IsPassword = false;
+            this.nsgInput1.Location = new System.Drawing.Point(100, 34);
+            this.nsgInput1.Margin = new System.Windows.Forms.Padding(0);
+            this.nsgInput1.Mask = "";
+            this.nsgInput1.MetaDataName = "Метаданные";
+            this.nsgInput1.MinimumSize = new System.Drawing.Size(4, 20);
+            this.nsgInput1.Name = "NsgInput";
+            this.nsgInput1.ObjectImages = null;
+            this.nsgInput1.ObjectIndex = null;
+            this.nsgInput1.ObjectStrings = null;
+            this.nsgInput1.Requsite = "ДатаДокумента";
+            this.nsgInput1.SearchFieldName = "";
+            this.nsgInput1.ShowMultipleObjectInComboBox = false;
+            this.nsgInput1.ShowRowCount = 10;
+            this.nsgInput1.Size = new System.Drawing.Size(204, 20);
+            this.nsgInput1.SourceObject = this.nsgVisualMultipleObject;
+            this.nsgInput1.TabIndex = 10;
+            this.nsgInput1.VerticalAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // nsgInput2
+            // 
+            this.nsgInput2.BackColor = System.Drawing.SystemColors.Window;
+            this.nsgInput2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nsgInput2.ConfigurationName = "Авто";
+            this.nsgInput2.DisableLeaveControlEvent = false;
+            this.nsgInput2.FullName = "Автосервис.ПриходнаНакладная.Контрагент";
+            this.nsgInput2.FullTextSearch = false;
+            this.nsgInput2.HorizontalAlignment = System.Drawing.StringAlignment.Near;
+            this.nsgInput2.IsButton = false;
+            this.nsgInput2.IsInitialized = true;
+            this.nsgInput2.IsPassword = false;
+            this.nsgInput2.Location = new System.Drawing.Point(100, 77);
+            this.nsgInput2.Margin = new System.Windows.Forms.Padding(0);
+            this.nsgInput2.Mask = "";
+            this.nsgInput2.MetaDataName = "Метаданные";
+            this.nsgInput2.MinimumSize = new System.Drawing.Size(4, 20);
+            this.nsgInput2.Name = "NsgInput";
+            this.nsgInput2.ObjectImages = null;
+            this.nsgInput2.ObjectIndex = null;
+            this.nsgInput2.ObjectStrings = null;
+            this.nsgInput2.Requsite = "Контрагент";
+            this.nsgInput2.SearchFieldName = "";
+            this.nsgInput2.ShowMultipleObjectInComboBox = false;
+            this.nsgInput2.ShowRowCount = 10;
+            this.nsgInput2.Size = new System.Drawing.Size(326, 20);
+            this.nsgInput2.SourceObject = this.nsgVisualMultipleObject;
+            this.nsgInput2.TabIndex = 12;
+            this.nsgInput2.VerticalAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(23, 84);
+            this.label2.Name = "label1";
+            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Контрагент";
+            // 
+            // nsgInput3
+            // 
+            this.nsgInput3.BackColor = System.Drawing.SystemColors.Window;
+            this.nsgInput3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nsgInput3.ConfigurationName = "Авто";
+            this.nsgInput3.DisableLeaveControlEvent = false;
+            this.nsgInput3.FullName = "Автосервис.ПриходнаНакладная.НомерДокумента";
+            this.nsgInput3.FullTextSearch = false;
+            this.nsgInput3.HorizontalAlignment = System.Drawing.StringAlignment.Near;
+            this.nsgInput3.IsButton = false;
+            this.nsgInput3.IsInitialized = true;
+            this.nsgInput3.IsPassword = false;
+            this.nsgInput3.Location = new System.Drawing.Point(465, 34);
+            this.nsgInput3.Margin = new System.Windows.Forms.Padding(0);
+            this.nsgInput3.Mask = "";
+            this.nsgInput3.MetaDataName = "Метаданные";
+            this.nsgInput3.MinimumSize = new System.Drawing.Size(4, 20);
+            this.nsgInput3.Name = "NsgInput";
+            this.nsgInput3.ObjectImages = null;
+            this.nsgInput3.ObjectIndex = null;
+            this.nsgInput3.ObjectStrings = null;
+            this.nsgInput3.Requsite = "НомерДокумента";
+            this.nsgInput3.SearchFieldName = "";
+            this.nsgInput3.ShowMultipleObjectInComboBox = false;
+            this.nsgInput3.ShowRowCount = 10;
+            this.nsgInput3.Size = new System.Drawing.Size(204, 20);
+            this.nsgInput3.SourceObject = this.nsgVisualMultipleObject;
+            this.nsgInput3.TabIndex = 14;
+            this.nsgInput3.VerticalAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(352, 41);
+            this.label3.Name = "label1";
+            this.label3.Size = new System.Drawing.Size(98, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Номер документа";
+            // 
+            // nsgInput4
+            // 
+            this.nsgInput4.BackColor = System.Drawing.SystemColors.Window;
+            this.nsgInput4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nsgInput4.ConfigurationName = "Авто";
+            this.nsgInput4.DisableLeaveControlEvent = false;
+            this.nsgInput4.FullName = "Автосервис.ПриходнаНакладная.Комментарий";
+            this.nsgInput4.FullTextSearch = false;
+            this.nsgInput4.HorizontalAlignment = System.Drawing.StringAlignment.Near;
+            this.nsgInput4.IsButton = false;
+            this.nsgInput4.IsInitialized = true;
+            this.nsgInput4.IsMultiline = true;
+            this.nsgInput4.IsPassword = false;
+            this.nsgInput4.Location = new System.Drawing.Point(100, 129);
+            this.nsgInput4.Margin = new System.Windows.Forms.Padding(0);
+            this.nsgInput4.Mask = "";
+            this.nsgInput4.MetaDataName = "Метаданные";
+            this.nsgInput4.MinimumSize = new System.Drawing.Size(4, 20);
+            this.nsgInput4.Name = "NsgInput";
+            this.nsgInput4.ObjectImages = null;
+            this.nsgInput4.ObjectIndex = null;
+            this.nsgInput4.ObjectStrings = null;
+            this.nsgInput4.Requsite = "Комментарий";
+            this.nsgInput4.SearchFieldName = "";
+            this.nsgInput4.ShowMultipleObjectInComboBox = false;
+            this.nsgInput4.ShowRowCount = 10;
+            this.nsgInput4.Size = new System.Drawing.Size(602, 115);
+            this.nsgInput4.SourceObject = this.nsgVisualMultipleObject;
+            this.nsgInput4.TabIndex = 16;
+            this.nsgInput4.VerticalAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(11, 136);
+            this.label4.Name = "label1";
+            this.label4.Size = new System.Drawing.Size(77, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Комментарий";
             // 
             // Идентификатор
             // 
@@ -692,162 +916,17 @@ namespace Авто.Метаданные.Автосервис
             this.Контрагент.SearchCondition.OwnerComponent = this.Контрагент;
             this.Контрагент.SearchCondition.Parameters = new NsgSoft.DataObjects.NsgCompareParam[0];
             // 
-            // label1
+            // СуммаИтого
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(33, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Дата";
-            // 
-            // nsgInput1
-            // 
-            this.nsgInput1.BackColor = System.Drawing.SystemColors.Window;
-            this.nsgInput1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.nsgInput1.ConfigurationName = "Авто";
-            this.nsgInput1.DisableLeaveControlEvent = false;
-            this.nsgInput1.FullName = "Автосервис.ПриходнаНакладная.ДатаДокумента";
-            this.nsgInput1.FullTextSearch = false;
-            this.nsgInput1.HorizontalAlignment = System.Drawing.StringAlignment.Near;
-            this.nsgInput1.IsButton = false;
-            this.nsgInput1.IsInitialized = true;
-            this.nsgInput1.IsPassword = false;
-            this.nsgInput1.Location = new System.Drawing.Point(100, 34);
-            this.nsgInput1.Margin = new System.Windows.Forms.Padding(0);
-            this.nsgInput1.Mask = "";
-            this.nsgInput1.MetaDataName = "Метаданные";
-            this.nsgInput1.MinimumSize = new System.Drawing.Size(4, 20);
-            this.nsgInput1.Name = "NsgInput";
-            this.nsgInput1.ObjectImages = null;
-            this.nsgInput1.ObjectIndex = null;
-            this.nsgInput1.ObjectStrings = null;
-            this.nsgInput1.Requsite = "ДатаДокумента";
-            this.nsgInput1.SearchFieldName = "";
-            this.nsgInput1.ShowMultipleObjectInComboBox = false;
-            this.nsgInput1.ShowRowCount = 10;
-            this.nsgInput1.Size = new System.Drawing.Size(204, 20);
-            this.nsgInput1.SourceObject = this.nsgVisualMultipleObject;
-            this.nsgInput1.TabIndex = 10;
-            this.nsgInput1.VerticalAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // nsgInput2
-            // 
-            this.nsgInput2.BackColor = System.Drawing.SystemColors.Window;
-            this.nsgInput2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.nsgInput2.ConfigurationName = "Авто";
-            this.nsgInput2.DisableLeaveControlEvent = false;
-            this.nsgInput2.FullName = "Автосервис.ПриходнаНакладная.Контрагент";
-            this.nsgInput2.FullTextSearch = false;
-            this.nsgInput2.HorizontalAlignment = System.Drawing.StringAlignment.Near;
-            this.nsgInput2.IsButton = false;
-            this.nsgInput2.IsInitialized = true;
-            this.nsgInput2.IsPassword = false;
-            this.nsgInput2.Location = new System.Drawing.Point(100, 77);
-            this.nsgInput2.Margin = new System.Windows.Forms.Padding(0);
-            this.nsgInput2.Mask = "";
-            this.nsgInput2.MetaDataName = "Метаданные";
-            this.nsgInput2.MinimumSize = new System.Drawing.Size(4, 20);
-            this.nsgInput2.Name = "NsgInput";
-            this.nsgInput2.ObjectImages = null;
-            this.nsgInput2.ObjectIndex = null;
-            this.nsgInput2.ObjectStrings = null;
-            this.nsgInput2.Requsite = "Контрагент";
-            this.nsgInput2.SearchFieldName = "";
-            this.nsgInput2.ShowMultipleObjectInComboBox = false;
-            this.nsgInput2.ShowRowCount = 10;
-            this.nsgInput2.Size = new System.Drawing.Size(204, 20);
-            this.nsgInput2.SourceObject = this.nsgVisualMultipleObject;
-            this.nsgInput2.TabIndex = 12;
-            this.nsgInput2.VerticalAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(23, 84);
-            this.label2.Name = "label1";
-            this.label2.Size = new System.Drawing.Size(65, 13);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Контрагент";
-            // 
-            // nsgInput3
-            // 
-            this.nsgInput3.BackColor = System.Drawing.SystemColors.Window;
-            this.nsgInput3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.nsgInput3.ConfigurationName = "Авто";
-            this.nsgInput3.DisableLeaveControlEvent = false;
-            this.nsgInput3.FullName = "Автосервис.ПриходнаНакладная.НомерДокумента";
-            this.nsgInput3.FullTextSearch = false;
-            this.nsgInput3.HorizontalAlignment = System.Drawing.StringAlignment.Near;
-            this.nsgInput3.IsButton = false;
-            this.nsgInput3.IsInitialized = true;
-            this.nsgInput3.IsPassword = false;
-            this.nsgInput3.Location = new System.Drawing.Point(465, 34);
-            this.nsgInput3.Margin = new System.Windows.Forms.Padding(0);
-            this.nsgInput3.Mask = "";
-            this.nsgInput3.MetaDataName = "Метаданные";
-            this.nsgInput3.MinimumSize = new System.Drawing.Size(4, 20);
-            this.nsgInput3.Name = "NsgInput";
-            this.nsgInput3.ObjectImages = null;
-            this.nsgInput3.ObjectIndex = null;
-            this.nsgInput3.ObjectStrings = null;
-            this.nsgInput3.Requsite = "НомерДокумента";
-            this.nsgInput3.SearchFieldName = "";
-            this.nsgInput3.ShowMultipleObjectInComboBox = false;
-            this.nsgInput3.ShowRowCount = 10;
-            this.nsgInput3.Size = new System.Drawing.Size(204, 20);
-            this.nsgInput3.SourceObject = this.nsgVisualMultipleObject;
-            this.nsgInput3.TabIndex = 14;
-            this.nsgInput3.VerticalAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(352, 41);
-            this.label3.Name = "label1";
-            this.label3.Size = new System.Drawing.Size(98, 13);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Номер документа";
-            // 
-            // nsgInput4
-            // 
-            this.nsgInput4.BackColor = System.Drawing.SystemColors.Window;
-            this.nsgInput4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.nsgInput4.ConfigurationName = "Авто";
-            this.nsgInput4.DisableLeaveControlEvent = false;
-            this.nsgInput4.FullName = "Автосервис.ПриходнаНакладная.Комментарий";
-            this.nsgInput4.FullTextSearch = false;
-            this.nsgInput4.HorizontalAlignment = System.Drawing.StringAlignment.Near;
-            this.nsgInput4.IsButton = false;
-            this.nsgInput4.IsInitialized = true;
-            this.nsgInput4.IsMultiline = true;
-            this.nsgInput4.IsPassword = false;
-            this.nsgInput4.Location = new System.Drawing.Point(100, 129);
-            this.nsgInput4.Margin = new System.Windows.Forms.Padding(0);
-            this.nsgInput4.Mask = "";
-            this.nsgInput4.MetaDataName = "Метаданные";
-            this.nsgInput4.MinimumSize = new System.Drawing.Size(4, 20);
-            this.nsgInput4.Name = "NsgInput";
-            this.nsgInput4.ObjectImages = null;
-            this.nsgInput4.ObjectIndex = null;
-            this.nsgInput4.ObjectStrings = null;
-            this.nsgInput4.Requsite = "Комментарий";
-            this.nsgInput4.SearchFieldName = "";
-            this.nsgInput4.ShowMultipleObjectInComboBox = false;
-            this.nsgInput4.ShowRowCount = 10;
-            this.nsgInput4.Size = new System.Drawing.Size(602, 115);
-            this.nsgInput4.SourceObject = this.nsgVisualMultipleObject;
-            this.nsgInput4.TabIndex = 16;
-            this.nsgInput4.VerticalAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(11, 136);
-            this.label4.Name = "label1";
-            this.label4.Size = new System.Drawing.Size(77, 13);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Комментарий";
+            this.СуммаИтого.AutoGenerated = true;
+            this.СуммаИтого.CalcTotal = false;
+            this.СуммаИтого.Caption = "СуммаИтого";
+            this.СуммаИтого.Creator = typeof(NsgSoft.Forms.NsgMultipleObjectElementForm);
+            this.СуммаИтого.Name = "СуммаИтого";
+            this.СуммаИтого.NSGType = typeof(NsgSoft.DataObjects.NsgDataFloat);
+            this.СуммаИтого.PropertyType = typeof(decimal);
+            this.СуммаИтого.SearchCondition.OwnerComponent = this.СуммаИтого;
+            this.СуммаИтого.SearchCondition.Parameters = new NsgSoft.DataObjects.NsgCompareParam[0];
             // 
             // ПриходнаНакладнаяФормаЭлемента
             // 
@@ -918,19 +997,6 @@ namespace Авто.Метаданные.Автосервис
         }
 
         #endregion
-
-        private NsgColumnDescriptor.Guid Идентификатор;
-        private NsgColumnDescriptor.Int64 Автоинкремент;
-        private NsgColumnDescriptor.String ПрефиксКода;
-        private NsgColumnDescriptor.Int64 НомерКода;
-        private NsgColumnDescriptor.String НомерДокумента;
-        private NsgColumnDescriptor.DateTime ДатаДокумента;
-        private NsgColumnDescriptor.String Индекс;
-        private NsgColumnDescriptor.MultipleObject ДокументОснование;
-        private NsgColumnDescriptor.String Комментарий;
-        private Сервис.СостоянияОбъекта.ColumnDescriptor СостояниеДокумента;
-        private _SystemTables.АвтосервисПриходнаНакладнаяТаблица.ColumnDescriptor Таблица;
-        protected Контрагенты.ColumnDescriptor Контрагент;
         private System.Windows.Forms.Label label1;
         protected NsgInput nsgInput1;
         protected NsgInput nsgInput2;
@@ -941,11 +1007,26 @@ namespace Авто.Метаданные.Автосервис
         protected System.Windows.Forms.Label label4;
         private NsgVisualMultipleObject vmoТаблица;
         private NsgIGrid nsgIGrid1;
+        protected NsgColumnDescriptor.Guid Идентификатор;
+        protected NsgColumnDescriptor.Int64 Автоинкремент;
+        protected NsgColumnDescriptor.String ПрефиксКода;
+        protected NsgColumnDescriptor.Int64 НомерКода;
+        protected NsgColumnDescriptor.String НомерДокумента;
+        protected NsgColumnDescriptor.DateTime ДатаДокумента;
+        protected NsgColumnDescriptor.String Индекс;
+        protected NsgColumnDescriptor.MultipleObject ДокументОснование;
+        protected NsgColumnDescriptor.String Комментарий;
+        protected Сервис.СостоянияОбъекта.ColumnDescriptor СостояниеДокумента;
+        protected _SystemTables.АвтосервисПриходнаНакладнаяТаблица.ColumnDescriptor Таблица;
+        protected Контрагенты.ColumnDescriptor Контрагент;
+        protected NsgColumnDescriptor.Decimal СуммаИтого;
         private NsgColumnDescriptor.Guid Идентификатор_vmoТаблица;
         private NsgColumnDescriptor.Int64 Автоинкремент_vmoТаблица;
         private NsgColumnDescriptor.MultipleObject Владелец;
         private NsgColumnDescriptor.Int64 НомерСтроки;
         private Номенклатура.ColumnDescriptor Номенклатура;
-        protected NsgColumnDescriptor.Decimal Вещественное;
+        private NsgColumnDescriptor.Decimal Цена;
+        private NsgColumnDescriptor.Decimal Количество;
+        protected NsgColumnDescriptor.Decimal Сумма;
     }
 }

@@ -65,7 +65,8 @@ E:\Work\FirstDemo\code\obj\Debug\Авто.exe
 E:\Work\FirstDemo\code\obj\Debug\Авто.pdb
 E:\Work\FirstDemo\code\obj\Debug\Авто.Метаданные.Автосервис.НоменклатураФормаЭлемента.resources
 E:\Work\FirstDemo\code\obj\Debug\Авто.csproj.GenerateResource.cache
-E:\Work\FirstDemo\code\obj\Debug\Авто.csprojAssemblyReference.cache
 E:\Work\FirstDemo\code\obj\Debug\Авто.Метаданные.Автосервис.НоменклатураФормаСписка.resources
 E:\Work\FirstDemo\code\obj\Debug\Авто.Метаданные.Автосервис.ПриходнаНакладнаяФормаЭлемента.resources
 E:\Work\FirstDemo\code\obj\Debug\Авто.Метаданные.Автосервис.РасходнаяНакладнаяФормаЭлемента.resources
+E:\Work\FirstDemo\code\obj\Debug\Авто.csprojAssemblyReference.cache
+E:\Work\FirstDemo\code\obj\Debug\Авто.Метаданные.Автосервис.ДолгиФорма.resources
