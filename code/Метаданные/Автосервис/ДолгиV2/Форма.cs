@@ -15,24 +15,23 @@ using NsgSoft.Forms;
 namespace Авто.Метаданные.Автосервис
 {
     
-    public partial class ДолгиФорма
+    public partial class ДолгиV2Форма
 
     {
-        public ДолгиФорма()
+        public ДолгиV2Форма()
         {
             InitializeComponent();
 		}
 
-		#region #Comments_Data# NsgSoft.Forms.NsgReportForm
-		
-		#endregion //#Comments_Data# NsgSoft.Forms.NsgReportForm
 
-		#region #Comments_Constructors# NsgSoft.Forms.NsgReportForm
-		
-		#endregion //#Comments_Constructors# NsgSoft.Forms.NsgReportForm
 
-		#region #Comments_Methods# NsgSoft.Forms.NsgReportForm
-		
+        protected override void OnSetFormObject(NsgMultipleObject formObject)
+        {
+            base.OnSetFormObject(formObject);
+            vmoФильтр.Data.MemoryTable.Clear();
+            vmoФильтр.Data.CurrentRow = vmoФильтр.Data.MemoryTable.NewRow();
+        }
+
         protected override void OnBeforeCreateReport(NsgBackgroundWorker nsgBackgroundReporter)
         {
             base.OnBeforeCreateReport(nsgBackgroundReporter);
@@ -50,18 +49,13 @@ namespace Авто.Метаданные.Автосервис
             base.OnCreateReportCompleted(nsgBackgroundReporter, e);
         }
 
-        #endregion //#Comments_Methods# NsgSoft.Forms.NsgReportForm
-
-        #region #Comments_Properties# NsgSoft.Forms.NsgReportForm
-
-        #endregion //#Comments_Properties# NsgSoft.Forms.NsgReportForm
 
         private void nsgButton1_AsyncClick(object sender, DoWorkEventArgs e)
         {
             var рег = Взаиморасчеты.Новый();
             рег.New();
 
-            NsgCompare cmp = null;
+            NsgCompare cmp = nsgObjectFilter1.Compare;
 
             var table = рег.GetCirculate(nsgPeriodPicker1.Period.Begin, nsgPeriodPicker1.Period.End, cmp);
 
@@ -87,26 +81,26 @@ namespace Авто.Метаданные.Автосервис
             vmoИтоги.Data.UpdateDataAsync(this);
         }
 
-        void docs() 
+        void docs()
         {
             var рег = Взаиморасчеты.Новый();
             рег.New();
 
-            NsgCompare cmp = null;
+            NsgCompare cmp = nsgObjectFilter1.Compare;
 
             var table = рег.GetCirculate(nsgPeriodPicker1.Period.Begin, nsgPeriodPicker1.Period.End, cmp,
                 NsgSoft.Common.NsgRegisterResult.Credit | NsgSoft.Common.NsgRegisterResult.Debit,
-                new string[] {Взаиморасчеты.Names.Контрагенты, Взаиморасчеты.Names.Владелец});
+                new string[] { Взаиморасчеты.Names.Контрагенты, Взаиморасчеты.Names.Владелец });
 
-            vmoИтоги.Data.BeginUpdateData();
-            vmoИтоги.Data.MemoryTable.Clear();
+            vmoДок.Data.BeginUpdateData();
+            vmoДок.Data.MemoryTable.Clear();
             foreach (var строка in table.Rows)
             {
                 var ка = строка[Взаиморасчеты.Names.Контрагенты].ToReferent() as Контрагенты;
                 var док = строка[Взаиморасчеты.Names.Владелец].ToReferent();
                 var Приход = строка[Взаиморасчеты.Names.Сумма].ToCredit();
                 var Расход = строка[Взаиморасчеты.Names.Сумма].ToDebit();
-                
+
 
                 var row = vmoДок.Data.MemoryTable.NewRow();
                 row[док_Контрагент].Value = ка;

@@ -32,6 +32,9 @@ namespace Авто.Метаданные.Автосервис
             рег.AddMovement();
             рег.Post();
 
+            
+
+
             return true;
 
         }

@@ -70,3 +70,4 @@ E:\Work\FirstDemo\code\obj\Debug\Авто.Метаданные.Автосерв�
 E:\Work\FirstDemo\code\obj\Debug\Авто.Метаданные.Автосервис.РасходнаяНакладнаяФормаЭлемента.resources
 E:\Work\FirstDemo\code\obj\Debug\Авто.csprojAssemblyReference.cache
 E:\Work\FirstDemo\code\obj\Debug\Авто.Метаданные.Автосервис.ДолгиФорма.resources
+E:\Work\FirstDemo\code\obj\Debug\Авто.Метаданные.Автосервис.ДолгиV2Форма.resources
