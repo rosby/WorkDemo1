@@ -1,1009 +1,320 @@
-[INFO ] [03:03:24] [1] - 
+[INFO ] [11:59:19] [1] - 
 
-03:03:24 -------------------------------- NEW LOG --------------------------------
-[INFO ] [03:03:28] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [03:03:30] [1] - Key: Invalid agent!
-[ERROR] [03:03:30] [1] - Key: Invalid agent!
-[ERROR] [03:03:30] [1] - Key: Invalid agent!
-[ERROR] [03:03:30] [1] - Key: Invalid agent!
-[INFO ] [03:47:29] [1] - 
-
-03:47:29 -------------------------------- NEW LOG --------------------------------
-[INFO ] [03:47:39] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [03:47:40] [1] - Key: Invalid agent!
-[ERROR] [03:47:40] [1] - Key: Invalid agent!
-[ERROR] [03:47:40] [1] - Key: Invalid agent!
-[ERROR] [03:47:40] [1] - Key: Invalid agent!
-[ERROR] [03:47:49] [25] - Ошибка 9. Неверно задан путь: .НачОст.
-[ERROR] [03:47:49] [25] -  CallStack content :
-[ERROR] [03:47:49] [25] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
-   в Авто.Метаданные.Автосервис.ДолгиФорма.nsgButton1_AsyncClick(Object sender, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Долги\Форма.cs:строка 80
-   в Авто.Метаданные.Автосервис.ДолгиФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Долги\Форма.cs:строка 44
-   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
-   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
-   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Threading.ThreadHelper.ThreadStart(Object obj)
-[ERROR] [03:47:49] [25] - 
-[ERROR] [03:48:11] [25] - Ошибка 9. Неверно задан путь: .НачОст.
-[ERROR] [03:48:11] [25] -  CallStack content :
-[ERROR] [03:48:11] [25] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
-   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
-   в Авто.Метаданные.Автосервис.ДолгиФорма.nsgButton1_AsyncClick(Object sender, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Долги\Форма.cs:строка 80
-   в Авто.Метаданные.Автосервис.ДолгиФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Долги\Форма.cs:строка 44
-   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
-   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
-   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Threading.ThreadHelper.ThreadStart(Object obj)
-[ERROR] [03:48:11] [25] - 
-[INFO ] [03:48:59] [1] - 
-
-03:48:59 -------------------------------- NEW LOG --------------------------------
-[INFO ] [03:49:04] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [03:49:06] [1] - Key: Invalid agent!
-[ERROR] [03:49:06] [1] - Key: Invalid agent!
-[ERROR] [03:49:06] [1] - Key: Invalid agent!
-[ERROR] [03:49:06] [1] - Key: Invalid agent!
-[ERROR] [03:49:14] [27] - Ошибка 9. Неверно задан путь: .НачОст.
-[ERROR] [03:49:14] [27] -  CallStack content :
-[ERROR] [03:49:14] [27] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
-   в Авто.Метаданные.Автосервис.ДолгиФорма.nsgButton1_AsyncClick(Object sender, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Долги\Форма.cs:строка 80
-   в Авто.Метаданные.Автосервис.ДолгиФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Долги\Форма.cs:строка 44
-   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
-   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
-   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Threading.ThreadHelper.ThreadStart(Object obj)
-[ERROR] [03:49:14] [27] - 
-[INFO ] [03:51:54] [1] - 
-
-03:51:54 -------------------------------- NEW LOG --------------------------------
-[INFO ] [03:51:58] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [03:52:00] [1] - Key: Invalid agent!
-[ERROR] [03:52:00] [1] - Key: Invalid agent!
-[ERROR] [03:52:00] [1] - Key: Invalid agent!
-[ERROR] [03:52:00] [1] - Key: Invalid agent!
-[ERROR] [03:52:02] [1] - Ошибка 53. Обработка не может быть зарегистрирована как печатная форма. Обработка не содержит объекта печати
-[ERROR] [03:52:02] [1] -  CallStack content :
-[ERROR] [03:52:02] [1] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
-   в NsgSoft.Forms.NsgReportForm.LoadReport(String reportData) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 530
-   в NsgSoft.Forms.Controls.PrintButton.setItem(ToolStripItem item) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Controls\PrintButton.cs:строка 683
-   в NsgSoft.Forms.Controls.PrintButton.execPrintForms() в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Controls\PrintButton.cs:строка 522
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEvent(Object objs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 153
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEventOnMainThread(Boolean isSync, Delegate eventInvoke, Object[] objects, NsgAsyncResult result) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 123
-   в NsgSoft.Forms.NsgBackgroundWorker.OnRunWorkerCompleted(RunWorkerCompletedEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.FormsComponents\NsgBackgroundWorker.cs:строка 263
-   в NsgSoft.Forms.NsgBackgroundWorker.ThreadRunWorkerCompleted(Object sender, RunWorkerCompletedEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.FormsComponents\NsgBackgroundWorker.cs:строка 315
-   в NsgSoft.DataObjects.NsgThread.compleatedReporterMethod(Object arg) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 687
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEvent(Object objs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 153
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Delegate.DynamicInvokeImpl(Object[] args)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbacks()
-   в System.Windows.Forms.Control.WndProc(Message& m)
-   в System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
-   в NsgSoft.Forms.NsgLockedForm.lockService_Processing(Object sender, NsgLongOperationProcessingArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgLockedForm.cs:строка 364
-   в NsgSoft.Forms.NsgLongOperationService.onProcessing(INsgLongOperation lockObject) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgLongOperationService.cs:строка 336
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEvent(Object objs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 153
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Delegate.DynamicInvokeImpl(Object[] args)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbacks()
-   в System.Windows.Forms.Control.WndProc(Message& m)
-   в System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
-   в Авто.Program.Main(String[] args) в E:\Work\FirstDemo\code\Program.cs:строка 79
-[ERROR] [03:52:02] [1] - 
-[INFO ] [03:52:38] [1] - 
-
-03:52:38 -------------------------------- NEW LOG --------------------------------
-[INFO ] [03:52:45] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [03:52:47] [1] - Key: Invalid agent!
-[ERROR] [03:52:47] [1] - Key: Invalid agent!
-[ERROR] [03:52:47] [1] - Key: Invalid agent!
-[ERROR] [03:52:47] [1] - Key: Invalid agent!
-[ERROR] [03:52:49] [1] - Ошибка 53. Обработка не может быть зарегистрирована как печатная форма. Обработка не содержит объекта печати
-[ERROR] [03:52:49] [1] -  CallStack content :
-[ERROR] [03:52:49] [1] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
-   в NsgSoft.Forms.NsgReportForm.LoadReport(String reportData) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 530
-   в NsgSoft.Forms.Controls.PrintButton.setItem(ToolStripItem item) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Controls\PrintButton.cs:строка 683
-   в NsgSoft.Forms.Controls.PrintButton.execPrintForms() в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Controls\PrintButton.cs:строка 522
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEvent(Object objs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 153
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEventOnMainThread(Boolean isSync, Delegate eventInvoke, Object[] objects, NsgAsyncResult result) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 123
-   в NsgSoft.Forms.NsgBackgroundWorker.OnRunWorkerCompleted(RunWorkerCompletedEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.FormsComponents\NsgBackgroundWorker.cs:строка 263
-   в NsgSoft.Forms.NsgBackgroundWorker.ThreadRunWorkerCompleted(Object sender, RunWorkerCompletedEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.FormsComponents\NsgBackgroundWorker.cs:строка 315
-   в NsgSoft.DataObjects.NsgThread.compleatedReporterMethod(Object arg) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 687
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEvent(Object objs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 153
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Delegate.DynamicInvokeImpl(Object[] args)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbacks()
-   в System.Windows.Forms.Control.WndProc(Message& m)
-   в System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
-   в NsgSoft.Forms.NsgLockedForm.lockService_Processing(Object sender, NsgLongOperationProcessingArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgLockedForm.cs:строка 364
-   в NsgSoft.Forms.NsgLongOperationService.onProcessing(INsgLongOperation lockObject) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgLongOperationService.cs:строка 336
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEvent(Object objs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 153
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Delegate.DynamicInvokeImpl(Object[] args)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbacks()
-   в System.Windows.Forms.Control.WndProc(Message& m)
-   в System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
-   в Авто.Program.Main(String[] args) в E:\Work\FirstDemo\code\Program.cs:строка 79
-[ERROR] [03:52:49] [1] - 
-[ERROR] [03:52:52] [28] - Ошибка 9. Неверно задан путь: .НачОст.
-[ERROR] [03:52:52] [28] -  CallStack content :
-[ERROR] [03:52:52] [28] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
-   в Авто.Метаданные.Автосервис.ДолгиФорма.nsgButton1_AsyncClick(Object sender, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Долги\Форма.cs:строка 80
-   в NsgSoft.Forms.NsgBackgroundWorker.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.FormsComponents\NsgBackgroundWorker.cs:строка 280
-   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
-   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Threading.ThreadHelper.ThreadStart(Object obj)
-[ERROR] [03:52:52] [28] - 
-[INFO ] [03:53:35] [1] - 
-
-03:53:35 -------------------------------- NEW LOG --------------------------------
-[INFO ] [03:53:39] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [03:53:41] [1] - Key: Invalid agent!
-[ERROR] [03:53:41] [1] - Key: Invalid agent!
-[ERROR] [03:53:41] [1] - Key: Invalid agent!
-[ERROR] [03:53:41] [1] - Key: Invalid agent!
-[ERROR] [03:53:42] [1] - Ошибка 53. Обработка не может быть зарегистрирована как печатная форма. Обработка не содержит объекта печати
-[ERROR] [03:53:42] [1] -  CallStack content :
-[ERROR] [03:53:42] [1] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
-   в NsgSoft.Forms.NsgReportForm.LoadReport(String reportData) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 530
-   в NsgSoft.Forms.Controls.PrintButton.setItem(ToolStripItem item) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Controls\PrintButton.cs:строка 683
-   в NsgSoft.Forms.Controls.PrintButton.execPrintForms() в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Controls\PrintButton.cs:строка 522
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEvent(Object objs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 153
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEventOnMainThread(Boolean isSync, Delegate eventInvoke, Object[] objects, NsgAsyncResult result) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 123
-   в NsgSoft.Forms.NsgBackgroundWorker.OnRunWorkerCompleted(RunWorkerCompletedEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.FormsComponents\NsgBackgroundWorker.cs:строка 263
-   в NsgSoft.Forms.NsgBackgroundWorker.ThreadRunWorkerCompleted(Object sender, RunWorkerCompletedEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.FormsComponents\NsgBackgroundWorker.cs:строка 315
-   в NsgSoft.DataObjects.NsgThread.compleatedReporterMethod(Object arg) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 687
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEvent(Object objs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 153
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Delegate.DynamicInvokeImpl(Object[] args)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbacks()
-   в System.Windows.Forms.Control.WndProc(Message& m)
-   в System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
-   в NsgSoft.Forms.NsgLockedForm.lockService_Processing(Object sender, NsgLongOperationProcessingArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgLockedForm.cs:строка 364
-   в NsgSoft.Forms.NsgLongOperationService.onProcessing(INsgLongOperation lockObject) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgLongOperationService.cs:строка 336
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEvent(Object objs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 153
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Delegate.DynamicInvokeImpl(Object[] args)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbacks()
-   в System.Windows.Forms.Control.WndProc(Message& m)
-   в System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
-   в Авто.Program.Main(String[] args) в E:\Work\FirstDemo\code\Program.cs:строка 79
-[ERROR] [03:53:42] [1] - 
-[ERROR] [03:53:44] [22] - Ошибка 9. Неверно задан путь: .КонОст.
-[ERROR] [03:53:44] [22] -  CallStack content :
-[ERROR] [03:53:44] [22] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
-   в Авто.Метаданные.Автосервис.ДолгиФорма.nsgButton1_AsyncClick(Object sender, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Долги\Форма.cs:строка 83
-   в NsgSoft.Forms.NsgBackgroundWorker.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.FormsComponents\NsgBackgroundWorker.cs:строка 280
-   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
-   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Threading.ThreadHelper.ThreadStart(Object obj)
-[ERROR] [03:53:44] [22] - 
-[INFO ] [03:55:08] [1] - 
-
-03:55:08 -------------------------------- NEW LOG --------------------------------
-[INFO ] [03:55:13] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [03:55:15] [1] - Key: Invalid agent!
-[ERROR] [03:55:15] [1] - Key: Invalid agent!
-[ERROR] [03:55:15] [1] - Key: Invalid agent!
-[ERROR] [03:55:15] [1] - Key: Invalid agent!
-[ERROR] [03:55:17] [1] - Ошибка 53. Обработка не может быть зарегистрирована как печатная форма. Обработка не содержит объекта печати
-[ERROR] [03:55:17] [1] -  CallStack content :
-[ERROR] [03:55:17] [1] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
-   в NsgSoft.Forms.NsgReportForm.LoadReport(String reportData) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 530
-   в NsgSoft.Forms.Controls.PrintButton.setItem(ToolStripItem item) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Controls\PrintButton.cs:строка 683
-   в NsgSoft.Forms.Controls.PrintButton.execPrintForms() в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Controls\PrintButton.cs:строка 522
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEvent(Object objs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 153
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEventOnMainThread(Boolean isSync, Delegate eventInvoke, Object[] objects, NsgAsyncResult result) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 123
-   в NsgSoft.Forms.NsgBackgroundWorker.OnRunWorkerCompleted(RunWorkerCompletedEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.FormsComponents\NsgBackgroundWorker.cs:строка 263
-   в NsgSoft.Forms.NsgBackgroundWorker.ThreadRunWorkerCompleted(Object sender, RunWorkerCompletedEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.FormsComponents\NsgBackgroundWorker.cs:строка 315
-   в NsgSoft.DataObjects.NsgThread.compleatedReporterMethod(Object arg) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 687
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEvent(Object objs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 153
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Delegate.DynamicInvokeImpl(Object[] args)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbacks()
-   в System.Windows.Forms.Control.WndProc(Message& m)
-   в System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
-   в NsgSoft.Forms.NsgLockedForm.lockService_Processing(Object sender, NsgLongOperationProcessingArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgLockedForm.cs:строка 364
-   в NsgSoft.Forms.NsgLongOperationService.onProcessing(INsgLongOperation lockObject) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgLongOperationService.cs:строка 336
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEvent(Object objs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 153
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Delegate.DynamicInvokeImpl(Object[] args)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbacks()
-   в System.Windows.Forms.Control.WndProc(Message& m)
-   в System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
-   в Авто.Program.Main(String[] args) в E:\Work\FirstDemo\code\Program.cs:строка 79
-[ERROR] [03:55:17] [1] - 
-[ERROR] [03:55:26] [19] - Ошибка 9. Неверно задан путь: .НачОст.
-[ERROR] [03:55:26] [19] -  CallStack content :
-[ERROR] [03:55:26] [19] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
-   в Авто.Метаданные.Автосервис.ДолгиФорма.nsgButton1_AsyncClick(Object sender, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Долги\Форма.cs:строка 80
-   в NsgSoft.Forms.NsgBackgroundWorker.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.FormsComponents\NsgBackgroundWorker.cs:строка 280
-   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
-   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Threading.ThreadHelper.ThreadStart(Object obj)
-[ERROR] [03:55:26] [19] - 
-[ERROR] [03:56:10] [19] - Ошибка 9. Неверно задан путь: .НачОст.
-[ERROR] [03:56:10] [19] -  CallStack content :
-[ERROR] [03:56:10] [19] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
-   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
-   в Авто.Метаданные.Автосервис.ДолгиФорма.nsgButton1_AsyncClick(Object sender, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Долги\Форма.cs:строка 80
-   в NsgSoft.Forms.NsgBackgroundWorker.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.FormsComponents\NsgBackgroundWorker.cs:строка 280
-   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
-   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Threading.ThreadHelper.ThreadStart(Object obj)
-[ERROR] [03:56:10] [19] - 
-[INFO ] [03:56:28] [1] - 
-
-03:56:28 -------------------------------- NEW LOG --------------------------------
-[INFO ] [03:56:33] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [03:56:34] [1] - Key: Invalid agent!
-[ERROR] [03:56:34] [1] - Key: Invalid agent!
-[ERROR] [03:56:34] [1] - Key: Invalid agent!
-[ERROR] [03:56:34] [1] - Key: Invalid agent!
-[ERROR] [03:56:37] [1] - Ошибка 53. Обработка не может быть зарегистрирована как печатная форма. Обработка не содержит объекта печати
-[ERROR] [03:56:37] [1] -  CallStack content :
-[ERROR] [03:56:37] [1] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
-   в NsgSoft.Forms.NsgReportForm.LoadReport(String reportData) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 530
-   в NsgSoft.Forms.Controls.PrintButton.setItem(ToolStripItem item) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Controls\PrintButton.cs:строка 683
-   в NsgSoft.Forms.Controls.PrintButton.execPrintForms() в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Controls\PrintButton.cs:строка 522
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEvent(Object objs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 153
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEventOnMainThread(Boolean isSync, Delegate eventInvoke, Object[] objects, NsgAsyncResult result) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 123
-   в NsgSoft.Forms.NsgBackgroundWorker.OnRunWorkerCompleted(RunWorkerCompletedEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.FormsComponents\NsgBackgroundWorker.cs:строка 263
-   в NsgSoft.Forms.NsgBackgroundWorker.ThreadRunWorkerCompleted(Object sender, RunWorkerCompletedEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.FormsComponents\NsgBackgroundWorker.cs:строка 315
-   в NsgSoft.DataObjects.NsgThread.compleatedReporterMethod(Object arg) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 687
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEvent(Object objs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 153
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Delegate.DynamicInvokeImpl(Object[] args)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbacks()
-   в System.Windows.Forms.Control.WndProc(Message& m)
-   в System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
-   в NsgSoft.Forms.NsgLockedForm.lockService_Processing(Object sender, NsgLongOperationProcessingArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgLockedForm.cs:строка 364
-   в NsgSoft.Forms.NsgLongOperationService.onProcessing(INsgLongOperation lockObject) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Service\NsgLongOperationService.cs:строка 336
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
-   в NsgSoft.DataObjects.NsgEventInvoker.invokeEvent(Object objs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgEventInvoker.cs:строка 153
-   в System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
-   в System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
-   в System.Delegate.DynamicInvokeImpl(Object[] args)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackDo(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbackHelper(Object obj)
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Windows.Forms.Control.InvokeMarshaledCallback(ThreadMethodEntry tme)
-   в System.Windows.Forms.Control.InvokeMarshaledCallbacks()
-   в System.Windows.Forms.Control.WndProc(Message& m)
-   в System.Windows.Forms.NativeWindow.DebuggableCallback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.UnsafeNativeMethods.DispatchMessageW(MSG& msg)
-   в System.Windows.Forms.Application.ComponentManager.System.Windows.Forms.UnsafeNativeMethods.IMsoComponentManager.FPushMessageLoop(IntPtr dwComponentID, Int32 reason, Int32 pvLoopData)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
-   в System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
-   в Авто.Program.Main(String[] args) в E:\Work\FirstDemo\code\Program.cs:строка 79
-[ERROR] [03:56:37] [1] - 
-[INFO ] [04:02:18] [1] - 
-
-04:02:18 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:02:30] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [04:02:31] [1] - Key: Invalid agent!
-[ERROR] [04:02:31] [1] - Key: Invalid agent!
-[ERROR] [04:02:31] [1] - Key: Invalid agent!
-[ERROR] [04:02:31] [1] - Key: Invalid agent!
-[INFO ] [04:04:26] [1] - 
-
-04:04:26 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:04:30] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [04:04:32] [1] - Key: Invalid agent!
-[ERROR] [04:04:32] [1] - Key: Invalid agent!
-[ERROR] [04:04:32] [1] - Key: Invalid agent!
-[ERROR] [04:04:32] [1] - Key: Invalid agent!
-[INFO ] [04:05:23] [1] - 
-
-04:05:23 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:05:27] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [04:05:29] [1] - Key: Invalid agent!
-[ERROR] [04:05:29] [1] - Key: Invalid agent!
-[ERROR] [04:05:29] [1] - Key: Invalid agent!
-[ERROR] [04:05:29] [1] - Key: Invalid agent!
-[INFO ] [04:11:07] [1] - 
-
-04:11:07 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:11:11] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [04:11:13] [1] - Key: Invalid agent!
-[ERROR] [04:11:13] [1] - Key: Invalid agent!
-[ERROR] [04:11:13] [1] - Key: Invalid agent!
-[ERROR] [04:11:13] [1] - Key: Invalid agent!
-[INFO ] [04:18:48] [1] - 
-
-04:18:48 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:18:52] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [04:18:54] [1] - Key: Invalid agent!
-[ERROR] [04:18:54] [1] - Key: Invalid agent!
-[ERROR] [04:18:54] [1] - Key: Invalid agent!
-[ERROR] [04:18:54] [1] - Key: Invalid agent!
-[INFO ] [04:22:39] [1] - 
-
-04:22:39 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:22:44] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [04:22:45] [1] - Key: Invalid agent!
-[ERROR] [04:22:45] [1] - Key: Invalid agent!
-[ERROR] [04:22:45] [1] - Key: Invalid agent!
-[ERROR] [04:22:45] [1] - Key: Invalid agent!
-[INFO ] [04:23:37] [1] - 
-
-04:23:37 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:23:42] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [04:23:44] [1] - Key: Invalid agent!
-[ERROR] [04:23:44] [1] - Key: Invalid agent!
-[ERROR] [04:23:44] [1] - Key: Invalid agent!
-[ERROR] [04:23:44] [1] - Key: Invalid agent!
-[INFO ] [04:25:23] [1] - 
-
-04:25:23 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:25:27] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [04:25:28] [1] - Key: Invalid agent!
-[ERROR] [04:25:28] [1] - Key: Invalid agent!
-[ERROR] [04:25:28] [1] - Key: Invalid agent!
-[ERROR] [04:25:28] [1] - Key: Invalid agent!
-[INFO ] [04:26:47] [1] - 
-
-04:26:47 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:27:30] [1] - 
-
-04:27:30 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:27:35] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [04:27:37] [1] - Key: Invalid agent!
-[ERROR] [04:27:37] [1] - Key: Invalid agent!
-[ERROR] [04:27:37] [1] - Key: Invalid agent!
-[ERROR] [04:27:37] [1] - Key: Invalid agent!
-[INFO ] [04:29:57] [1] - 
-
-04:29:57 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:30:02] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [04:30:03] [1] - Key: Invalid agent!
-[ERROR] [04:30:03] [1] - Key: Invalid agent!
-[ERROR] [04:30:03] [1] - Key: Invalid agent!
-[ERROR] [04:30:03] [1] - Key: Invalid agent!
-[INFO ] [04:39:32] [1] - 
-
-04:39:32 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:42:45] [1] - 
-
-04:42:45 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:42:49] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [04:42:51] [1] - Key: Invalid agent!
-[ERROR] [04:42:51] [1] - Key: Invalid agent!
-[ERROR] [04:42:51] [1] - Key: Invalid agent!
-[ERROR] [04:42:51] [1] - Key: Invalid agent!
-[INFO ] [04:43:35] [1] - 
-
-04:43:35 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:43:39] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [04:43:41] [1] - Key: Invalid agent!
-[ERROR] [04:43:41] [1] - Key: Invalid agent!
-[ERROR] [04:43:41] [1] - Key: Invalid agent!
-[ERROR] [04:43:41] [1] - Key: Invalid agent!
-[INFO ] [04:45:50] [1] - 
-
-04:45:50 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:45:54] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [04:45:56] [1] - Key: Invalid agent!
-[ERROR] [04:45:56] [1] - Key: Invalid agent!
-[ERROR] [04:45:56] [1] - Key: Invalid agent!
-[ERROR] [04:45:56] [1] - Key: Invalid agent!
-[INFO ] [04:46:30] [1] - 
-
-04:46:30 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:46:35] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [04:46:36] [1] - Key: Invalid agent!
-[ERROR] [04:46:36] [1] - Key: Invalid agent!
-[ERROR] [04:46:36] [1] - Key: Invalid agent!
-[ERROR] [04:46:36] [1] - Key: Invalid agent!
-[INFO ] [04:47:41] [1] - 
-
-04:47:41 -------------------------------- NEW LOG --------------------------------
-[INFO ] [04:47:45] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [04:47:46] [1] - Key: Invalid agent!
-[ERROR] [04:47:46] [1] - Key: Invalid agent!
-[ERROR] [04:47:46] [1] - Key: Invalid agent!
-[ERROR] [04:47:46] [1] - Key: Invalid agent!
-[INFO ] [05:04:14] [1] - 
-
-05:04:14 -------------------------------- NEW LOG --------------------------------
-[INFO ] [05:04:22] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [05:04:26] [10] - Key: Invalid agent!
-[ERROR] [05:04:26] [10] - Key: Invalid agent!
-[ERROR] [05:04:26] [10] - Key: Invalid agent!
-[ERROR] [05:04:26] [10] - Key: Invalid agent!
-[ERROR] [05:04:26] [10] - Ошибка 22. Ошибка работы с БД -- Нельзя снять блокировку приложения (участник базы данных: "public", ресурс: "354f7c7a-f61e-4342-aeff-dd8664f5cac0"), поскольку в данный момент она не удерживается.
-[ERROR] [05:04:26] [10] -  CallStack content :
-[ERROR] [05:04:26] [10] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
-   в NsgSoft.Database.NsgDatabaseMsSQL.asyncExecuteNonQuery(SqlCommand command, Boolean noOutTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 4571
-   в NsgSoft.DataObjects.NsgMultipleObject.UnLock(String resource) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2323
-   в NsgSoft.DataObjects.NsgMultipleObject.Lock(String resource, Boolean openNewTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2264
-   в NsgSoft.DataObjects.NsgConfiguration.SetUpdateFlag(Boolean p) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 2281
-   в NsgSoft.DataObjects.NsgConfiguration.CreateStorage(Object sender, DoWorkEventArgs eventArgs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 1697
-   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
-   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Threading.ThreadHelper.ThreadStart(Object obj)
-[ERROR] [05:04:26] [10] - 
-[INFO ] [05:04:44] [1] - 
-
-05:04:44 -------------------------------- NEW LOG --------------------------------
-[INFO ] [05:04:48] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [05:04:50] [1] - Key: Invalid agent!
-[ERROR] [05:04:50] [1] - Key: Invalid agent!
-[ERROR] [05:04:50] [1] - Key: Invalid agent!
-[ERROR] [05:04:50] [1] - Key: Invalid agent!
-[INFO ] [05:06:02] [1] - 
-
-05:06:02 -------------------------------- NEW LOG --------------------------------
-[INFO ] [05:06:05] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [05:06:07] [1] - Key: Invalid agent!
-[ERROR] [05:06:07] [1] - Key: Invalid agent!
-[ERROR] [05:06:07] [1] - Key: Invalid agent!
-[ERROR] [05:06:07] [1] - Key: Invalid agent!
-[INFO ] [05:10:26] [1] - 
-
-05:10:26 -------------------------------- NEW LOG --------------------------------
-[INFO ] [05:10:30] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [05:10:31] [1] - Key: Invalid agent!
-[ERROR] [05:10:31] [1] - Key: Invalid agent!
-[ERROR] [05:10:31] [1] - Key: Invalid agent!
-[ERROR] [05:10:31] [1] - Key: Invalid agent!
-[ERROR] [05:10:40] [32] - Ошибка при компиляции отчета: Индекс находился вне границ массива.
-[ERROR] [05:10:40] [32] -  CallStack content :
-[ERROR] [05:10:40] [32] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.ReportBuilder.StiReport.Compile() в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\StiReport.cs:строка 4364
-   в NsgSoft.ReportBuilder.StiReport.Render(StiRenderState renderState) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\StiReport.cs:строка 3325
-   в NsgSoft.ReportBuilder.NsgReport.PrepareReport(Boolean doNotReload) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 590
-   в NsgSoft.ReportBuilder.NsgReport.ThreadDoWork(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 747
-   в NsgSoft.ReportBuilder.NsgReport.ShowReport(INsgObjectFormBase parentForm) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 506
-   в NsgSoft.Forms.NsgReportForm.OnProcessReport(ReportProcessArgs processArgs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 453
-   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 410
-   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
-   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Threading.ThreadHelper.ThreadStart(Object obj)
-[ERROR] [05:10:40] [32] - 
-[ERROR] [05:10:40] [32] - ===================== Exception Begin =====================
-Main Message = 'Ошибка при компиляции отчета: Индекс находился вне границ массива.'.
+11:59:19 -------------------------------- NEW LOG --------------------------------
+[INFO ] [11:59:54] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [11:59:55] [1] - Key: Invalid agent!
+[ERROR] [11:59:55] [1] - Key: Invalid agent!
+[ERROR] [11:59:55] [1] - Key: Invalid agent!
+[ERROR] [11:59:55] [1] - Key: Invalid agent!
+[ERROR] [12:00:31] [4eb4a8fe-3e17-4aef-8580-d87e986f8df6] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
  
-Main StackTrace = '   в NsgSoft.ReportBuilder.StiReport.Compile() в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\StiReport.cs:строка 4368
-   в NsgSoft.ReportBuilder.StiReport.Render(StiRenderState renderState) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\StiReport.cs:строка 3365
-   в NsgSoft.ReportBuilder.NsgReport.PrepareReport(Boolean doNotReload) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 590
-   в NsgSoft.ReportBuilder.NsgReport.ThreadDoWork(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 747
-   в NsgSoft.ReportBuilder.NsgReport.ShowReport(INsgObjectFormBase parentForm) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 506
-   в NsgSoft.Forms.NsgReportForm.OnProcessReport(ReportProcessArgs processArgs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 453
-   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 410
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
    в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
    в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
 ====================== Exception End ======================
 
-[INFO ] [05:11:50] [1] - 
+[INFO ] [12:43:33] [1] - 
 
-05:11:50 -------------------------------- NEW LOG --------------------------------
-[INFO ] [05:11:55] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [05:11:56] [1] - Key: Invalid agent!
-[ERROR] [05:11:56] [1] - Key: Invalid agent!
-[ERROR] [05:11:56] [1] - Key: Invalid agent!
-[ERROR] [05:11:56] [1] - Key: Invalid agent!
-[INFO ] [05:21:43] [1] - 
-
-05:21:43 -------------------------------- NEW LOG --------------------------------
-[INFO ] [05:21:48] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [05:21:49] [1] - Key: Invalid agent!
-[ERROR] [05:21:49] [1] - Key: Invalid agent!
-[ERROR] [05:21:49] [1] - Key: Invalid agent!
-[ERROR] [05:21:49] [1] - Key: Invalid agent!
-[INFO ] [05:22:48] [1] - 
-
-05:22:48 -------------------------------- NEW LOG --------------------------------
-[INFO ] [05:22:52] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [05:22:54] [1] - Key: Invalid agent!
-[ERROR] [05:22:54] [1] - Key: Invalid agent!
-[ERROR] [05:22:54] [1] - Key: Invalid agent!
-[ERROR] [05:22:54] [1] - Key: Invalid agent!
-[INFO ] [05:29:24] [1] - 
-
-05:29:24 -------------------------------- NEW LOG --------------------------------
-[INFO ] [05:29:28] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [05:29:30] [1] - Key: Invalid agent!
-[ERROR] [05:29:30] [1] - Key: Invalid agent!
-[ERROR] [05:29:30] [1] - Key: Invalid agent!
-[ERROR] [05:29:30] [1] - Key: Invalid agent!
-[INFO ] [05:30:17] [1] - 
-
-05:30:17 -------------------------------- NEW LOG --------------------------------
-[INFO ] [05:30:21] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [05:30:22] [1] - Key: Invalid agent!
-[ERROR] [05:30:22] [1] - Key: Invalid agent!
-[ERROR] [05:30:22] [1] - Key: Invalid agent!
-[ERROR] [05:30:22] [1] - Key: Invalid agent!
-[INFO ] [05:32:16] [1] - 
-
-05:32:16 -------------------------------- NEW LOG --------------------------------
-[INFO ] [05:32:20] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [05:32:22] [1] - Key: Invalid agent!
-[ERROR] [05:32:22] [1] - Key: Invalid agent!
-[ERROR] [05:32:22] [1] - Key: Invalid agent!
-[ERROR] [05:32:22] [1] - Key: Invalid agent!
-[INFO ] [05:33:34] [1] - 
-
-05:33:34 -------------------------------- NEW LOG --------------------------------
-[INFO ] [05:33:38] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [05:33:40] [1] - Key: Invalid agent!
-[ERROR] [05:33:40] [1] - Key: Invalid agent!
-[ERROR] [05:33:40] [1] - Key: Invalid agent!
-[ERROR] [05:33:40] [1] - Key: Invalid agent!
-[INFO ] [06:16:35] [1] - 
-
-06:16:35 -------------------------------- NEW LOG --------------------------------
-[INFO ] [06:16:39] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [06:16:40] [1] - Key: Invalid agent!
-[ERROR] [06:16:40] [1] - Key: Invalid agent!
-[ERROR] [06:16:40] [1] - Key: Invalid agent!
-[ERROR] [06:16:40] [1] - Key: Invalid agent!
-[INFO ] [06:19:57] [1] - 
-
-06:19:57 -------------------------------- NEW LOG --------------------------------
-[INFO ] [06:20:03] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [06:20:04] [1] - Key: Invalid agent!
-[ERROR] [06:20:04] [1] - Key: Invalid agent!
-[ERROR] [06:20:04] [1] - Key: Invalid agent!
-[ERROR] [06:20:04] [1] - Key: Invalid agent!
-[INFO ] [06:21:48] [1] - 
-
-06:21:48 -------------------------------- NEW LOG --------------------------------
-[INFO ] [06:21:53] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [06:21:55] [1] - Key: Invalid agent!
-[ERROR] [06:21:55] [1] - Key: Invalid agent!
-[ERROR] [06:21:55] [1] - Key: Invalid agent!
-[ERROR] [06:21:55] [1] - Key: Invalid agent!
-[INFO ] [06:24:31] [1] - 
-
-06:24:31 -------------------------------- NEW LOG --------------------------------
-[INFO ] [06:24:35] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [06:24:37] [1] - Key: Invalid agent!
-[ERROR] [06:24:37] [1] - Key: Invalid agent!
-[ERROR] [06:24:37] [1] - Key: Invalid agent!
-[ERROR] [06:24:37] [1] - Key: Invalid agent!
-[INFO ] [06:28:40] [1] - 
-
-06:28:40 -------------------------------- NEW LOG --------------------------------
-[INFO ] [06:28:45] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [06:28:46] [1] - Key: Invalid agent!
-[ERROR] [06:28:46] [1] - Key: Invalid agent!
-[ERROR] [06:28:46] [1] - Key: Invalid agent!
-[ERROR] [06:28:46] [1] - Key: Invalid agent!
-[INFO ] [06:34:27] [1] - 
-
-06:34:27 -------------------------------- NEW LOG --------------------------------
-[INFO ] [06:34:32] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [06:34:34] [1] - Key: Invalid agent!
-[ERROR] [06:34:34] [1] - Key: Invalid agent!
-[ERROR] [06:34:34] [1] - Key: Invalid agent!
-[ERROR] [06:34:34] [1] - Key: Invalid agent!
-[INFO ] [06:36:02] [1] - 
-
-06:36:02 -------------------------------- NEW LOG --------------------------------
-[INFO ] [06:36:29] [1] - 
-
-06:36:29 -------------------------------- NEW LOG --------------------------------
-[INFO ] [06:36:33] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [06:36:34] [1] - Key: Invalid agent!
-[ERROR] [06:36:34] [1] - Key: Invalid agent!
-[ERROR] [06:36:34] [1] - Key: Invalid agent!
-[ERROR] [06:36:34] [1] - Key: Invalid agent!
-[INFO ] [06:39:04] [1] - 
-
-06:39:04 -------------------------------- NEW LOG --------------------------------
-[INFO ] [06:39:12] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [06:39:14] [1] - Key: Invalid agent!
-[ERROR] [06:39:14] [1] - Key: Invalid agent!
-[ERROR] [06:39:14] [1] - Key: Invalid agent!
-[ERROR] [06:39:14] [1] - Key: Invalid agent!
-[INFO ] [06:40:57] [1] - 
-
-06:40:57 -------------------------------- NEW LOG --------------------------------
-[INFO ] [06:41:01] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [06:41:03] [1] - Key: Invalid agent!
-[ERROR] [06:41:03] [1] - Key: Invalid agent!
-[ERROR] [06:41:03] [1] - Key: Invalid agent!
-[ERROR] [06:41:03] [1] - Key: Invalid agent!
-[INFO ] [06:43:45] [1] - 
-
-06:43:45 -------------------------------- NEW LOG --------------------------------
-[INFO ] [06:43:49] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [06:43:50] [1] - Key: Invalid agent!
-[ERROR] [06:43:50] [1] - Key: Invalid agent!
-[ERROR] [06:43:50] [1] - Key: Invalid agent!
-[ERROR] [06:43:50] [1] - Key: Invalid agent!
-[ERROR] [06:43:56] [22] - Ошибка при компиляции отчета: c:\Users\danii\AppData\Local\Temp\v23fhd5y.0.cs(1114,55) : error CS0102: Класс "Reports.Отчет.данныеДокDataSource" уже содержит определение для "Наименование"
-[ERROR] [06:43:56] [22] -  CallStack content :
-[ERROR] [06:43:56] [22] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.ReportBuilder.StiReport.Compile() в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\StiReport.cs:строка 4364
-   в NsgSoft.ReportBuilder.StiReport.Render(StiRenderState renderState) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\StiReport.cs:строка 3325
-   в NsgSoft.ReportBuilder.NsgReport.PrepareReport(Boolean doNotReload) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 590
-   в NsgSoft.ReportBuilder.NsgReport.ThreadDoWork(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 747
-   в NsgSoft.ReportBuilder.NsgReport.ShowReport(INsgObjectFormBase parentForm) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 506
-   в NsgSoft.Forms.NsgReportForm.OnProcessReport(ReportProcessArgs processArgs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 453
-   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 410
-   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
-   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Threading.ThreadHelper.ThreadStart(Object obj)
-[ERROR] [06:43:56] [22] - 
-[ERROR] [06:43:56] [22] - ===================== Exception Begin =====================
-Main Message = 'Ошибка при компиляции отчета: c:\Users\danii\AppData\Local\Temp\v23fhd5y.0.cs(1114,55) : error CS0102: Класс "Reports.Отчет.данныеДокDataSource" уже содержит определение для "Наименование"'.
+12:43:33 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:43:37] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:43:38] [1] - Key: Invalid agent!
+[ERROR] [12:43:38] [1] - Key: Invalid agent!
+[ERROR] [12:43:38] [1] - Key: Invalid agent!
+[ERROR] [12:43:38] [1] - Key: Invalid agent!
+[ERROR] [12:46:39] [c5551b48-2c4b-4650-8561-ec91b5447365] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
  
-Main StackTrace = '   в NsgSoft.ReportBuilder.StiReport.Compile() в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\StiReport.cs:строка 4368
-   в NsgSoft.ReportBuilder.StiReport.Render(StiRenderState renderState) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\StiReport.cs:строка 3365
-   в NsgSoft.ReportBuilder.NsgReport.PrepareReport(Boolean doNotReload) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 590
-   в NsgSoft.ReportBuilder.NsgReport.ThreadDoWork(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 747
-   в NsgSoft.ReportBuilder.NsgReport.ShowReport(INsgObjectFormBase parentForm) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 506
-   в NsgSoft.Forms.NsgReportForm.OnProcessReport(ReportProcessArgs processArgs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 453
-   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 410
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
    в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
    в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
 ====================== Exception End ======================
 
-[INFO ] [06:47:14] [1] - 
-
-06:47:14 -------------------------------- NEW LOG --------------------------------
-[INFO ] [06:47:19] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [06:47:21] [1] - Key: Invalid agent!
-[ERROR] [06:47:21] [1] - Key: Invalid agent!
-[ERROR] [06:47:21] [1] - Key: Invalid agent!
-[ERROR] [06:47:21] [1] - Key: Invalid agent!
-[ERROR] [06:47:26] [22] - Ошибка при компиляции отчета: c:\Users\danii\AppData\Local\Temp\vjy1at0x.0.cs(1170,55) : error CS0102: Класс "Reports.Отчет.данныеДокDataSource" уже содержит определение для "Наименование"
-[ERROR] [06:47:26] [22] -  CallStack content :
-[ERROR] [06:47:26] [22] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.ReportBuilder.StiReport.Compile() в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\StiReport.cs:строка 4364
-   в NsgSoft.ReportBuilder.StiReport.Render(StiRenderState renderState) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\StiReport.cs:строка 3325
-   в NsgSoft.ReportBuilder.NsgReport.PrepareReport(Boolean doNotReload) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 590
-   в NsgSoft.ReportBuilder.NsgReport.ThreadDoWork(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 747
-   в NsgSoft.ReportBuilder.NsgReport.ShowReport(INsgObjectFormBase parentForm) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 506
-   в NsgSoft.Forms.NsgReportForm.OnProcessReport(ReportProcessArgs processArgs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 453
-   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 410
-   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
-   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Threading.ThreadHelper.ThreadStart(Object obj)
-[ERROR] [06:47:26] [22] - 
-[ERROR] [06:47:26] [22] - ===================== Exception Begin =====================
-Main Message = 'Ошибка при компиляции отчета: c:\Users\danii\AppData\Local\Temp\vjy1at0x.0.cs(1170,55) : error CS0102: Класс "Reports.Отчет.данныеДокDataSource" уже содержит определение для "Наименование"'.
+[ERROR] [12:47:21] [Проведение] - ===================== Exception Begin =====================
+Main Message = 'Номенклатура: Отвертка - не достаточно остатка'.
  
-Main StackTrace = '   в NsgSoft.ReportBuilder.StiReport.Compile() в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\StiReport.cs:строка 4368
-   в NsgSoft.ReportBuilder.StiReport.Render(StiRenderState renderState) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\StiReport.cs:строка 3365
-   в NsgSoft.ReportBuilder.NsgReport.PrepareReport(Boolean doNotReload) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 590
-   в NsgSoft.ReportBuilder.NsgReport.ThreadDoWork(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 747
-   в NsgSoft.ReportBuilder.NsgReport.ShowReport(INsgObjectFormBase parentForm) в F:\Project_TT_2010\Framework\trunk\NsgSoft.ReportBuilder\NsgSoft\NsgReport.cs:строка 506
-   в NsgSoft.Forms.NsgReportForm.OnProcessReport(ReportProcessArgs processArgs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 453
-   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 410
+Main StackTrace = '   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Test() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 79
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Handling() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 34
+   в NsgSoft.DataObjects.NsgDataDocument.Handle() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataDocument.cs:строка 1120'.
+====================== Exception End ======================
+
+[INFO ] [13:10:17] [1] - 
+
+13:10:17 -------------------------------- NEW LOG --------------------------------
+[INFO ] [13:10:22] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [13:10:23] [1] - Key: Invalid agent!
+[ERROR] [13:10:23] [1] - Key: Invalid agent!
+[ERROR] [13:10:23] [1] - Key: Invalid agent!
+[ERROR] [13:10:23] [1] - Key: Invalid agent!
+[INFO ] [13:11:39] [1] - 
+
+13:11:39 -------------------------------- NEW LOG --------------------------------
+[INFO ] [13:11:43] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [13:11:45] [1] - Key: Invalid agent!
+[ERROR] [13:11:45] [1] - Key: Invalid agent!
+[ERROR] [13:11:45] [1] - Key: Invalid agent!
+[ERROR] [13:11:45] [1] - Key: Invalid agent!
+[INFO ] [13:19:47] [1] - 
+
+13:19:47 -------------------------------- NEW LOG --------------------------------
+[INFO ] [13:19:57] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [13:19:58] [1] - Key: Invalid agent!
+[ERROR] [13:19:58] [1] - Key: Invalid agent!
+[ERROR] [13:19:58] [1] - Key: Invalid agent!
+[ERROR] [13:19:58] [1] - Key: Invalid agent!
+[ERROR] [13:20:26] [b9cd4a50-9958-4491-b38b-769b900e675d] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
    в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
    в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
 ====================== Exception End ======================
 
-[INFO ] [06:51:02] [1] - 
+[ERROR] [13:20:44] [Проведение] - ===================== Exception Begin =====================
+Main Message = 'Номенклатура: Отвертка - не достаточно остатка'.
+ 
+Main StackTrace = '   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Test() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 65
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Handling() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 34
+   в NsgSoft.DataObjects.NsgDataDocument.Handle() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataDocument.cs:строка 1120'.
+====================== Exception End ======================
 
-06:51:02 -------------------------------- NEW LOG --------------------------------
-[INFO ] [06:51:06] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [06:51:07] [1] - Key: Invalid agent!
-[ERROR] [06:51:07] [1] - Key: Invalid agent!
-[ERROR] [06:51:07] [1] - Key: Invalid agent!
-[ERROR] [06:51:07] [1] - Key: Invalid agent!
-[INFO ] [06:54:14] [1] - 
+[INFO ] [13:22:13] [1] - 
 
-06:54:14 -------------------------------- NEW LOG --------------------------------
-[INFO ] [06:54:20] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [06:54:22] [1] - Key: Invalid agent!
-[ERROR] [06:54:22] [1] - Key: Invalid agent!
-[ERROR] [06:54:22] [1] - Key: Invalid agent!
-[ERROR] [06:54:22] [1] - Key: Invalid agent!
-[INFO ] [06:57:20] [1] - 
-
-06:57:20 -------------------------------- NEW LOG --------------------------------
-[INFO ] [06:57:35] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [06:57:36] [1] - Key: Invalid agent!
-[ERROR] [06:57:36] [1] - Key: Invalid agent!
-[ERROR] [06:57:36] [1] - Key: Invalid agent!
-[ERROR] [06:57:36] [1] - Key: Invalid agent!
-[INFO ] [07:02:45] [1] - 
-
-07:02:45 -------------------------------- NEW LOG --------------------------------
-[INFO ] [07:02:49] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [07:02:50] [1] - Key: Invalid agent!
-[ERROR] [07:02:50] [1] - Key: Invalid agent!
-[ERROR] [07:02:50] [1] - Key: Invalid agent!
-[ERROR] [07:02:50] [1] - Key: Invalid agent!
-[INFO ] [07:06:11] [1] - 
-
-07:06:11 -------------------------------- NEW LOG --------------------------------
-[INFO ] [07:06:16] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [07:06:18] [1] - Key: Invalid agent!
-[ERROR] [07:06:18] [1] - Key: Invalid agent!
-[ERROR] [07:06:18] [1] - Key: Invalid agent!
-[ERROR] [07:06:18] [1] - Key: Invalid agent!
-[INFO ] [07:18:37] [1] - 
-
-07:18:37 -------------------------------- NEW LOG --------------------------------
-[INFO ] [07:18:41] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [07:18:42] [1] - Key: Invalid agent!
-[ERROR] [07:18:42] [1] - Key: Invalid agent!
-[ERROR] [07:18:42] [1] - Key: Invalid agent!
-[ERROR] [07:18:42] [1] - Key: Invalid agent!
-[INFO ] [07:23:52] [1] - 
-
-07:23:52 -------------------------------- NEW LOG --------------------------------
-[INFO ] [07:23:56] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [07:23:57] [1] - Key: Invalid agent!
-[ERROR] [07:23:57] [1] - Key: Invalid agent!
-[ERROR] [07:23:57] [1] - Key: Invalid agent!
-[ERROR] [07:23:57] [1] - Key: Invalid agent!
-[INFO ] [09:03:58] [1] - 
-
-09:03:58 -------------------------------- NEW LOG --------------------------------
-[INFO ] [09:04:03] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [09:04:20] [10] - Key: Invalid agent!
-[ERROR] [09:04:20] [10] - Key: Invalid agent!
-[ERROR] [09:04:20] [10] - Key: Invalid agent!
-[ERROR] [09:04:20] [10] - Key: Invalid agent!
-[ERROR] [09:04:20] [10] - Ошибка 22. Ошибка работы с БД -- Нельзя снять блокировку приложения (участник базы данных: "public", ресурс: "6e38cea5-6169-4bdb-aece-07ec62e91aaf"), поскольку в данный момент она не удерживается.
-[ERROR] [09:04:20] [10] -  CallStack content :
-[ERROR] [09:04:20] [10] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
-   в System.Environment.get_StackTrace()
-   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
-   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
-   в NsgSoft.Database.NsgDatabaseMsSQL.asyncExecuteNonQuery(SqlCommand command, Boolean noOutTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 4571
-   в NsgSoft.DataObjects.NsgMultipleObject.UnLock(String resource) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2323
-   в NsgSoft.DataObjects.NsgMultipleObject.Lock(String resource, Boolean openNewTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2264
-   в NsgSoft.DataObjects.NsgConfiguration.SetUpdateFlag(Boolean p) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 2281
-   в NsgSoft.DataObjects.NsgConfiguration.CreateStorage(Object sender, DoWorkEventArgs eventArgs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 1697
+13:22:13 -------------------------------- NEW LOG --------------------------------
+[INFO ] [13:22:26] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [13:22:28] [1] - Key: Invalid agent!
+[ERROR] [13:22:28] [1] - Key: Invalid agent!
+[ERROR] [13:22:28] [1] - Key: Invalid agent!
+[ERROR] [13:22:28] [1] - Key: Invalid agent!
+[ERROR] [13:22:57] [42b59093-55ad-4b67-8277-f132d0e310d9] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
    в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
-   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
-   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
-   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
-   в System.Threading.ThreadHelper.ThreadStart(Object obj)
-[ERROR] [09:04:20] [10] - 
-[INFO ] [09:05:31] [1] - 
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
 
-09:05:31 -------------------------------- NEW LOG --------------------------------
-[INFO ] [09:05:34] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [09:05:36] [1] - Key: Invalid agent!
-[ERROR] [09:05:36] [1] - Key: Invalid agent!
-[ERROR] [09:05:36] [1] - Key: Invalid agent!
-[ERROR] [09:05:36] [1] - Key: Invalid agent!
-[INFO ] [09:30:42] [1] - 
+[INFO ] [13:23:35] [1] - 
 
-09:30:42 -------------------------------- NEW LOG --------------------------------
-[INFO ] [09:30:46] [1] - Login user: 'Администратор' result: 'True'
-[ERROR] [09:30:47] [1] - Key: Invalid agent!
-[ERROR] [09:30:47] [1] - Key: Invalid agent!
-[ERROR] [09:30:47] [1] - Key: Invalid agent!
-[ERROR] [09:30:47] [1] - Key: Invalid agent!
+13:23:35 -------------------------------- NEW LOG --------------------------------
+[INFO ] [13:23:39] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [13:23:41] [1] - Key: Invalid agent!
+[ERROR] [13:23:41] [1] - Key: Invalid agent!
+[ERROR] [13:23:41] [1] - Key: Invalid agent!
+[ERROR] [13:23:41] [1] - Key: Invalid agent!
+[ERROR] [13:24:01] [1953e6d2-db3d-4628-beed-08b504390867] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [13:56:56] [1] - 
+
+13:56:56 -------------------------------- NEW LOG --------------------------------
+[INFO ] [13:57:04] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [13:57:05] [1] - Key: Invalid agent!
+[ERROR] [13:57:05] [1] - Key: Invalid agent!
+[ERROR] [13:57:05] [1] - Key: Invalid agent!
+[ERROR] [13:57:05] [1] - Key: Invalid agent!
+[ERROR] [13:57:36] [3a50336c-14a4-4fa6-9549-090f5fe1bc46] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [14:14:31] [1] - 
+
+14:14:31 -------------------------------- NEW LOG --------------------------------
+[INFO ] [14:14:35] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [14:14:37] [1] - Key: Invalid agent!
+[ERROR] [14:14:37] [1] - Key: Invalid agent!
+[ERROR] [14:14:37] [1] - Key: Invalid agent!
+[ERROR] [14:14:37] [1] - Key: Invalid agent!
+[INFO ] [14:32:55] [1] - 
+
+14:32:55 -------------------------------- NEW LOG --------------------------------
+[INFO ] [14:33:01] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [14:33:03] [1] - Key: Invalid agent!
+[ERROR] [14:33:03] [1] - Key: Invalid agent!
+[ERROR] [14:33:03] [1] - Key: Invalid agent!
+[ERROR] [14:33:03] [1] - Key: Invalid agent!
+[INFO ] [14:38:43] [1] - 
+
+14:38:43 -------------------------------- NEW LOG --------------------------------
+[INFO ] [14:38:49] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [14:38:51] [1] - Key: Invalid agent!
+[ERROR] [14:38:51] [1] - Key: Invalid agent!
+[ERROR] [14:38:51] [1] - Key: Invalid agent!
+[ERROR] [14:38:51] [1] - Key: Invalid agent!
+[INFO ] [14:40:35] [1] - 
+
+14:40:35 -------------------------------- NEW LOG --------------------------------
+[INFO ] [15:37:52] [1] - 
+
+15:37:52 -------------------------------- NEW LOG --------------------------------
+[INFO ] [15:45:15] [1] - 
+
+15:45:15 -------------------------------- NEW LOG --------------------------------
+[INFO ] [15:45:20] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [15:45:21] [1] - Key: Invalid agent!
+[ERROR] [15:45:21] [1] - Key: Invalid agent!
+[ERROR] [15:45:21] [1] - Key: Invalid agent!
+[ERROR] [15:45:21] [1] - Key: Invalid agent!
+[INFO ] [15:48:21] [1] - 
+
+15:48:21 -------------------------------- NEW LOG --------------------------------
+[INFO ] [15:48:26] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [15:48:28] [1] - Key: Invalid agent!
+[ERROR] [15:48:28] [1] - Key: Invalid agent!
+[ERROR] [15:48:28] [1] - Key: Invalid agent!
+[ERROR] [15:48:28] [1] - Key: Invalid agent!
+[INFO ] [15:49:53] [1] - 
+
+15:49:53 -------------------------------- NEW LOG --------------------------------
+[INFO ] [15:49:59] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [15:50:00] [1] - Key: Invalid agent!
+[ERROR] [15:50:00] [1] - Key: Invalid agent!
+[ERROR] [15:50:00] [1] - Key: Invalid agent!
+[ERROR] [15:50:00] [1] - Key: Invalid agent!
+[INFO ] [15:51:02] [1] - 
+
+15:51:02 -------------------------------- NEW LOG --------------------------------
+[INFO ] [15:51:07] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [15:51:09] [1] - Key: Invalid agent!
+[ERROR] [15:51:09] [1] - Key: Invalid agent!
+[ERROR] [15:51:09] [1] - Key: Invalid agent!
+[ERROR] [15:51:09] [1] - Key: Invalid agent!
+[INFO ] [15:55:02] [1] - 
+
+15:55:02 -------------------------------- NEW LOG --------------------------------
+[INFO ] [15:55:07] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [15:55:09] [1] - Key: Invalid agent!
+[ERROR] [15:55:09] [1] - Key: Invalid agent!
+[ERROR] [15:55:09] [1] - Key: Invalid agent!
+[ERROR] [15:55:09] [1] - Key: Invalid agent!
+[ERROR] [15:55:57] [08cf900f-0b0e-41fc-b796-178ca4de07ab] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [15:57:32] [1] - 
+
+15:57:32 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:27:05] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:27:06] [1] - Key: Invalid agent!
+[ERROR] [16:27:06] [1] - Key: Invalid agent!
+[ERROR] [16:27:06] [1] - Key: Invalid agent!
+[ERROR] [16:27:06] [1] - Key: Invalid agent!
+[INFO ] [16:29:05] [1] - 
+
+16:29:05 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:29:10] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:29:12] [1] - Key: Invalid agent!
+[ERROR] [16:29:12] [1] - Key: Invalid agent!
+[ERROR] [16:29:12] [1] - Key: Invalid agent!
+[ERROR] [16:29:12] [1] - Key: Invalid agent!
+[INFO ] [16:30:07] [1] - 
+
+16:30:07 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:30:11] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:30:13] [1] - Key: Invalid agent!
+[ERROR] [16:30:13] [1] - Key: Invalid agent!
+[ERROR] [16:30:13] [1] - Key: Invalid agent!
+[ERROR] [16:30:13] [1] - Key: Invalid agent!
+[INFO ] [16:33:16] [1] - 
+
+16:33:16 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:33:21] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:33:23] [1] - Key: Invalid agent!
+[ERROR] [16:33:23] [1] - Key: Invalid agent!
+[ERROR] [16:33:23] [1] - Key: Invalid agent!
+[ERROR] [16:33:23] [1] - Key: Invalid agent!
+[INFO ] [16:35:47] [1] - 
+
+16:35:47 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:36:07] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:36:08] [1] - Key: Invalid agent!
+[ERROR] [16:36:08] [1] - Key: Invalid agent!
+[ERROR] [16:36:08] [1] - Key: Invalid agent!
+[ERROR] [16:36:08] [1] - Key: Invalid agent!
+[INFO ] [16:41:36] [1] - 
+
+16:41:36 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:41:42] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:41:43] [1] - Key: Invalid agent!
+[ERROR] [16:41:43] [1] - Key: Invalid agent!
+[ERROR] [16:41:43] [1] - Key: Invalid agent!
+[ERROR] [16:41:43] [1] - Key: Invalid agent!
+[INFO ] [16:44:34] [1] - 
+
+16:44:34 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:44:39] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:44:41] [1] - Key: Invalid agent!
+[ERROR] [16:44:41] [1] - Key: Invalid agent!
+[ERROR] [16:44:41] [1] - Key: Invalid agent!
+[ERROR] [16:44:41] [1] - Key: Invalid agent!
+[ERROR] [16:45:49] [1a6aee7a-cf51-4db5-bed7-bfa94a41bbd1] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [16:46:13] [1] - 
+
+16:46:13 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:46:16] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:46:18] [1] - Key: Invalid agent!
+[ERROR] [16:46:18] [1] - Key: Invalid agent!
+[ERROR] [16:46:18] [1] - Key: Invalid agent!
+[ERROR] [16:46:18] [1] - Key: Invalid agent!
+[ERROR] [16:46:39] [dc467548-b1ed-42be-afc9-e875f36b92e6] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [16:50:01] [1] - 
+
+16:50:01 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:50:05] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:50:06] [1] - Key: Invalid agent!
+[ERROR] [16:50:06] [1] - Key: Invalid agent!
+[ERROR] [16:50:06] [1] - Key: Invalid agent!
+[ERROR] [16:50:06] [1] - Key: Invalid agent!
+[INFO ] [16:54:25] [1] - 
+
+16:54:25 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:54:29] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:54:30] [1] - Key: Invalid agent!
+[ERROR] [16:54:30] [1] - Key: Invalid agent!
+[ERROR] [16:54:30] [1] - Key: Invalid agent!
+[ERROR] [16:54:30] [1] - Key: Invalid agent!
