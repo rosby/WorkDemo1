@@ -34,12 +34,10 @@ namespace Авто.Метаданные.Автосервис
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ОтчетПоОстаткамФорма));
-            NsgSoft.Forms.NsgGridColumn nsgGridColumn2 = new NsgSoft.Forms.NsgGridColumn();
+            NsgSoft.Forms.NsgGridColumn nsgGridColumn1 = new NsgSoft.Forms.NsgGridColumn();
             this.nsgObjectFilter1 = new NsgSoft.Forms.NsgIGridView.NsgObjectFilter();
             this.vmoФильтр = new NsgSoft.Forms.NsgVisualMultipleObject(this.components);
-            this.Фильтр_Номенклатура = new Авто.Метаданные.Автосервис.Номенклатура.ColumnDescriptor();
             this.vmoИтоги = new NsgSoft.Forms.NsgVisualMultipleObject(this.components);
-            this.Итоги_Номенклатура = new Авто.Метаданные.Автосервис.Номенклатура.ColumnDescriptor();
             this.Итоги_СуммаПриход = new NsgSoft.Forms.NsgColumnDescriptor.Decimal();
             this.Итоги_КоличествоПриход = new NsgSoft.Forms.NsgColumnDescriptor.Decimal();
             this.Итоги_СуммаРасход = new NsgSoft.Forms.NsgColumnDescriptor.Decimal();
@@ -57,11 +55,13 @@ namespace Авто.Метаданные.Автосервис
             this.vmoИтогиДок = new NsgSoft.Forms.NsgVisualMultipleObject(this.components);
             this.ИтогиДок_СуммаПриход = new NsgSoft.Forms.NsgColumnDescriptor.Decimal();
             this.ИтогиДок_СуммаРасход = new NsgSoft.Forms.NsgColumnDescriptor.Decimal();
-            this.ИтогиДок_Номенклатура = new Авто.Метаданные.Автосервис.Номенклатура.ColumnDescriptor();
             this.ИтогиДок_Документ = new NsgSoft.Forms.NsgColumnDescriptor.UntypedMultipleObject();
             this.ИтогиДок_КоличествоПриход = new NsgSoft.Forms.NsgColumnDescriptor.String();
             this.ИтогиДок_КоличествоРасход = new NsgSoft.Forms.NsgColumnDescriptor.String();
             this.stiReportDataSource2 = new NsgSoft.ReportBuilder.Design.StiReportDataSource("данныеИтогиДок", this.данныеИтогиДок);
+            this.Фильтр_Номенклатура = new Авто.Метаданные.Автосервис.Номенклатура.ColumnDescriptor();
+            this.Итоги_Номенклатура = new Авто.Метаданные.Автосервис.Номенклатура.ColumnDescriptor();
+            this.ИтогиДок_Номенклатура = new Авто.Метаданные.Автосервис.Номенклатура.ColumnDescriptor();
             ((System.ComponentModel.ISupportInitialize)(this.btnCreateReport)).BeginInit();
             this.panelButtonReportForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.printButton)).BeginInit();
@@ -99,7 +99,7 @@ namespace Авто.Метаданные.Автосервис
             this.panelButtonReportForm.Controls.Add(this.printButton);
             this.panelButtonReportForm.Controls.Add(this.btnCreateReport);
             this.panelButtonReportForm.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelButtonReportForm.Location = new System.Drawing.Point(0, 337);
+            this.panelButtonReportForm.Location = new System.Drawing.Point(0, 357);
             this.panelButtonReportForm.Name = "panelButtonReportForm";
             this.panelButtonReportForm.Size = new System.Drawing.Size(1214, 28);
             this.panelButtonReportForm.TabIndex = 0;
@@ -147,13 +147,12 @@ namespace Авто.Метаданные.Автосервис
             this.nsgObjectFilter1.AllowDrop = true;
             this.nsgObjectFilter1.AutoSetCompare = true;
             this.nsgObjectFilter1.BackColor = System.Drawing.SystemColors.Control;
-            nsgGridColumn2.Caption = "";
-            nsgGridColumn2.ChangedProperties = new string[] {
+            nsgGridColumn1.Caption = "";
+            nsgGridColumn1.ChangedProperties = new string[] {
         "Visible"};
-            nsgGridColumn2.ImportedFromVMO = false;
-            nsgGridColumn2.Name = "Номенклатура";
-            nsgGridColumn2.Root = this.nsgObjectFilter1.Columns.Collection;
-            this.nsgObjectFilter1.Columns.Collection.Add(nsgGridColumn2);
+            nsgGridColumn1.Name = "Номенклатура";
+            nsgGridColumn1.Root = this.nsgObjectFilter1.Columns.Collection;
+            this.nsgObjectFilter1.Columns.Collection.Add(nsgGridColumn1);
             this.nsgObjectFilter1.FilterTypeCaption = "Тип Фильтра";
             this.nsgObjectFilter1.Grouping = false;
             this.nsgObjectFilter1.IsModify = true;
@@ -178,16 +177,6 @@ namespace Авто.Метаданные.Автосервис
             this.vmoФильтр.MetaDataName = "";
             this.vmoФильтр.FullName = "";
             // 
-            // Фильтр_Номенклатура
-            // 
-            this.Фильтр_Номенклатура.Caption = "Номенклатура";
-            this.Фильтр_Номенклатура.Creator = typeof(NsgSoft.Forms.NsgReportForm);
-            this.Фильтр_Номенклатура.Name = "Номенклатура";
-            this.Фильтр_Номенклатура.NSGType = typeof(Авто.Метаданные.Автосервис.Номенклатура);
-            this.Фильтр_Номенклатура.PropertyType = typeof(Авто.Метаданные.Автосервис.Номенклатура);
-            this.Фильтр_Номенклатура.SearchCondition.OwnerComponent = this.Фильтр_Номенклатура;
-            this.Фильтр_Номенклатура.SearchCondition.Parameters = new NsgSoft.DataObjects.NsgCompareParam[0];
-            // 
             // vmoИтоги
             // 
             this.vmoИтоги.Columns.Collection.Add(this.Итоги_Номенклатура);
@@ -202,16 +191,6 @@ namespace Авто.Метаданные.Автосервис
             this.vmoИтоги.DataSourceType = NsgSoft.Forms.NsgDataSourceType.DynamicObject;
             this.vmoИтоги.MetaDataName = "";
             this.vmoИтоги.FullName = "";
-            // 
-            // Итоги_Номенклатура
-            // 
-            this.Итоги_Номенклатура.Caption = "Номенклатура";
-            this.Итоги_Номенклатура.Creator = typeof(NsgSoft.Forms.NsgReportForm);
-            this.Итоги_Номенклатура.Name = "Номенклатура";
-            this.Итоги_Номенклатура.NSGType = typeof(Авто.Метаданные.Автосервис.Номенклатура);
-            this.Итоги_Номенклатура.PropertyType = typeof(Авто.Метаданные.Автосервис.Номенклатура);
-            this.Итоги_Номенклатура.SearchCondition.OwnerComponent = this.Итоги_Номенклатура;
-            this.Итоги_Номенклатура.SearchCondition.Parameters = new NsgSoft.DataObjects.NsgCompareParam[0];
             // 
             // Итоги_СуммаПриход
             // 
@@ -319,7 +298,7 @@ namespace Авто.Метаданные.Автосервис
             this.nsgGroupsList1.BackColor = System.Drawing.SystemColors.Control;
             this.nsgGroupsList1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nsgGroupsList1.DisableComponents = ((System.Collections.Generic.List<string>)(resources.GetObject("nsgGroupsList1.DisableComponents")));
-            this.nsgGroupsList1.Location = new System.Drawing.Point(401, 28);
+            this.nsgGroupsList1.Location = new System.Drawing.Point(434, 41);
             this.nsgGroupsList1.MinimumSize = new System.Drawing.Size(290, 150);
             this.nsgGroupsList1.Name = "NsgGroupsList";
             this.nsgGroupsList1.NsgRemoveMasterComponent = true;
@@ -415,16 +394,6 @@ namespace Авто.Метаданные.Автосервис
             this.ИтогиДок_СуммаРасход.SearchCondition.OwnerComponent = this.ИтогиДок_СуммаРасход;
             this.ИтогиДок_СуммаРасход.SearchCondition.Parameters = new NsgSoft.DataObjects.NsgCompareParam[0];
             // 
-            // ИтогиДок_Номенклатура
-            // 
-            this.ИтогиДок_Номенклатура.Caption = "Номенклатура";
-            this.ИтогиДок_Номенклатура.Creator = typeof(NsgSoft.Forms.NsgReportForm);
-            this.ИтогиДок_Номенклатура.Name = "Номенклатура";
-            this.ИтогиДок_Номенклатура.NSGType = typeof(Авто.Метаданные.Автосервис.Номенклатура);
-            this.ИтогиДок_Номенклатура.PropertyType = typeof(Авто.Метаданные.Автосервис.Номенклатура);
-            this.ИтогиДок_Номенклатура.SearchCondition.OwnerComponent = this.ИтогиДок_Номенклатура;
-            this.ИтогиДок_Номенклатура.SearchCondition.Parameters = new NsgSoft.DataObjects.NsgCompareParam[0];
-            // 
             // ИтогиДок_Документ
             // 
             this.ИтогиДок_Документ.Caption = "Документ";
@@ -460,6 +429,36 @@ namespace Авто.Метаданные.Автосервис
             // 
             this.stiReportDataSource2.Item = this.данныеИтогиДок;
             this.stiReportDataSource2.Name = "данныеИтогиДок";
+            // 
+            // Фильтр_Номенклатура
+            // 
+            this.Фильтр_Номенклатура.Caption = "Номенклатура";
+            this.Фильтр_Номенклатура.Creator = typeof(NsgSoft.Forms.NsgReportForm);
+            this.Фильтр_Номенклатура.Name = "Номенклатура";
+            this.Фильтр_Номенклатура.NSGType = typeof(Авто.Метаданные.Автосервис.Номенклатура);
+            this.Фильтр_Номенклатура.PropertyType = typeof(Авто.Метаданные.Автосервис.Номенклатура);
+            this.Фильтр_Номенклатура.SearchCondition.OwnerComponent = this.Фильтр_Номенклатура;
+            this.Фильтр_Номенклатура.SearchCondition.Parameters = new NsgSoft.DataObjects.NsgCompareParam[0];
+            // 
+            // Итоги_Номенклатура
+            // 
+            this.Итоги_Номенклатура.Caption = "Номенклатура";
+            this.Итоги_Номенклатура.Creator = typeof(NsgSoft.Forms.NsgReportForm);
+            this.Итоги_Номенклатура.Name = "Номенклатура";
+            this.Итоги_Номенклатура.NSGType = typeof(Авто.Метаданные.Автосервис.Номенклатура);
+            this.Итоги_Номенклатура.PropertyType = typeof(Авто.Метаданные.Автосервис.Номенклатура);
+            this.Итоги_Номенклатура.SearchCondition.OwnerComponent = this.Итоги_Номенклатура;
+            this.Итоги_Номенклатура.SearchCondition.Parameters = new NsgSoft.DataObjects.NsgCompareParam[0];
+            // 
+            // ИтогиДок_Номенклатура
+            // 
+            this.ИтогиДок_Номенклатура.Caption = "Номенклатура";
+            this.ИтогиДок_Номенклатура.Creator = typeof(NsgSoft.Forms.NsgReportForm);
+            this.ИтогиДок_Номенклатура.Name = "Номенклатура";
+            this.ИтогиДок_Номенклатура.NSGType = typeof(Авто.Метаданные.Автосервис.Номенклатура);
+            this.ИтогиДок_Номенклатура.PropertyType = typeof(Авто.Метаданные.Автосервис.Номенклатура);
+            this.ИтогиДок_Номенклатура.SearchCondition.OwnerComponent = this.ИтогиДок_Номенклатура;
+            this.ИтогиДок_Номенклатура.SearchCondition.Parameters = new NsgSoft.DataObjects.NsgCompareParam[0];
             // 
             // ОтчетПоОстаткамФорма
             // 
@@ -519,7 +518,6 @@ namespace Авто.Метаданные.Автосервис
         protected NsgColumnDescriptor.Decimal Итоги_КоличествоНачОст;
         protected NsgColumnDescriptor.Decimal Итоги_КоличествоКонОст;
         protected NsgSoft.ReportBuilder.NsgGroupsList nsgGroupsList1;
-        protected NsgSoft.ReportBuilder.NsgReportDataSource данныеИтоги;
         private NsgSoft.ReportBuilder.NsgReport nsgReport1;
         protected NsgColumnDescriptor.Decimal ИтогиДок_СуммаПриход;
         protected NsgColumnDescriptor.Decimal ИтогиДок_СуммаРасход;
@@ -529,9 +527,10 @@ namespace Авто.Метаданные.Автосервис
         protected NsgColumnDescriptor.String ИтогиДок_КоличествоРасход;
         protected NsgSoft.ReportBuilder.NsgReportDataSource данныеИтогиДок;
         protected NsgSoft.ReportBuilder.Design.StiReportDataSource stiReportDataSource2;
-        private NsgVisualMultipleObject vmoИтогиДок;
-        private NsgVisualMultipleObject vmoИтоги;
-        private NsgVisualMultipleObject vmoФильтр;
-        private NsgSoft.ReportBuilder.Design.StiReportDataSource stiReportDataSource1;
+        protected NsgVisualMultipleObject vmoИтогиДок;
+        protected NsgVisualMultipleObject vmoИтоги;
+        protected NsgVisualMultipleObject vmoФильтр;
+        protected NsgSoft.ReportBuilder.Design.StiReportDataSource stiReportDataSource1;
+        protected NsgSoft.ReportBuilder.NsgReportDataSource данныеИтоги;
     }
 }

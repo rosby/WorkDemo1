@@ -7,6 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using NsgSoft.DataObjects;
 using NsgSoft.Forms;
+using NsgSoft.Database;
 
 
 
@@ -93,7 +94,7 @@ namespace Авто.Метаданные.Автосервис
             {
                 var row = vmoИтогиДок.Data.MemoryTable.NewRow();
                 row[ИтогиДок_Номенклатура].Value = строка[Остатки.Names.Номенклатура].ToReferent() as Номенклатура;
-                row[ИтогиДок_Документ].Value = строка[Остатки.Names.Владелец].ToReferent();
+                row[ИтогиДок_Документ].Value = строка[Остатки.Names.Владелец].ToReferent();        
                 row[ИтогиДок_СуммаПриход].Value = строка[Остатки.Names.Сумма].ToCredit();
                 row[ИтогиДок_СуммаРасход].Value = строка[Остатки.Names.Сумма].ToDebit();
                 row[ИтогиДок_КоличествоПриход].Value = строка[Остатки.Names.Количество].ToCredit();

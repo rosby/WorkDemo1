@@ -1,0 +1,320 @@
+[INFO ] [11:59:19] [1] - 
+
+11:59:19 -------------------------------- NEW LOG --------------------------------
+[INFO ] [11:59:54] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [11:59:55] [1] - Key: Invalid agent!
+[ERROR] [11:59:55] [1] - Key: Invalid agent!
+[ERROR] [11:59:55] [1] - Key: Invalid agent!
+[ERROR] [11:59:55] [1] - Key: Invalid agent!
+[ERROR] [12:00:31] [4eb4a8fe-3e17-4aef-8580-d87e986f8df6] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [12:43:33] [1] - 
+
+12:43:33 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:43:37] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:43:38] [1] - Key: Invalid agent!
+[ERROR] [12:43:38] [1] - Key: Invalid agent!
+[ERROR] [12:43:38] [1] - Key: Invalid agent!
+[ERROR] [12:43:38] [1] - Key: Invalid agent!
+[ERROR] [12:46:39] [c5551b48-2c4b-4650-8561-ec91b5447365] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[ERROR] [12:47:21] [Проведение] - ===================== Exception Begin =====================
+Main Message = 'Номенклатура: Отвертка - не достаточно остатка'.
+ 
+Main StackTrace = '   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Test() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 79
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Handling() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 34
+   в NsgSoft.DataObjects.NsgDataDocument.Handle() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataDocument.cs:строка 1120'.
+====================== Exception End ======================
+
+[INFO ] [13:10:17] [1] - 
+
+13:10:17 -------------------------------- NEW LOG --------------------------------
+[INFO ] [13:10:22] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [13:10:23] [1] - Key: Invalid agent!
+[ERROR] [13:10:23] [1] - Key: Invalid agent!
+[ERROR] [13:10:23] [1] - Key: Invalid agent!
+[ERROR] [13:10:23] [1] - Key: Invalid agent!
+[INFO ] [13:11:39] [1] - 
+
+13:11:39 -------------------------------- NEW LOG --------------------------------
+[INFO ] [13:11:43] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [13:11:45] [1] - Key: Invalid agent!
+[ERROR] [13:11:45] [1] - Key: Invalid agent!
+[ERROR] [13:11:45] [1] - Key: Invalid agent!
+[ERROR] [13:11:45] [1] - Key: Invalid agent!
+[INFO ] [13:19:47] [1] - 
+
+13:19:47 -------------------------------- NEW LOG --------------------------------
+[INFO ] [13:19:57] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [13:19:58] [1] - Key: Invalid agent!
+[ERROR] [13:19:58] [1] - Key: Invalid agent!
+[ERROR] [13:19:58] [1] - Key: Invalid agent!
+[ERROR] [13:19:58] [1] - Key: Invalid agent!
+[ERROR] [13:20:26] [b9cd4a50-9958-4491-b38b-769b900e675d] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[ERROR] [13:20:44] [Проведение] - ===================== Exception Begin =====================
+Main Message = 'Номенклатура: Отвертка - не достаточно остатка'.
+ 
+Main StackTrace = '   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Test() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 65
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Handling() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 34
+   в NsgSoft.DataObjects.NsgDataDocument.Handle() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataDocument.cs:строка 1120'.
+====================== Exception End ======================
+
+[INFO ] [13:22:13] [1] - 
+
+13:22:13 -------------------------------- NEW LOG --------------------------------
+[INFO ] [13:22:26] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [13:22:28] [1] - Key: Invalid agent!
+[ERROR] [13:22:28] [1] - Key: Invalid agent!
+[ERROR] [13:22:28] [1] - Key: Invalid agent!
+[ERROR] [13:22:28] [1] - Key: Invalid agent!
+[ERROR] [13:22:57] [42b59093-55ad-4b67-8277-f132d0e310d9] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [13:23:35] [1] - 
+
+13:23:35 -------------------------------- NEW LOG --------------------------------
+[INFO ] [13:23:39] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [13:23:41] [1] - Key: Invalid agent!
+[ERROR] [13:23:41] [1] - Key: Invalid agent!
+[ERROR] [13:23:41] [1] - Key: Invalid agent!
+[ERROR] [13:23:41] [1] - Key: Invalid agent!
+[ERROR] [13:24:01] [1953e6d2-db3d-4628-beed-08b504390867] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [13:56:56] [1] - 
+
+13:56:56 -------------------------------- NEW LOG --------------------------------
+[INFO ] [13:57:04] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [13:57:05] [1] - Key: Invalid agent!
+[ERROR] [13:57:05] [1] - Key: Invalid agent!
+[ERROR] [13:57:05] [1] - Key: Invalid agent!
+[ERROR] [13:57:05] [1] - Key: Invalid agent!
+[ERROR] [13:57:36] [3a50336c-14a4-4fa6-9549-090f5fe1bc46] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [14:14:31] [1] - 
+
+14:14:31 -------------------------------- NEW LOG --------------------------------
+[INFO ] [14:14:35] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [14:14:37] [1] - Key: Invalid agent!
+[ERROR] [14:14:37] [1] - Key: Invalid agent!
+[ERROR] [14:14:37] [1] - Key: Invalid agent!
+[ERROR] [14:14:37] [1] - Key: Invalid agent!
+[INFO ] [14:32:55] [1] - 
+
+14:32:55 -------------------------------- NEW LOG --------------------------------
+[INFO ] [14:33:01] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [14:33:03] [1] - Key: Invalid agent!
+[ERROR] [14:33:03] [1] - Key: Invalid agent!
+[ERROR] [14:33:03] [1] - Key: Invalid agent!
+[ERROR] [14:33:03] [1] - Key: Invalid agent!
+[INFO ] [14:38:43] [1] - 
+
+14:38:43 -------------------------------- NEW LOG --------------------------------
+[INFO ] [14:38:49] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [14:38:51] [1] - Key: Invalid agent!
+[ERROR] [14:38:51] [1] - Key: Invalid agent!
+[ERROR] [14:38:51] [1] - Key: Invalid agent!
+[ERROR] [14:38:51] [1] - Key: Invalid agent!
+[INFO ] [14:40:35] [1] - 
+
+14:40:35 -------------------------------- NEW LOG --------------------------------
+[INFO ] [15:37:52] [1] - 
+
+15:37:52 -------------------------------- NEW LOG --------------------------------
+[INFO ] [15:45:15] [1] - 
+
+15:45:15 -------------------------------- NEW LOG --------------------------------
+[INFO ] [15:45:20] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [15:45:21] [1] - Key: Invalid agent!
+[ERROR] [15:45:21] [1] - Key: Invalid agent!
+[ERROR] [15:45:21] [1] - Key: Invalid agent!
+[ERROR] [15:45:21] [1] - Key: Invalid agent!
+[INFO ] [15:48:21] [1] - 
+
+15:48:21 -------------------------------- NEW LOG --------------------------------
+[INFO ] [15:48:26] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [15:48:28] [1] - Key: Invalid agent!
+[ERROR] [15:48:28] [1] - Key: Invalid agent!
+[ERROR] [15:48:28] [1] - Key: Invalid agent!
+[ERROR] [15:48:28] [1] - Key: Invalid agent!
+[INFO ] [15:49:53] [1] - 
+
+15:49:53 -------------------------------- NEW LOG --------------------------------
+[INFO ] [15:49:59] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [15:50:00] [1] - Key: Invalid agent!
+[ERROR] [15:50:00] [1] - Key: Invalid agent!
+[ERROR] [15:50:00] [1] - Key: Invalid agent!
+[ERROR] [15:50:00] [1] - Key: Invalid agent!
+[INFO ] [15:51:02] [1] - 
+
+15:51:02 -------------------------------- NEW LOG --------------------------------
+[INFO ] [15:51:07] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [15:51:09] [1] - Key: Invalid agent!
+[ERROR] [15:51:09] [1] - Key: Invalid agent!
+[ERROR] [15:51:09] [1] - Key: Invalid agent!
+[ERROR] [15:51:09] [1] - Key: Invalid agent!
+[INFO ] [15:55:02] [1] - 
+
+15:55:02 -------------------------------- NEW LOG --------------------------------
+[INFO ] [15:55:07] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [15:55:09] [1] - Key: Invalid agent!
+[ERROR] [15:55:09] [1] - Key: Invalid agent!
+[ERROR] [15:55:09] [1] - Key: Invalid agent!
+[ERROR] [15:55:09] [1] - Key: Invalid agent!
+[ERROR] [15:55:57] [08cf900f-0b0e-41fc-b796-178ca4de07ab] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [15:57:32] [1] - 
+
+15:57:32 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:27:05] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:27:06] [1] - Key: Invalid agent!
+[ERROR] [16:27:06] [1] - Key: Invalid agent!
+[ERROR] [16:27:06] [1] - Key: Invalid agent!
+[ERROR] [16:27:06] [1] - Key: Invalid agent!
+[INFO ] [16:29:05] [1] - 
+
+16:29:05 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:29:10] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:29:12] [1] - Key: Invalid agent!
+[ERROR] [16:29:12] [1] - Key: Invalid agent!
+[ERROR] [16:29:12] [1] - Key: Invalid agent!
+[ERROR] [16:29:12] [1] - Key: Invalid agent!
+[INFO ] [16:30:07] [1] - 
+
+16:30:07 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:30:11] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:30:13] [1] - Key: Invalid agent!
+[ERROR] [16:30:13] [1] - Key: Invalid agent!
+[ERROR] [16:30:13] [1] - Key: Invalid agent!
+[ERROR] [16:30:13] [1] - Key: Invalid agent!
+[INFO ] [16:33:16] [1] - 
+
+16:33:16 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:33:21] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:33:23] [1] - Key: Invalid agent!
+[ERROR] [16:33:23] [1] - Key: Invalid agent!
+[ERROR] [16:33:23] [1] - Key: Invalid agent!
+[ERROR] [16:33:23] [1] - Key: Invalid agent!
+[INFO ] [16:35:47] [1] - 
+
+16:35:47 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:36:07] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:36:08] [1] - Key: Invalid agent!
+[ERROR] [16:36:08] [1] - Key: Invalid agent!
+[ERROR] [16:36:08] [1] - Key: Invalid agent!
+[ERROR] [16:36:08] [1] - Key: Invalid agent!
+[INFO ] [16:41:36] [1] - 
+
+16:41:36 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:41:42] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:41:43] [1] - Key: Invalid agent!
+[ERROR] [16:41:43] [1] - Key: Invalid agent!
+[ERROR] [16:41:43] [1] - Key: Invalid agent!
+[ERROR] [16:41:43] [1] - Key: Invalid agent!
+[INFO ] [16:44:34] [1] - 
+
+16:44:34 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:44:39] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:44:41] [1] - Key: Invalid agent!
+[ERROR] [16:44:41] [1] - Key: Invalid agent!
+[ERROR] [16:44:41] [1] - Key: Invalid agent!
+[ERROR] [16:44:41] [1] - Key: Invalid agent!
+[ERROR] [16:45:49] [1a6aee7a-cf51-4db5-bed7-bfa94a41bbd1] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [16:46:13] [1] - 
+
+16:46:13 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:46:16] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:46:18] [1] - Key: Invalid agent!
+[ERROR] [16:46:18] [1] - Key: Invalid agent!
+[ERROR] [16:46:18] [1] - Key: Invalid agent!
+[ERROR] [16:46:18] [1] - Key: Invalid agent!
+[ERROR] [16:46:39] [dc467548-b1ed-42be-afc9-e875f36b92e6] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [16:50:01] [1] - 
+
+16:50:01 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:50:05] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:50:06] [1] - Key: Invalid agent!
+[ERROR] [16:50:06] [1] - Key: Invalid agent!
+[ERROR] [16:50:06] [1] - Key: Invalid agent!
+[ERROR] [16:50:06] [1] - Key: Invalid agent!
+[INFO ] [16:54:25] [1] - 
+
+16:54:25 -------------------------------- NEW LOG --------------------------------
+[INFO ] [16:54:29] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [16:54:30] [1] - Key: Invalid agent!
+[ERROR] [16:54:30] [1] - Key: Invalid agent!
+[ERROR] [16:54:30] [1] - Key: Invalid agent!
+[ERROR] [16:54:30] [1] - Key: Invalid agent!
