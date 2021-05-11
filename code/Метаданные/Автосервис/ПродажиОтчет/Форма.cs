@@ -53,8 +53,7 @@ namespace Авто.Метаданные.Автосервис
             NsgCompare cmp = nsgObjectFilter1.Compare;
 
             var table = контр.GetCirculate(nsgPeriodPicker1.Period.Begin, nsgPeriodPicker1.Period.End, cmp,
-                NsgSoft.Common.NsgRegisterResult.Credit,
-                new string[] { Остатки.Names.Номенклатура, Остатки.Names.Владелец });
+                NsgSoft.Common.NsgRegisterResult.Credit, new string[] { ПродажиРегистр.Names.Контрагенты});
 
             vmoКонтрагент.Data.BeginUpdateData();
             vmoКонтрагент.Data.MemoryTable.Clear();
@@ -62,7 +61,7 @@ namespace Авто.Метаданные.Автосервис
             foreach (var строка in table.Rows) 
             {
                 var row = vmoКонтрагент.Data.MemoryTable.NewRow();
-                row[vmoКонтр_Контр].Value = (строка[ПродажиРегистр.Names.Владелец].ToReferent() as РасходнаяНакладная).Контрагенты;
+                row[vmoКонтр_Контр].Value = строка[ПродажиРегистр.Names.Контрагенты].ToReferent() as Контрагенты;
                 row[vmoКонтр_Количество].Value = строка[ПродажиРегистр.Names.Количество].ToCredit();
                 row[vmoКонтр_Сумма].Value = строка[ПродажиРегистр.Names.ЦенаПродажи].ToCredit();
                 row[vmoКонтр_Рентаб].Value = строка[ПродажиРегистр.Names.Рентабельность].ToCredit();
@@ -82,8 +81,7 @@ namespace Авто.Метаданные.Автосервис
             NsgCompare cmp = nsgObjectFilter1.Compare;
 
             var table = док.GetCirculate(nsgPeriodPicker1.Period.Begin, nsgPeriodPicker1.Period.End, cmp,
-                NsgSoft.Common.NsgRegisterResult.Credit,
-                new string[] { Остатки.Names.Номенклатура, Остатки.Names.Владелец });
+                NsgSoft.Common.NsgRegisterResult.Credit, new string[] { ПродажиРегистр.Names.Контрагенты, ПродажиРегистр.Names.Номенклатура });
 
             vmoДок.Data.BeginUpdateData();
             vmoДок.Data.MemoryTable.Clear();
@@ -91,7 +89,7 @@ namespace Авто.Метаданные.Автосервис
             foreach (var строка in table.Rows)
             {
                 var row = vmoДок.Data.MemoryTable.NewRow();
-                row[vmoДок_Контр].Value = (строка[ПродажиРегистр.Names.Владелец].ToReferent() as РасходнаяНакладная).Контрагенты;
+                row[vmoДок_Контр].Value = строка[ПродажиРегистр.Names.Контрагенты].ToReferent() as Контрагенты;
                 row[vmoДок_Номенкл].Value = строка[ПродажиРегистр.Names.Номенклатура].ToReferent() as Номенклатура;
                 row[vmoДок_Количество].Value = строка[ПродажиРегистр.Names.Количество].ToCredit();
                 row[vmoДок_Сумма].Value = строка[ПродажиРегистр.Names.ЦенаПродажи].ToCredit();

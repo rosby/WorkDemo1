@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<NsgConfiguration version="2021.5.10.4" CodeLang="ru" name="Авто" description="New Configuration" copyright="Unknown Developer ©  2011" dbmanlist="" guid="ba39aa6f-8a49-4da2-9389-35dcf2e0cf2d" CodePath=".\code" CodeWebPath=".\codeWeb" UseWebCode="False" Prefix="Ав" Type="Base" languages="" dll="">
+<NsgConfiguration version="2021.5.11.0" CodeLang="ru" name="Авто" description="New Configuration" copyright="Unknown Developer ©  2011" dbmanlist="" guid="ba39aa6f-8a49-4da2-9389-35dcf2e0cf2d" CodePath=".\code" CodeWebPath=".\codeWeb" UseWebCode="False" Prefix="Ав" Type="Base" languages="" dll="">
   <MetaDataList>
-    <NsgMetaData Guid="164524e3-4855-47a0-8173-ec7793f793fe" version="2021.5.10.4" FullVersion="NsgSoft.DataObjects=2016.4.18.0;Авто=2021.5.10.4;" name="Метаданные" typename="Метаданные" userinfo="True" userlog="True" usermenu="True" PeriodicTable="_SystemTables.PeriodicTable" languages="">
+    <NsgMetaData Guid="164524e3-4855-47a0-8173-ec7793f793fe" version="2021.5.11.0" FullVersion="NsgSoft.DataObjects=2016.4.18.0;Авто=2021.5.11.0;" name="Метаданные" typename="Метаданные" userinfo="True" userlog="True" usermenu="True" PeriodicTable="_SystemTables.PeriodicTable" languages="">
       <Groups>
         <group name="Сервис" />
         <group name="Автосервис" />
@@ -4040,6 +4040,11 @@
                 <presentation lang="(Default)" value="" />
               </NsgLanguageString>
             </NsgSimpleObject>
+            <NsgSimpleObject Guid="11551787-5507-4f06-925e-359fff98ab3b" type="NsgDataTypedReference" editoraccess="Full" name="Контрагенты" visible="true" description="Контрагенты" field="Kontragenty" index="None" subtype="Property" nullAllow="False" SaveInDatabase="true" includeInPredefined="false" required="false" characteristicCompareType="Equal" characteristicWeight="1" stringFormat="" refgroup="Автосервис" refname="Контрагенты">
+              <NsgLanguageString type="presentation">
+                <presentation lang="(Default)" value="" />
+              </NsgLanguageString>
+            </NsgSimpleObject>
           </ObjectList>
           <Containers />
         </NsgMultipleObject>
@@ -4233,6 +4238,11 @@
               </NsgLanguageString>
             </NsgSimpleObject>
             <NsgSimpleObject Guid="0fac9c8d-c7fe-41bc-9bf0-59490779acbc" type="NsgDataFloat" editoraccess="Full" name="Рентабельность" visible="true" description="Рентабельность" field="Rentabelnost" index="None" subtype="Resource" nullAllow="False" SaveInDatabase="true" includeInPredefined="false" required="false" characteristicCompareType="Equal" characteristicWeight="1" stringFormat="" minValue="-100000000000000000" maxValue="100000000000000000" precision="2" hidezero="True">
+              <NsgLanguageString type="presentation">
+                <presentation lang="(Default)" value="" />
+              </NsgLanguageString>
+            </NsgSimpleObject>
+            <NsgSimpleObject Guid="11551787-5507-4f06-925e-359fff98ab3b" type="NsgDataTypedReference" editoraccess="Full" name="Контрагенты" visible="true" description="Контрагенты" field="Kontragenty" index="None" subtype="Property" nullAllow="False" SaveInDatabase="true" includeInPredefined="false" required="false" characteristicCompareType="Equal" characteristicWeight="1" stringFormat="" refgroup="Автосервис" refname="Контрагенты">
               <NsgLanguageString type="presentation">
                 <presentation lang="(Default)" value="" />
               </NsgLanguageString>

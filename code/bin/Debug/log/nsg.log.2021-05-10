@@ -1,0 +1,884 @@
+[INFO ] [10:39:45] [1] - 
+
+10:39:45 -------------------------------- NEW LOG --------------------------------
+[INFO ] [10:39:50] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [10:39:54] [10] - Key: Invalid agent!
+[ERROR] [10:39:54] [10] - Key: Invalid agent!
+[ERROR] [10:39:54] [10] - Key: Invalid agent!
+[ERROR] [10:39:54] [10] - Key: Invalid agent!
+[ERROR] [10:39:55] [10] - Ошибка 22. Ошибка работы с БД -- Нельзя снять блокировку приложения (участник базы данных: "public", ресурс: "5fa6fe97-a46f-4379-a98b-61cee697dfde"), поскольку в данный момент она не удерживается.
+[ERROR] [10:39:55] [10] -  CallStack content :
+[ERROR] [10:39:55] [10] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
+   в NsgSoft.Database.NsgDatabaseMsSQL.asyncExecuteNonQuery(SqlCommand command, Boolean noOutTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 4571
+   в NsgSoft.DataObjects.NsgMultipleObject.UnLock(String resource) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2323
+   в NsgSoft.DataObjects.NsgMultipleObject.Lock(String resource, Boolean openNewTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2264
+   в NsgSoft.DataObjects.NsgConfiguration.SetUpdateFlag(Boolean p) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 2281
+   в NsgSoft.DataObjects.NsgConfiguration.CreateStorage(Object sender, DoWorkEventArgs eventArgs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 1697
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [10:39:55] [10] - 
+[INFO ] [10:40:12] [1] - 
+
+10:40:12 -------------------------------- NEW LOG --------------------------------
+[INFO ] [10:40:16] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [10:40:17] [1] - Key: Invalid agent!
+[ERROR] [10:40:17] [1] - Key: Invalid agent!
+[ERROR] [10:40:17] [1] - Key: Invalid agent!
+[ERROR] [10:40:17] [1] - Key: Invalid agent!
+[INFO ] [12:04:18] [1] - 
+
+12:04:18 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:06:27] [1] - 
+
+12:06:27 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:06:36] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:06:38] [1] - Key: Invalid agent!
+[ERROR] [12:06:38] [1] - Key: Invalid agent!
+[ERROR] [12:06:38] [1] - Key: Invalid agent!
+[ERROR] [12:06:38] [1] - Key: Invalid agent!
+[ERROR] [12:06:48] [39] - Ошибка 22. Ошибка работы с БД -- Недопустимое имя столбца "_Sign".
+
+select @_original_begin_date0 as OriginalBeginDate, 
+	case when rest.Nomenklatura is not null then rest.Nomenklatura else circ.Nomenklatura end as Nomenklatura, 
+
+ IsNull(rest.beforeKolichestvo, 0) as beforeKolichestvo,
+ IsNull(circ.inKolichestvo, 0) as inKolichestvo,
+ IsNull(circ.outKolichestvo, 0) as outKolichestvo,
+(IsNull(rest.beforeKolichestvo, 0) + IsNull(circ.inKolichestvo, 0) - IsNull(circ.outKolichestvo, 0)) as afterKolichestvo,
+ IsNull(rest.beforeSumma, 0) as beforeSumma,
+ IsNull(circ.inSumma, 0) as inSumma,
+ IsNull(circ.outSumma, 0) as outSumma,
+(IsNull(rest.beforeSumma, 0) + IsNull(circ.inSumma, 0) - IsNull(circ.outSumma, 0)) as afterSumma
+from (select Nomenklatura, IsNull(sum(Kolichestvo), 0) as beforeKolichestvo, IsNull(sum(Summa), 0) as beforeSumma
+from ( select t2.Nomenklatura, IsNull(Kolichestvo, 0) as Kolichestvo, IsNull(Summa, 0) as Summa
+	from ( select Nomenklatura,  max(_date) as _maximum_date
+		 from Ав_tab_AvtoservisOstatki2 WITH (nolock) where _date <= @_start_period_date0
+		 group by Nomenklatura) as t1
+	 inner join Ав_tab_AvtoservisOstatki2 as t2 WITH(NOLOCK) on t1.Nomenklatura = t2.Nomenklatura and  t1._maximum_date = t2._date
+ where 
+    ( t2._Sign = @n232    )
+
+	
+		 ) as t
+group by Nomenklatura
+having  IsNull(sum(Kolichestvo), 0) != 0 or IsNull(sum(Summa), 0) != 0) rest
+full outer join
+(select 
+	case when _in.Nomenklatura is not null then _in.Nomenklatura else _out.Nomenklatura end as Nomenklatura, 
+ IsNull(sum(_in.Kolichestvo), 0) as inKolichestvo, IsNull(sum(_out.Kolichestvo), 0) as outKolichestvo, IsNull(sum(_in.Summa), 0) as inSumma, IsNull(sum(_out.Summa), 0) as outSumma
+from (select Nomenklatura,  IsNull(sum(Kolichestvo), 0) as Kolichestvo, IsNull(sum(Summa), 0) as Summa
+from Ав_tab_AvtoservisOstatki WITH (nolock)
+where _date >= @_begin_date_circulate_credit0 and _date <= @_end_date_circulate_credit0  and _active = 1 and _Sign = 1
+ and 
+    ( _Sign = @n232    )
+
+group by Nomenklatura
+having  IsNull(sum(Kolichestvo), 0) != 0 or IsNull(sum(Summa), 0) != 0) as _in
+full outer join
+(select Nomenklatura,  IsNull(sum(Kolichestvo), 0) as Kolichestvo, IsNull(sum(Summa), 0) as Summa
+from Ав_tab_AvtoservisOstatki WITH (nolock)
+where _date >= @_begin_date_circulate_debit0 and _date <= @_end_date_circulate_debit0  and _active = 1 and _Sign = -1
+ and 
+    ( _Sign = @n232    )
+
+group by Nomenklatura
+having  IsNull(sum(Kolichestvo), 0) != 0 or IsNull(sum(Summa), 0) != 0) as _out
+on _in.Nomenklatura = _out.Nomenklatura 
+group by _in.Nomenklatura, _out.Nomenklatura) circ
+on rest.Nomenklatura = circ.Nomenklatura 
+;
+[ERROR] [12:06:48] [39] -  CallStack content :
+[ERROR] [12:06:48] [39] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
+   в NsgSoft.Database.NsgDatabaseMsSQL.asyncExecuteReader(SqlCommand command) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 4527
+   в NsgSoft.Database.NsgDatabaseMsSQL.executeGetCirculateByPeriod(SqlCommand command, Int32 allResultCount) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.query.cs:строка 263
+   в NsgSoft.Database.NsgDatabaseMsSQL.GetCirculate(NsgRestParam restParams, Queue`1 periods, IDbTransaction transaction, String inStartQuery, String inEndQuery) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.query.cs:строка 240
+   в NsgSoft.DataObjects.NsgDataRegister.GetCirculate(DateTime start, DateTime end, NsgPeriod periodType, Int32 periodCount, TimeSpan interval, NsgCompare compare, NsgRegisterResult needResult, String[] refTblNames, String[] resultDimensions) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataRegister.cs:строка 1777
+   в NsgSoft.DataObjects.NsgDataRegister.GetCirculate(DateTime start, DateTime end, NsgCompare compare, String[] resultDimensions) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataRegister.cs:строка 1495
+   в Авто.Метаданные.Автосервис.ПродажиФорма.VmoFill() в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 52
+   в Авто.Метаданные.Автосервис.ПродажиФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 36
+   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [12:06:48] [39] - 
+[INFO ] [12:12:15] [1] - 
+
+12:12:15 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:12:19] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:12:20] [1] - Key: Invalid agent!
+[ERROR] [12:12:20] [1] - Key: Invalid agent!
+[ERROR] [12:12:20] [1] - Key: Invalid agent!
+[ERROR] [12:12:20] [1] - Key: Invalid agent!
+[ERROR] [12:12:28] [31] - Ошибка 9. Неверно задан путь: .ВидДвижения.
+[ERROR] [12:12:28] [31] -  CallStack content :
+[ERROR] [12:12:28] [31] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
+   в NsgSoft.DataObjects.NsgDataObjectList`2.GetObjectsByPath(String path, Boolean throwErrors) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 1444
+   в NsgSoft.DataObjects.NsgDataObjectList`2.GetObjectByPath(String path) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 1394
+   в Авто.Метаданные.Автосервис.ПродажиФорма.VmoFill() в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 59
+   в Авто.Метаданные.Автосервис.ПродажиФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 36
+   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [12:12:28] [31] - 
+[INFO ] [12:13:29] [1] - 
+
+12:13:29 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:13:33] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:13:34] [1] - Key: Invalid agent!
+[ERROR] [12:13:34] [1] - Key: Invalid agent!
+[ERROR] [12:13:34] [1] - Key: Invalid agent!
+[ERROR] [12:13:34] [1] - Key: Invalid agent!
+[ERROR] [12:13:38] [16] - Ошибка 9. Неверно задан путь: .ВидДвижения.
+[ERROR] [12:13:38] [16] -  CallStack content :
+[ERROR] [12:13:39] [16] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
+   в NsgSoft.DataObjects.NsgDataObjectList`2.GetObjectsByPath(String path, Boolean throwErrors) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 1444
+   в NsgSoft.DataObjects.NsgDataObjectList`2.GetObjectByPath(String path) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 1394
+   в Авто.Метаданные.Автосервис.ПродажиФорма.VmoFill() в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 59
+   в Авто.Метаданные.Автосервис.ПродажиФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 36
+   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [12:13:39] [16] - 
+[INFO ] [12:13:59] [1] - 
+
+12:13:59 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:14:04] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:14:05] [1] - Key: Invalid agent!
+[ERROR] [12:14:05] [1] - Key: Invalid agent!
+[ERROR] [12:14:05] [1] - Key: Invalid agent!
+[ERROR] [12:14:05] [1] - Key: Invalid agent!
+[ERROR] [12:14:39] [20] - NsgMemoryTableRow - Unknow resource ID!
+[ERROR] [12:14:39] [20] -  CallStack content :
+[ERROR] [12:14:39] [20] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgResourceLoader.getString(ResourceManager mngr, String resName, Boolean showException, Object[] parameters) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgResourceLoader.cs:строка 536
+   в NsgSoft.DataObjects.NsgBaseObject.get_TypeLocalName() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgBaseObject.cs:строка 310
+   в Авто.Метаданные.Автосервис.ПродажиФорма.VmoFill() в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 59
+   в Авто.Метаданные.Автосервис.ПродажиФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 36
+   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [12:14:39] [20] - 
+[ERROR] [12:16:06] [20] - NsgMemoryTableRow - Unknow resource ID!
+[ERROR] [12:16:06] [20] -  CallStack content :
+[ERROR] [12:16:06] [20] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgResourceLoader.getString(ResourceManager mngr, String resName, Boolean showException, Object[] parameters) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgResourceLoader.cs:строка 536
+   в NsgSoft.DataObjects.NsgBaseObject.get_TypeLocalName() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgBaseObject.cs:строка 310
+   в Авто.Метаданные.Автосервис.ПродажиФорма.VmoFill() в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 59
+   в Авто.Метаданные.Автосервис.ПродажиФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 36
+   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [12:16:06] [20] - 
+[INFO ] [12:18:24] [1] - 
+
+12:18:24 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:18:29] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:18:31] [1] - Key: Invalid agent!
+[ERROR] [12:18:31] [1] - Key: Invalid agent!
+[ERROR] [12:18:31] [1] - Key: Invalid agent!
+[ERROR] [12:18:31] [1] - Key: Invalid agent!
+[ERROR] [12:18:36] [17] - Ошибка 9. Неверно задан путь: .Владелец.
+[ERROR] [12:18:36] [17] -  CallStack content :
+[ERROR] [12:18:36] [17] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
+   в NsgSoft.DataObjects.NsgDataObjectList`2.GetObjectsByPath(String path, Boolean throwErrors) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 1444
+   в NsgSoft.DataObjects.NsgDataObjectList`2.GetObjectByPath(String path) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 1394
+   в Авто.Метаданные.Автосервис.ПродажиФорма.VmoFill() в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 60
+   в Авто.Метаданные.Автосервис.ПродажиФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 36
+   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [12:18:36] [17] - 
+[INFO ] [12:21:00] [1] - 
+
+12:21:00 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:21:05] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:21:06] [1] - Key: Invalid agent!
+[ERROR] [12:21:06] [1] - Key: Invalid agent!
+[ERROR] [12:21:06] [1] - Key: Invalid agent!
+[ERROR] [12:21:06] [1] - Key: Invalid agent!
+[ERROR] [12:21:12] [22] - Ошибка 9. Неверно задан путь: .Владелец.
+[ERROR] [12:21:12] [22] -  CallStack content :
+[ERROR] [12:21:12] [22] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
+   в NsgSoft.DataObjects.NsgDataObjectList`2.GetObjectsByPath(String path, Boolean throwErrors) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 1444
+   в NsgSoft.DataObjects.NsgDataObjectList`2.GetObjectByPath(String path) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 1394
+   в Авто.Метаданные.Автосервис.ПродажиФорма.VmoFill() в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 60
+   в Авто.Метаданные.Автосервис.ПродажиФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 36
+   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [12:21:12] [22] - 
+[INFO ] [12:22:19] [1] - 
+
+12:22:19 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:22:23] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:22:25] [1] - Key: Invalid agent!
+[ERROR] [12:22:25] [1] - Key: Invalid agent!
+[ERROR] [12:22:25] [1] - Key: Invalid agent!
+[ERROR] [12:22:25] [1] - Key: Invalid agent!
+[ERROR] [12:22:29] [20] - Ошибка 9. Неверно задан путь: .Владелец.
+[ERROR] [12:22:29] [20] -  CallStack content :
+[ERROR] [12:22:29] [20] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
+   в NsgSoft.DataObjects.NsgDataObjectList`2.GetObjectsByPath(String path, Boolean throwErrors) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 1444
+   в NsgSoft.DataObjects.NsgDataObjectList`2.GetObjectByPath(String path) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 1394
+   в Авто.Метаданные.Автосервис.ПродажиФорма.VmoFill() в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 60
+   в Авто.Метаданные.Автосервис.ПродажиФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 36
+   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [12:22:29] [20] - 
+[INFO ] [12:23:46] [1] - 
+
+12:23:46 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:23:50] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:23:51] [1] - Key: Invalid agent!
+[ERROR] [12:23:51] [1] - Key: Invalid agent!
+[ERROR] [12:23:51] [1] - Key: Invalid agent!
+[ERROR] [12:23:51] [1] - Key: Invalid agent!
+[INFO ] [12:28:30] [1] - 
+
+12:28:30 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:28:34] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:28:36] [1] - Key: Invalid agent!
+[ERROR] [12:28:36] [1] - Key: Invalid agent!
+[ERROR] [12:28:36] [1] - Key: Invalid agent!
+[ERROR] [12:28:36] [1] - Key: Invalid agent!
+[ERROR] [12:28:40] [Load NsgObjectFilter objects.] - ===================== Exception Begin =====================
+Main Message = 'Ссылка на объект не указывает на экземпляр объекта.'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgIGridView.NsgObjectFilter.<SettingsFromXml>b__223_0(NsgThread thread, DoWorkEventArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\NsgIGridView\NsgObjectFilter.cs:строка 2663
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 628
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [12:30:38] [1] - 
+
+12:30:38 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:30:42] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:30:43] [1] - Key: Invalid agent!
+[ERROR] [12:30:43] [1] - Key: Invalid agent!
+[ERROR] [12:30:43] [1] - Key: Invalid agent!
+[ERROR] [12:30:43] [1] - Key: Invalid agent!
+[ERROR] [12:30:46] [Load NsgObjectFilter objects.] - ===================== Exception Begin =====================
+Main Message = 'Ссылка на объект не указывает на экземпляр объекта.'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgIGridView.NsgObjectFilter.<SettingsFromXml>b__223_0(NsgThread thread, DoWorkEventArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\NsgIGridView\NsgObjectFilter.cs:строка 2663
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 628
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [12:34:46] [1] - 
+
+12:34:46 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:34:50] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:34:51] [1] - Key: Invalid agent!
+[ERROR] [12:34:51] [1] - Key: Invalid agent!
+[ERROR] [12:34:51] [1] - Key: Invalid agent!
+[ERROR] [12:34:51] [1] - Key: Invalid agent!
+[ERROR] [12:34:54] [Load NsgObjectFilter objects.] - ===================== Exception Begin =====================
+Main Message = 'Ссылка на объект не указывает на экземпляр объекта.'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgIGridView.NsgObjectFilter.<SettingsFromXml>b__223_0(NsgThread thread, DoWorkEventArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\NsgIGridView\NsgObjectFilter.cs:строка 2663
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 628
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[ERROR] [12:35:01] [43] - ===================== Exception Begin =====================
+Main Message = 'Тип значения не соответствует типу столбца.'.
+ 
+Main StackTrace = '   в System.Data.Common.ObjectStorage.Set(Int32 recordNo, Object value)
+   в System.Data.DataColumn.set_Item(Int32 record, Object value)'.
+====================== Exception End ======================
+
+[INFO ] [12:35:29] [1] - 
+
+12:35:29 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:35:32] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:35:34] [1] - Key: Invalid agent!
+[ERROR] [12:35:34] [1] - Key: Invalid agent!
+[ERROR] [12:35:34] [1] - Key: Invalid agent!
+[ERROR] [12:35:34] [1] - Key: Invalid agent!
+[ERROR] [12:35:36] [Load NsgObjectFilter objects.] - ===================== Exception Begin =====================
+Main Message = 'Ссылка на объект не указывает на экземпляр объекта.'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgIGridView.NsgObjectFilter.<SettingsFromXml>b__223_0(NsgThread thread, DoWorkEventArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\NsgIGridView\NsgObjectFilter.cs:строка 2663
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 628
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [12:36:01] [1] - 
+
+12:36:01 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:36:06] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:36:08] [1] - Key: Invalid agent!
+[ERROR] [12:36:08] [1] - Key: Invalid agent!
+[ERROR] [12:36:08] [1] - Key: Invalid agent!
+[ERROR] [12:36:08] [1] - Key: Invalid agent!
+[ERROR] [12:36:10] [Load NsgObjectFilter objects.] - ===================== Exception Begin =====================
+Main Message = 'Ссылка на объект не указывает на экземпляр объекта.'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgIGridView.NsgObjectFilter.<SettingsFromXml>b__223_0(NsgThread thread, DoWorkEventArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\NsgIGridView\NsgObjectFilter.cs:строка 2663
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 628
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[ERROR] [12:36:29] [26] - NsgMemoryTableRow - Unknow resource ID!
+[ERROR] [12:36:29] [26] -  CallStack content :
+[ERROR] [12:36:29] [26] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgResourceLoader.getString(ResourceManager mngr, String resName, Boolean showException, Object[] parameters) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgResourceLoader.cs:строка 536
+   в NsgSoft.DataObjects.NsgBaseObject.get_TypeLocalName() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgBaseObject.cs:строка 310
+   в Авто.Метаданные.Автосервис.ПродажиФорма.VmoFill() в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 62
+   в Авто.Метаданные.Автосервис.ПродажиФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 36
+   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [12:36:29] [26] - 
+[ERROR] [12:37:03] [26] - NsgMemoryTableRow - Unknow resource ID!
+[ERROR] [12:37:03] [26] -  CallStack content :
+[ERROR] [12:37:03] [26] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgResourceLoader.getString(ResourceManager mngr, String resName, Boolean showException, Object[] parameters) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgResourceLoader.cs:строка 536
+   в NsgSoft.DataObjects.NsgBaseObject.get_TypeLocalName() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgBaseObject.cs:строка 310
+   в Авто.Метаданные.Автосервис.ПродажиФорма.VmoFill() в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 62
+   в Авто.Метаданные.Автосервис.ПродажиФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\Продажи\Форма.cs:строка 36
+   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [12:37:03] [26] - 
+[INFO ] [12:37:31] [1] - 
+
+12:37:31 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:37:35] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:37:37] [1] - Key: Invalid agent!
+[ERROR] [12:37:37] [1] - Key: Invalid agent!
+[ERROR] [12:37:37] [1] - Key: Invalid agent!
+[ERROR] [12:37:37] [1] - Key: Invalid agent!
+[ERROR] [12:37:39] [Load NsgObjectFilter objects.] - ===================== Exception Begin =====================
+Main Message = 'Ссылка на объект не указывает на экземпляр объекта.'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgIGridView.NsgObjectFilter.<SettingsFromXml>b__223_0(NsgThread thread, DoWorkEventArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\NsgIGridView\NsgObjectFilter.cs:строка 2663
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 628
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [12:41:52] [1] - 
+
+12:41:52 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:41:55] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:41:57] [1] - Key: Invalid agent!
+[ERROR] [12:41:57] [1] - Key: Invalid agent!
+[ERROR] [12:41:57] [1] - Key: Invalid agent!
+[ERROR] [12:41:57] [1] - Key: Invalid agent!
+[ERROR] [12:41:59] [Load NsgObjectFilter objects.] - ===================== Exception Begin =====================
+Main Message = 'Ссылка на объект не указывает на экземпляр объекта.'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgIGridView.NsgObjectFilter.<SettingsFromXml>b__223_0(NsgThread thread, DoWorkEventArgs args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\NsgIGridView\NsgObjectFilter.cs:строка 2663
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 628
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [12:43:51] [1] - 
+
+12:43:51 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:43:55] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:43:57] [1] - Key: Invalid agent!
+[ERROR] [12:43:57] [1] - Key: Invalid agent!
+[ERROR] [12:43:57] [1] - Key: Invalid agent!
+[ERROR] [12:43:57] [1] - Key: Invalid agent!
+[INFO ] [12:45:25] [1] - 
+
+12:45:25 -------------------------------- NEW LOG --------------------------------
+[INFO ] [12:45:29] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [12:45:31] [1] - Key: Invalid agent!
+[ERROR] [12:45:31] [1] - Key: Invalid agent!
+[ERROR] [12:45:31] [1] - Key: Invalid agent!
+[ERROR] [12:45:31] [1] - Key: Invalid agent!
+[INFO ] [17:52:51] [1] - 
+
+17:52:51 -------------------------------- NEW LOG --------------------------------
+[INFO ] [17:52:57] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [17:56:29] [10] - Key: Invalid agent!
+[ERROR] [17:56:29] [10] - Key: Invalid agent!
+[ERROR] [17:56:29] [10] - Key: Invalid agent!
+[ERROR] [17:56:29] [10] - Key: Invalid agent!
+[INFO ] [17:56:42] [1] - 
+
+17:56:42 -------------------------------- NEW LOG --------------------------------
+[INFO ] [17:56:47] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [17:56:49] [1] - Key: Invalid agent!
+[ERROR] [17:56:49] [1] - Key: Invalid agent!
+[ERROR] [17:56:49] [1] - Key: Invalid agent!
+[ERROR] [17:56:49] [1] - Key: Invalid agent!
+[ERROR] [17:58:22] [35c131bb-e425-482a-9bd2-59e54344b30a] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[ERROR] [17:58:44] [Проведение] - Ошибка 46. Используется недопустимый регистр Автосервис.ПродажиРегистр
+[ERROR] [17:58:44] [Проведение] -  CallStack content :
+[ERROR] [17:58:44] [Проведение] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
+   в NsgSoft.DataObjects.NsgDataRegister.set_Document(NsgDataDocument value) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataRegister.cs:строка 464
+   в Авто.Метаданные.Автосервис.ПродажиРегистр.Новый(NsgDataDocument document) в E:\Work\FirstDemo\code\Метаданные\Автосервис\ПродажиРегистр\ПродажиРегистр.NsgInit.cs:строка 46
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Prodagi(Decimal себестоймость, Строка строка) в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 87
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.ForRegisters() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 73
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Handling() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 34
+   в NsgSoft.DataObjects.NsgDataDocument.Handle() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataDocument.cs:строка 1120
+   в NsgSoft.Forms.NsgVisualMultipleObject.handle_DoWork(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgVisualMultipleObject.cs:строка 3220
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [17:58:44] [Проведение] - 
+[ERROR] [17:58:44] [Проведение] - ===================== Exception Begin =====================
+Main Message = 'Ошибка 46. Используется недопустимый регистр Автосервис.ПродажиРегистр'.
+ 
+Main StackTrace = '   в NsgSoft.DataObjects.NsgDataRegister.set_Document(NsgDataDocument value) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataRegister.cs:строка 470
+   в Авто.Метаданные.Автосервис.ПродажиРегистр.Новый(NsgDataDocument document) в E:\Work\FirstDemo\code\Метаданные\Автосервис\ПродажиРегистр\ПродажиРегистр.NsgInit.cs:строка 46
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Prodagi(Decimal себестоймость, Строка строка) в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 87
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.ForRegisters() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 73
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Handling() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 34
+   в NsgSoft.DataObjects.NsgDataDocument.Handle() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataDocument.cs:строка 1120'.
+====================== Exception End ======================
+
+[INFO ] [18:00:36] [1] - 
+
+18:00:36 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:00:52] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:00:57] [8] - Key: Invalid agent!
+[ERROR] [18:00:57] [8] - Key: Invalid agent!
+[ERROR] [18:00:57] [8] - Key: Invalid agent!
+[ERROR] [18:00:57] [8] - Key: Invalid agent!
+[ERROR] [18:00:57] [8] - Ошибка 22. Ошибка работы с БД -- Нельзя снять блокировку приложения (участник базы данных: "public", ресурс: "dbf4cf3a-c0be-4f69-9370-d4a60e2968ee"), поскольку в данный момент она не удерживается.
+[ERROR] [18:00:57] [8] -  CallStack content :
+[ERROR] [18:00:57] [8] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
+   в NsgSoft.Database.NsgDatabaseMsSQL.asyncExecuteNonQuery(SqlCommand command, Boolean noOutTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 4571
+   в NsgSoft.DataObjects.NsgMultipleObject.UnLock(String resource) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2323
+   в NsgSoft.DataObjects.NsgMultipleObject.Lock(String resource, Boolean openNewTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2264
+   в NsgSoft.DataObjects.NsgConfiguration.SetUpdateFlag(Boolean p) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 2281
+   в NsgSoft.DataObjects.NsgConfiguration.CreateStorage(Object sender, DoWorkEventArgs eventArgs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 1697
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [18:00:57] [8] - 
+[INFO ] [18:01:14] [1] - 
+
+18:01:14 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:01:18] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:01:20] [1] - Key: Invalid agent!
+[ERROR] [18:01:20] [1] - Key: Invalid agent!
+[ERROR] [18:01:20] [1] - Key: Invalid agent!
+[ERROR] [18:01:20] [1] - Key: Invalid agent!
+[ERROR] [18:01:37] [16781719-5f1a-4f0c-a712-826bea5bb733] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[ERROR] [18:01:53] [Проведение] - ===================== Exception Begin =====================
+Main Message = 'Попытка деления на нуль.'.
+ 
+Main StackTrace = '   в System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   в System.Decimal.op_Division(Decimal d1, Decimal d2)
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Prodagi(Decimal себестоймость, Строка строка) в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 93
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.ForRegisters() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 73
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Handling() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 34
+   в NsgSoft.DataObjects.NsgDataDocument.Handle() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataDocument.cs:строка 1120'.
+====================== Exception End ======================
+
+[ERROR] [18:03:15] [Проведение] - ===================== Exception Begin =====================
+Main Message = 'Попытка деления на нуль.'.
+ 
+Main StackTrace = '   в System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   в System.Decimal.op_Division(Decimal d1, Decimal d2)
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Prodagi(Decimal себестоймость, Строка строка) в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 93
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.ForRegisters() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 73
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Handling() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 34
+   в NsgSoft.DataObjects.NsgDataDocument.Handle() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataDocument.cs:строка 1120'.
+====================== Exception End ======================
+
+[ERROR] [18:03:17] [Проведение] - ===================== Exception Begin =====================
+Main Message = 'Попытка деления на нуль.'.
+ 
+Main StackTrace = '   в System.Decimal.FCallDivide(Decimal& d1, Decimal& d2)
+   в System.Decimal.op_Division(Decimal d1, Decimal d2)
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Prodagi(Decimal себестоймость, Строка строка) в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 93
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.ForRegisters() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 73
+   в Авто.Метаданные.Автосервис.РасходнаяНакладная.Handling() в E:\Work\FirstDemo\code\Метаданные\Автосервис\РасходнаяНакладная\РасходнаяНакладная.cs:строка 34
+   в NsgSoft.DataObjects.NsgDataDocument.Handle() в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataDocument.cs:строка 1120'.
+====================== Exception End ======================
+
+[INFO ] [18:03:39] [1] - 
+
+18:03:39 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:03:43] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:03:45] [1] - Key: Invalid agent!
+[ERROR] [18:03:45] [1] - Key: Invalid agent!
+[ERROR] [18:03:45] [1] - Key: Invalid agent!
+[ERROR] [18:03:45] [1] - Key: Invalid agent!
+[ERROR] [18:04:12] [48c5b89e-79ea-45c0-839b-b3d6794dfbc2] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [18:06:32] [1] - 
+
+18:06:32 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:06:37] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:06:38] [1] - Key: Invalid agent!
+[ERROR] [18:06:38] [1] - Key: Invalid agent!
+[ERROR] [18:06:38] [1] - Key: Invalid agent!
+[ERROR] [18:06:38] [1] - Key: Invalid agent!
+[ERROR] [18:06:55] [ff7e0263-9152-4adf-af42-fa94af4bb110] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [18:48:24] [1] - 
+
+18:48:24 -------------------------------- NEW LOG --------------------------------
+[INFO ] [18:48:30] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [18:48:32] [1] - Key: Invalid agent!
+[ERROR] [18:48:32] [1] - Key: Invalid agent!
+[ERROR] [18:48:32] [1] - Key: Invalid agent!
+[ERROR] [18:48:32] [1] - Key: Invalid agent!
+[INFO ] [20:17:50] [1] - 
+
+20:17:50 -------------------------------- NEW LOG --------------------------------
+[INFO ] [20:17:55] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [20:18:00] [8] - Key: Invalid agent!
+[ERROR] [20:18:00] [8] - Key: Invalid agent!
+[ERROR] [20:18:00] [8] - Key: Invalid agent!
+[ERROR] [20:18:00] [8] - Key: Invalid agent!
+[ERROR] [20:18:00] [8] - Ошибка 22. Ошибка работы с БД -- Нельзя снять блокировку приложения (участник базы данных: "public", ресурс: "faf70420-420b-4707-9a02-d149248586de"), поскольку в данный момент она не удерживается.
+[ERROR] [20:18:00] [8] -  CallStack content :
+[ERROR] [20:18:00] [8] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
+   в NsgSoft.Database.NsgDatabaseMsSQL.asyncExecuteNonQuery(SqlCommand command, Boolean noOutTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 4571
+   в NsgSoft.DataObjects.NsgMultipleObject.UnLock(String resource) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2323
+   в NsgSoft.DataObjects.NsgMultipleObject.Lock(String resource, Boolean openNewTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2264
+   в NsgSoft.DataObjects.NsgConfiguration.SetUpdateFlag(Boolean p) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 2281
+   в NsgSoft.DataObjects.NsgConfiguration.CreateStorage(Object sender, DoWorkEventArgs eventArgs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 1697
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [20:18:00] [8] - 
+[INFO ] [20:18:22] [1] - 
+
+20:18:22 -------------------------------- NEW LOG --------------------------------
+[INFO ] [20:18:26] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [20:18:28] [1] - Key: Invalid agent!
+[ERROR] [20:18:28] [1] - Key: Invalid agent!
+[ERROR] [20:18:28] [1] - Key: Invalid agent!
+[ERROR] [20:18:28] [1] - Key: Invalid agent!
+[ERROR] [20:18:36] [45] - Ошибка 9. Неверно задан путь: .Владелец.
+[ERROR] [20:18:36] [45] -  CallStack content :
+[ERROR] [20:18:36] [45] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
+   в NsgSoft.DataObjects.NsgDataObjectList`2.GetObjectsByPath(String path, Boolean throwErrors) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 1444
+   в NsgSoft.DataObjects.NsgDataObjectList`2.GetObjectByPath(String path) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 1394
+   в Авто.Метаданные.Автосервис.ПродажиОтчетФорма.VmoKontr() в E:\Work\FirstDemo\code\Метаданные\Автосервис\ПродажиОтчет\Форма.cs:строка 61
+   в Авто.Метаданные.Автосервис.ПродажиОтчетФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\ПродажиОтчет\Форма.cs:строка 37
+   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [20:18:36] [45] - 
+[ERROR] [20:18:36] [45] - ===================== Exception Begin =====================
+Main Message = 'Ошибка 9. Неверно задан путь: .Владелец.'.
+ 
+Main StackTrace = '   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
+   в NsgSoft.DataObjects.NsgDataObjectList`2.GetObjectsByPath(String path, Boolean throwErrors) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 1444
+   в NsgSoft.DataObjects.NsgDataObjectList`2.GetObjectByPath(String path) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 1394
+   в Авто.Метаданные.Автосервис.ПродажиОтчетФорма.VmoKontr() в E:\Work\FirstDemo\code\Метаданные\Автосервис\ПродажиОтчет\Форма.cs:строка 61
+   в Авто.Метаданные.Автосервис.ПродажиОтчетФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\ПродажиОтчет\Форма.cs:строка 37
+   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [20:27:36] [1] - 
+
+20:27:36 -------------------------------- NEW LOG --------------------------------
+[INFO ] [20:27:46] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [20:27:48] [1] - Key: Invalid agent!
+[ERROR] [20:27:48] [1] - Key: Invalid agent!
+[ERROR] [20:27:48] [1] - Key: Invalid agent!
+[ERROR] [20:27:48] [1] - Key: Invalid agent!
+[INFO ] [20:28:44] [1] - 
+
+20:28:44 -------------------------------- NEW LOG --------------------------------
+[INFO ] [20:28:48] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [20:28:50] [1] - Key: Invalid agent!
+[ERROR] [20:28:50] [1] - Key: Invalid agent!
+[ERROR] [20:28:50] [1] - Key: Invalid agent!
+[ERROR] [20:28:50] [1] - Key: Invalid agent!
+[INFO ] [21:15:10] [1] - 
+
+21:15:10 -------------------------------- NEW LOG --------------------------------
+[INFO ] [21:15:17] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [21:15:29] [8] - Key: Invalid agent!
+[ERROR] [21:15:29] [8] - Key: Invalid agent!
+[ERROR] [21:15:29] [8] - Key: Invalid agent!
+[ERROR] [21:15:29] [8] - Key: Invalid agent!
+[ERROR] [21:15:29] [8] - Ошибка 22. Ошибка работы с БД -- Нельзя снять блокировку приложения (участник базы данных: "public", ресурс: "9ff76834-945a-4789-a463-b469b78cc127"), поскольку в данный момент она не удерживается.
+[ERROR] [21:15:29] [8] -  CallStack content :
+[ERROR] [21:15:29] [8] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.Common.NsgLoggedException..ctor(Enum error, Single errorNumber, Object[] args) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgLoggedException.cs:строка 60
+   в NsgSoft.Database.NsgDatabaseMsSQL.asyncExecuteNonQuery(SqlCommand command, Boolean noOutTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Database\NsgDatabaseMsSQL.cs:строка 4571
+   в NsgSoft.DataObjects.NsgMultipleObject.UnLock(String resource) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2323
+   в NsgSoft.DataObjects.NsgMultipleObject.Lock(String resource, Boolean openNewTransaction) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\NsgMultipleObject.cs:строка 2264
+   в NsgSoft.DataObjects.NsgConfiguration.SetUpdateFlag(Boolean p) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 2281
+   в NsgSoft.DataObjects.NsgConfiguration.CreateStorage(Object sender, DoWorkEventArgs eventArgs) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgConfiguration.cs:строка 1697
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [21:15:29] [8] - 
+[INFO ] [21:15:48] [1] - 
+
+21:15:48 -------------------------------- NEW LOG --------------------------------
+[INFO ] [21:15:52] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [21:15:54] [1] - Key: Invalid agent!
+[ERROR] [21:15:54] [1] - Key: Invalid agent!
+[ERROR] [21:15:54] [1] - Key: Invalid agent!
+[ERROR] [21:15:54] [1] - Key: Invalid agent!
+[ERROR] [21:16:08] [73] - ===================== Exception Begin =====================
+Main Message = 'Реквизит "Владелец" регистра "Автосервис.ПродажиРегистр" может быть запрошен только с оборотами.'.
+ 
+Main StackTrace = '   в NsgSoft.DataObjects.NsgDataRegister.GetCirculate(DateTime start, DateTime end, NsgPeriod periodType, Int32 periodCount, TimeSpan interval, NsgCompare compare, NsgRegisterResult needResult, String[] refTblNames, String[] resultDimensions) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataRegister.cs:строка 1719
+   в NsgSoft.DataObjects.NsgDataRegister.GetCirculate(DateTime start, DateTime end, NsgCompare compare, NsgRegisterResult needResult, String[] resultDimensions) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Base Data Types\Multiple Objects\NsgDataRegister.cs:строка 1608
+   в Авто.Метаданные.Автосервис.ПродажиОтчетФорма.VmoKontr() в E:\Work\FirstDemo\code\Метаданные\Автосервис\ПродажиОтчет\Форма.cs:строка 54
+   в Авто.Метаданные.Автосервис.ПродажиОтчетФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\ПродажиОтчет\Форма.cs:строка 37
+   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+
+[INFO ] [21:17:14] [1] - 
+
+21:17:14 -------------------------------- NEW LOG --------------------------------
+[INFO ] [21:17:18] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [21:17:20] [1] - Key: Invalid agent!
+[ERROR] [21:17:20] [1] - Key: Invalid agent!
+[ERROR] [21:17:20] [1] - Key: Invalid agent!
+[ERROR] [21:17:20] [1] - Key: Invalid agent!
+[INFO ] [21:18:46] [1] - 
+
+21:18:46 -------------------------------- NEW LOG --------------------------------
+[INFO ] [21:18:50] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [21:18:52] [1] - Key: Invalid agent!
+[ERROR] [21:18:52] [1] - Key: Invalid agent!
+[ERROR] [21:18:52] [1] - Key: Invalid agent!
+[ERROR] [21:18:52] [1] - Key: Invalid agent!
+[INFO ] [22:26:22] [1] - 
+
+22:26:22 -------------------------------- NEW LOG --------------------------------
+[INFO ] [22:26:28] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [22:26:30] [1] - Key: Invalid agent!
+[ERROR] [22:26:30] [1] - Key: Invalid agent!
+[ERROR] [22:26:30] [1] - Key: Invalid agent!
+[ERROR] [22:26:30] [1] - Key: Invalid agent!
+[ERROR] [22:26:36] [22] - Ошибка 9. Неверно задан путь: .Номенклатура.
+[ERROR] [22:26:36] [22] -  CallStack content :
+[ERROR] [22:26:36] [22] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
+   в Авто.Метаданные.Автосервис.ПродажиОтчетФорма.VmoDoc() в E:\Work\FirstDemo\code\Метаданные\Автосервис\ПродажиОтчет\Форма.cs:строка 95
+   в Авто.Метаданные.Автосервис.ПродажиОтчетФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\ПродажиОтчет\Форма.cs:строка 38
+   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [22:26:36] [22] - 
+[INFO ] [22:43:29] [1] - 
+
+22:43:29 -------------------------------- NEW LOG --------------------------------
+[INFO ] [22:43:34] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [22:43:37] [1] - Key: Invalid agent!
+[ERROR] [22:43:37] [1] - Key: Invalid agent!
+[ERROR] [22:43:37] [1] - Key: Invalid agent!
+[ERROR] [22:43:37] [1] - Key: Invalid agent!
+[ERROR] [22:43:46] [46] - Ошибка 9. Неверно задан путь: .Номенклатура.
+[ERROR] [22:43:46] [46] -  CallStack content :
+[ERROR] [22:43:46] [46] -    в System.Environment.GetStackTrace(Exception e, Boolean needFileInfo)
+   в System.Environment.get_StackTrace()
+   в NsgSoft.Common.NsgTracer.WriteErrorWithCallstack(String error) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Common\Service\NsgTracer.cs:строка 239
+   в NsgSoft.DataObjects.NsgDataObjectList`2.get_Item(String key) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\MetaData Managment\NsgDataObjectList.cs:строка 370
+   в Авто.Метаданные.Автосервис.ПродажиОтчетФорма.VmoDoc() в E:\Work\FirstDemo\code\Метаданные\Автосервис\ПродажиОтчет\Форма.cs:строка 95
+   в Авто.Метаданные.Автосервис.ПродажиОтчетФорма.OnCreateReport(NsgBackgroundWorker nsgBackgroundReporter, DoWorkEventArgs e) в E:\Work\FirstDemo\code\Метаданные\Автосервис\ПродажиОтчет\Форма.cs:строка 38
+   в NsgSoft.Forms.NsgReportForm.onCreateReport(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Forms\CommonForms\NsgReportForm.cs:строка 405
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565
+   в System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   в System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   в System.Threading.ThreadHelper.ThreadStart(Object obj)
+[ERROR] [22:43:46] [46] - 
+[INFO ] [22:50:53] [1] - 
+
+22:50:53 -------------------------------- NEW LOG --------------------------------
+[INFO ] [22:52:09] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [22:52:11] [1] - Key: Invalid agent!
+[ERROR] [22:52:11] [1] - Key: Invalid agent!
+[ERROR] [22:52:11] [1] - Key: Invalid agent!
+[ERROR] [22:52:11] [1] - Key: Invalid agent!
+[INFO ] [22:56:47] [1] - 
+
+22:56:47 -------------------------------- NEW LOG --------------------------------
+[INFO ] [22:56:52] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [22:56:55] [1] - Key: Invalid agent!
+[ERROR] [22:56:55] [1] - Key: Invalid agent!
+[ERROR] [22:56:55] [1] - Key: Invalid agent!
+[ERROR] [22:56:55] [1] - Key: Invalid agent!
+[INFO ] [22:57:36] [1] - 
+
+22:57:36 -------------------------------- NEW LOG --------------------------------
+[INFO ] [22:57:40] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [22:57:42] [1] - Key: Invalid agent!
+[ERROR] [22:57:42] [1] - Key: Invalid agent!
+[ERROR] [22:57:42] [1] - Key: Invalid agent!
+[ERROR] [22:57:42] [1] - Key: Invalid agent!
+[INFO ] [23:01:19] [1] - 
+
+23:01:19 -------------------------------- NEW LOG --------------------------------
+[INFO ] [23:01:24] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [23:01:26] [1] - Key: Invalid agent!
+[ERROR] [23:01:26] [1] - Key: Invalid agent!
+[ERROR] [23:01:26] [1] - Key: Invalid agent!
+[ERROR] [23:01:26] [1] - Key: Invalid agent!
+[INFO ] [23:06:33] [1] - 
+
+23:06:33 -------------------------------- NEW LOG --------------------------------
+[INFO ] [23:06:38] [1] - Login user: 'Администратор' result: 'True'
+[ERROR] [23:06:40] [1] - Key: Invalid agent!
+[ERROR] [23:06:40] [1] - Key: Invalid agent!
+[ERROR] [23:06:40] [1] - Key: Invalid agent!
+[ERROR] [23:06:40] [1] - Key: Invalid agent!
+[ERROR] [23:10:56] [2fe28c70-8206-4bb6-90a0-c82d03cb1df7] - ===================== Exception Begin =====================
+Main Message = 'VMO is not Active!'.
+ 
+Main StackTrace = '   в NsgSoft.Forms.NsgDataSourceProvider.setCurrentRow(Object sender, NsgMultipleObject value, Boolean isAsync) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 1617
+   в NsgSoft.Forms.NsgDataSourceProvider.updateDataInternal(Object sender, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 3131
+   в NsgSoft.Forms.NsgDataSourceProvider.<.ctor>b__50_0(NsgThread thread, DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.Forms\Components\NsgVisualMultipleObject\NsgDataSourceProvider.cs:строка 418
+   в NsgSoft.DataObjects.NsgThread.OnDoWork(DoWorkEventArgs e) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 630
+   в NsgSoft.DataObjects.NsgThread.start(Object obj) в F:\Project_TT_2010\Framework\trunk\NsgSoft.DataObjects\Service\NsgThread.cs:строка 565'.
+====================== Exception End ======================
+

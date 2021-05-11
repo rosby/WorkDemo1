@@ -148,7 +148,6 @@ namespace Авто.Метаданные.Автосервис
             nsgGridColumn1.Caption = "";
             nsgGridColumn1.ChangedProperties = new string[] {
         "Visible"};
-            nsgGridColumn1.ImportedFromVMO = false;
             nsgGridColumn1.Name = "Контрагент";
             nsgGridColumn1.Root = this.nsgObjectFilter1.Columns.Collection;
             this.nsgObjectFilter1.Columns.Collection.Add(nsgGridColumn1);
@@ -172,6 +171,8 @@ namespace Авто.Метаданные.Автосервис
             // vmoФильтр
             // 
             this.vmoФильтр.Columns.Collection.Add(this.vmoФильтр_Контр);
+            this.vmoФильтр.IsActive = true;
+            this.vmoФильтр.DataSourceType = NsgSoft.Forms.NsgDataSourceType.DynamicObject;
             this.vmoФильтр.MetaDataName = "";
             this.vmoФильтр.FullName = "";
             // 
@@ -193,6 +194,7 @@ namespace Авто.Метаданные.Автосервис
             this.vmoКонтрагент.Columns.Collection.Add(this.vmoКонтр_Рентаб);
             this.vmoКонтрагент.Columns.Collection.Add(this.vmoКонтр_Сумма);
             this.vmoКонтрагент.Columns.Collection.Add(this.vmoКонтр_Себес);
+            this.vmoКонтрагент.IsActive = true;
             this.vmoКонтрагент.DataSourceType = NsgSoft.Forms.NsgDataSourceType.DynamicObject;
             this.vmoКонтрагент.MetaDataName = "";
             this.vmoКонтрагент.FullName = "";
@@ -271,6 +273,7 @@ namespace Авто.Метаданные.Автосервис
             this.vmoДок.Columns.Collection.Add(this.vmoДок_Прибыль);
             this.vmoДок.Columns.Collection.Add(this.vmoДок_Сумма);
             this.vmoДок.Columns.Collection.Add(this.vmoДок_Себес);
+            this.vmoДок.IsActive = true;
             this.vmoДок.DataSourceType = NsgSoft.Forms.NsgDataSourceType.DynamicObject;
             this.vmoДок.MetaDataName = "";
             this.vmoДок.FullName = "";
@@ -396,7 +399,7 @@ namespace Авто.Метаданные.Автосервис
             this.nsgReport1.ReportAlias = "Отчет";
             this.nsgReport1.ReportDataSources.Add(this.stiReportDataSource1);
             this.nsgReport1.ReportDataSources.Add(this.stiReportDataSource2);
-            this.nsgReport1.ReportGuid = "e81b410e61194f2db0700bd551ccd380";
+            this.nsgReport1.ReportGuid = "476a88b77093442ea6195f34d5b24b11";
             this.nsgReport1.ReportLoaded = true;
             this.nsgReport1.ReportName = "Отчет";
             this.nsgReport1.ReportSource = resources.GetString("nsgReport1.ReportSource");
